@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tielinen.pro</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__logo">
+        <a href="#" class="header__logo-link">Janne Tielinen</a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          {%- for item in menus[0].items -%}
+            <li class="header__nav-item">
+              <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+      <div class="header__cta">
+        <a href="#contact" class="header__cta-button">Contact Me</a>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero__content">
+          <h1 class="hero__heading">Expert Shopify Developer for All Your E-Commerce Needs</h1>
+          <p class="hero__paragraph">
+            With years of experience in custom Shopify themes, store setup, performance optimization, and seamless store
+            migrations, I help businesses thrive online. Let's work together to elevate your Shopify store and turn your
+            e-commerce vision into reality.
+          </p>
+          {% comment %} <a href="#contact" class="hero__cta-button">Get in Touch</a> NO CTA in hero? {% endcomment %}
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h2 class="about__title">Development and consultation can be made simple yet effective</h2>
+        <p class="about__description">
+          I am here to help you with your web development needs. Whether it's creating a new website, enhancing an
+          existing one, or consulting on your online strategy, my goal is to deliver efficient and effective solutions.
+        </p>
+        <div class="about__service-description">
+          <div class="about__service-description-highlights">
+            <div class="about__service-description-highlight">
+              <h3 class="about__service-description-highlight-title">I do this</h3>
+              <p class="about__service-description-highlight-description">
+                Details about the first service or feature you offer.
+              </p>
+            </div>
+            <div class="about__service-description-highlight">
+              <h3 class="about__service-description-highlight-title">I do that</h3>
+              <p class="about__service-description-highlight-description">
+                Details about the first service or feature you offer.
+              </p>
+            </div>
+            <div class="about__service-description-highlight">
+              <h3 class="about__service-description-highlight-title">You get this</h3>
+              <p class="about__service-description-highlight-description">
+                Details about the first service or feature you offer.
+              </p>
+            </div>
+            <div class="service-description__highlight services__highlight--video">
+              <div class="services__video">
+                <!-- Replace this with your video embed or video tag -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <p class="portfolio__description">Some of my recent projects</p>
+        <div class="portfolio__items">
+          {%- for portfolio_item in portfolio-items -%}
+            <div class="portfolio__item">
+              <div class="portfolio__item-image">
+                <!-- Image or placeholder for the project thumbnail -->
+                <!-- {{- portfolio_item.image_url -}} -->
+              </div>
+              <button class="portfolio__item-button">{{- portfolio_item.button_label -}}</button>
+              <h3 class="portfolio__item-title">{{- portfolio_item.title -}}</h3>
+              <p class="portfolio__item-description">{{- portfolio_item.description -}}</p>
+            </div>
+          {%- endfor -%}
+        </div>
+        <button class="portfolio__load-more">Load more</button>
+      </section>
+      <section id="featured-services" class="featured-services">
+        <h2 class="featured-services__heading">Featured Services</h2>
+        <p class="featured-services__subheading">Featured Services</p>
+        <div class="featured-services__items">
+          {%- for servive_item in featured-services -%}
+            <div class="featured-services__item">
+              <h3 class="featured-services__item-title">{{- servive_item.title -}}</h3>
+              <p class="featured-services__item-description">
+                {{- servive_item.description -}}
+              </p>
+            </div>
+          {%- endfor -%}
+        </div>
+      </section>
+      <section id="reviews" class="reviews">
+        <h2 class="reviews__heading">Reviews</h2>
+        <p class="reviews__subheading">Reviews subheading</p>
+        {%- for review in upwork-profile.reviews -%}
+          <div class="reviews__items">
+            <div class="reviews__item">
+              <div class="reviews__item-client">
+                <p class="reviews__item-client-position">{{- review.reviewer_job_title -}}</p>
+              </div>
+              <p class="reviews__item-text">
+                {{- review.review -}}
+              </p>
+            </div>
+          </div>
+        {%- endfor -%}
+      </section>
+      <section id="contact-form" class="contact-form">
+        <h2 class="contact-form__title">Get in Touch</h2>
+        <p class="contact-form__description">
+          Have a question or want to work together? Fill out the form below, and I'll get back to you as soon as
+          possible.
+        </p>
+        <form class="contact-form__form" action="#" method="post">
+          <div class="contact-form__group">
+            <label for="name" class="contact-form__label">Name</label>
+            <input type="text" id="name" name="name" class="contact-form__input" placeholder="Your Name" required>
+          </div>
+          <div class="contact-form__group">
+            <label for="email" class="contact-form__label">Email</label>
+            <input type="email" id="email" name="email" class="contact-form__input" placeholder="Your Email" required>
+          </div>
+          <div class="contact-form__group">
+            <label for="message" class="contact-form__label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact-form__textarea"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="contact-form__button">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="fooder__logo">
+        <a href="#" class="header__logo-link">Janne Tielinen</a>
+      </div>
+      <nav class="footer__nav">
+        {%- for menu in menus -%}
+          <div class="footer__nav-menu">
+            <h6>{{- menu.name -}}</h6>
+            {%- for item in menu.items -%}
+              <li class="header__nav-item">
+                <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
+              </li>
+            {%- endfor -%}
+          </div>
+        {%- endfor -%}
+      </nav>
+      <div class="footer__copyright">
+        <small>&copy; 2024 Janne Tielinen. All rights reserved.</small>
+      </div>
+    </footer>
+  </body>
+</html>

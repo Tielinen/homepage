@@ -1,0 +1,239 @@
+{
+  "projects": [
+    {
+      "Job_title": "Shopify Store Creation with Real-Time Stock Sync",
+      "Store": "housumaailma.fi",
+      "Industry": "Fashion",
+      "Client_review": "Janne has helped a lot with our Shopify shop. Our shop was not so easy to make, because it's conneted with an other shop and there are various things what should function together  and in sync. Janne has  solved all our problemems and it's great to have this kind of an expert who can all the time be helpful and help also with difficult programming as well as e.g. with e-mail marketing and 'easier' matters. We are happy to have Janne on our team. I can be in touch every time I need help. He is also very good at teaching. I have all the tips on how to do things myself, so I've learned a lot - he has even sent me videos on how to do something if I haven't found a solution myself. We can very warmly recommend Janne for the maintenance, programming and problem solving of the online store.",
+      "My_role": "Shopify Store Developer and Customization Expert",
+      "Project_description": "I developed and customized a Shopify store for a women's trousers brand. The store features a unique solution to sync stock quantities with the manufacturer's inventory, updating four times daily. This ensures accurate, real-time stock levels for customers. My role included creating the store, implementing the stock update solution, and tailoring the site to meet the client's needs."
+    },
+    {
+      "Job_title": "Health Supplement Store Creation",
+      "Store": "versagora.com",
+      "Industry": "Nutritional Supplements",
+      "Client_review": "",
+      "My_role": "",
+      "Project_description": "Tasked with emulating the successful design of a market leader, I developed an intuitive and detail-focused online store for a new health supplement brand. Target Audience: Health-conscious individuals looking for quality supplements to enhance their well-being. Execution: My role involved customizing and creating Shopify sections with a keen eye on design details to match the client’s vision. Regular reviews on various devices ensured the store’s responsiveness and user experience adhered to the high standards set by the theme author."
+    },
+    {
+      "Job_title": "Butique for tall women",
+      "Store": "whitneyallysyn.com",
+      "Industry": "Fashion",
+      "Client_review": "Janne was so great to work with! He diligently and patiently worked with me to set up my business website and customize it the way I wanted. He's highly responsive, did all the research, came to me with options and solutions, and advised me on what was needed to keep my website backed up and secure. Janne will always be my #1 go to for my website needs. I highly recommend working with him. 10/10!",
+      "My_role": "",
+      "Project_description": "Shopify E-commerce creation from scratch, close cooperation with the merchant. Creating high converting E-commerce shops while following closely the merchant design and feature request. We both like to think we have created a beautiful, high-converting site."
+    },
+    {
+      "Job_title": "Shopify Web Design and Development",
+      "Store": "Made With Love by Celia",
+      "Industry": "Food and Beverage",
+      "Client_review": "",
+      "My_role": "",
+      "Project_description": "Objective: The objective of this project was to create a professional and user-friendly online store for a home bakery business using the Shopify platform within a tight budget The store was intended to showcase the bakery's products and allow customers to place orders online. Scope: - The scope of the project included the design and development of a custom Shopify theme, as well as the setup and configuration of all necessary features and functionality for the store. - The store needed a clean, modern design, easy navigation, and user-friendly features."
+    },
+    {
+      "Job_title": "eCommerce store migration to Shopify ",
+      "Store": "pellavakauppa.fi",
+      "Industry": "Fashion",
+      "Client_review": "",
+      "My_role": "",
+      "Project_description": "Project: Migrating an eCommerce Platform from a Small Local Platform to Shopify. Objective: The objective of this project was to migrate an eCommerce platform from a local platform to Shopify. Scope: The project scope included transferring all products, customers, orders, and other relevant data from the current platform to Shopify. The migrated store was required to have the same functionalities and features as the existing platform, including payment gateways, shipping options, and customer accounts. Deliverables: A fully migrated and functional eCommerce store on the Shopify platform."
+    },
+    {
+      "Job_title": "Helsinki Fashion Online Shop",
+      "Store": "Helsinki Fashion",
+      "Industry": "Fashion",
+      "Client_review": "",
+      "My_role": "",
+      "Project_description": "The Helsinki Fashion Shopify Shop is built on a customized premium theme. The online store features include, but are not limited to: Image Hotspots to cross-sell products. Mega Menus for product accessibility. Filters with multiple options to increase conversions and revenue."
+      
+    },
+    {
+      "Job_title": "mamaswildchild.com.au Shopify Shop",
+      "Store": "mamaswildchild.com.au",
+      "Industry": "Fashion",
+      "Client_review": "",
+      "My_role": "On this children's fashion store, I customized Shopify's premium theme Prestige and implemented a hidden password-protected wholesales section, with wholesale prices.",
+      "Project_description": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Liquid Storefronts for Theme Developers Certification",
+      "description": "This Certification signifies that the credential holder understands the principles and best practices to optimize a Shopify theme using Liquid, in order to deliver exceptional user experiences for Shopify merchants and their customers.",
+      "link": "https://www.credly.com/badges/27843625-c941-4025-9ddf-b32b01201755",
+      "provider": "Shopify",
+      "verification": "Verified by Credly"
+    },
+    {
+      "name": "Shopify Foundations Certification",
+      "description": "We will educate Shopify Certification participants on the e-commerce industry's evolving standards and trends in concert with key Shopify product/service offerings. An official Shopify Partner Certification is a stamp of approval for Partners with whom Merchants choose to work alongside. This is an introductory professional development certification program backed by educational data science as well as independent evaluators.",
+      "link": "",
+      "provider": "Shopify",
+      "verification": "Verified by Credly"
+    },
+    {
+      "name": "Hotjar Foundations Level 1 Expert",
+      "description": "I have mastered the essentials of Hotjar’s powerful tools, including Heatmaps, Recordings, Surveys, Feedback, and Interviews. This certification has equipped me to regularly analyze data through the Observe, Ask, and Engage frameworks, identify key user concerns, and drive continuous improvements to digital platforms using Hotjar’s insights. Ready to leverage advanced analytics to enhance your site's user experience and performance.",
+      "link": "https://verify.skilljar.com/c/7cshcxwm5ftq",
+      "provider": "Hotjar",
+      "verification": ""
+    }
+  ],
+  "reviews": [
+    {
+      "job_title": "Looking for a Shopify Expert",
+      "review": "Janne was great to work with; he showed initiative, was very communicative, and detail orientated. Will rehire again in the future!",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Liquid, JS, CSS quick fix",
+      "review": "Absolute pleasure working with him. Provided the best outcome, even if it wasn't in his best interest and honesty is a value I highly appreciate. Very knowledgeable and provides great advice as well. I'll be using him again.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Fix code error in Shopify",
+      "review": "Janne was very communicative and worked hard to resolve issue in a timely manner.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Shopify customization",
+      "review": "Very detail oriented and highly skilled. Great communication. Will definitely work together again.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Shopify Anpassung",
+      "review": "Janne was always reliable. At the beginning it was difficult for me to explain exactly what we wanted from him and what we expected from the cooperation. It was also my first time working with a freelancer. Janne always took his time here! In addition, he could always answer my technical questions super, was friendly and reliable. It was a very good collaboration - gladly again!",
+      "reviewer_job_title": "Project Manager"
+    },
+    {
+      "job_title": "Shopify Developer Needed",
+      "review": "Janne was very quick and implemented the changes in our website incredibly fast. He had a way of doing things in a very intuitive manner, which actually enabled us to have more features on our store without extra work needed to be done. Our communication was flawless and he was super responsive throughout the entire project. Although a small one, I could feel that he treated it as a very important one; which is something that everyone looks for. If you need someone to work on your Shopify store, Janne is the man. I will definitely hire him again if I need any more help.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Codepen to Shopify: Build an eCommerce page in Shopify based on a Codepen mockup",
+      "review": "Janne met all of our requirements for this Shopify project, and provided expert guidance and advice about how to go about completing it in time given our needs. Thanks, Janne!",
+      "reviewer_job_title": "Digital Marketing Specialist"
+    },
+    {
+      "job_title": "I need a shopify expert ",
+      "review": "We could not have been happier with Janne. His knowledge of Shopify was extensive, his responsive was outstanding, his advice was generous and his communication was faultless. He made our shop look beautiful and we achieved sales on the first day of launch! We will definitely be working with Janne again!!",
+      "reviewer_job_title": "E-commerce Manager"
+    },
+    {
+      "job_title": "SHOPIFY DEVELOPER for CAMERA RENTAL SITE",
+      "review": "Janne is a great freelancer, with good communication, polite and cooperative attitude. He provides clear instructions on how he will approach a task before approaching it and he took the initiative to provide all necessary information for tasks to be successful.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Shopify custom coding",
+      "review": "He listened to my needs and came up with great solutions! Very efficient and communicated well! Definitely going to rehire",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Shopify Expert",
+      "review": "Fantastic. Very helpful, cooperative, and kind. Helped us to deliver the project within a few hours.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Add 'Add to cart' button on Shopify Theme",
+      "review": "I will be engaging in Janne's service again. He provides great recommendations and is thorough with his work, something I truly respect and admire.",
+      "reviewer_job_title": "Founder, Digital Marketing Agency"
+    },
+    {
+      "job_title": "UrbanK9Raw tasks",
+      "review": "Incredible experience. The level of detail Janne has is unreal. Thinks steps ahead of what you need and will provide the right solution. I was even provided a video on the logic of why he did what he did and how to change it if needed. Couldn't have asked for me! Absolute champion.",
+      "reviewer_job_title": "Founder, Digital Marketing Agency"
+    },
+    {
+      "job_title": "Shopify Liquid Expert - Mobile Site Optimisation",
+      "review": "Janne went above and beyond to help solve the issues we were having. We had a meeting pre-hiring where he shared his screen and showed the rough steps he would be going through to solve all the issues we had. During the process Janne also kept us updated with where he was up to and was more than happy to answer any questions.",
+      "reviewer_job_title": "Operations Manager"
+    },
+    {
+      "job_title": "Shopify Coder to amend Pipeline website",
+      "review": "I highly recommend Janne. His communication was excellent, the work carried out quickly, and we're really happy with the result.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Coder Needed to Edit Header on Shopify Store",
+      "review": "Janne was a dream to work with! All around excellent experience and will be working with him again in the future. Thank you!",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "FB Pixel",
+      "review": "Janne is a pleasure to work with. High quality work and excellent communication.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Custom Tabs with Custom Icons Shopify Theme Customisation",
+      "review": "Very easy to work with and fast service!",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "30 minute consultation ",
+      "review": "It was a pleasure speaking to Janne. He clearly is very knowledgeable about Shopify and he clarified many issues for me that were quite crucial to the project. I plan to work with Janne in the future and would wholeheartedly recommend him as a Shopify consultant.",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Shopify Tweaker For Document Services Project",
+      "review": "Very responsive, commercial/forthcoming with ideas and manages timelines / expectations very well. Highly recommended!",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "",
+      "review": "",
+      "reviewer_job_title": ""
+    },
+    {
+      "job_title": "Shopify Management and Support",
+      "review":  "Janne was great to work with. He always provided great suggestions and is just a pleasure to work with." ,
+      "reviewer_job_title": "Founder, Digital Marketing Agency"
+    },
+    {
+      "job_title": "Add Custom JavaScript Functionality to Shopify Website",
+      "review":  "I am a skilled developer myself, so trust me when I say that Janne is the REAL DEAL. He is my go to guy when I am facing challenges that go beyond my skillset. On this particular project, he helped me to build out a few highly custom JavaScript features for an established Shopify store. His work was delivered on time and flawless. He also brings a refreshing positive energy to every project while thoroughly understanding your needs and offering excellent communication throughout. I am so happy to have connected with Janne and I give him my highest recommendation. I will definitely be calling on him again in the future!",
+      "reviewer_job_title": "Shopify Developer"
+    },
+    {
+      "job_title": "Need help with Shopify template, photo sizes, menu design",
+      "review":  "My experience with Janne has been the best experience I've had with hiring someone in this fashion. We had a work around for an issue with our Shopify store that a previous Upwork hire set up for us. Janne was able to suggest and implement a much more eloquent, easier to use, and faster solution to the same problem. Each subsequent task that we asked Janne to help with was completed in a timely manner. Janne was very helpful is setting us up for future success. He took the time via more than one video meeting to make sure we were properly informed on how best to use our new Shopify theme features. Janne also suggested some additional improvements to our theme that helped set our store for success, and again helped us understand how to use these features. If you need help with your Shopify store, I highly recommend hiring Janne.",
+      "reviewer_job_title": "Business Owner"
+    },
+    {
+      "job_title": "Shopify Expert and Frontend developer",
+      "review":  "Janne has helped a lot with our Shopify shop. Our shop was not so easy to make, because it's conneted with an other shop and there are various things what should function together and in sync. Janne has solved all our problemems and it's great to have this kind of an expert who can all the time be helpful and help also with difficult programming as well as e.g. with e-mail marketing and 'easier' matters. We are happy to have Janne on our team. I can be in touch every time I need help. He is also very good at teaching. I have all the tips on how to do things myself, so I've learned a lot - he has even sent me videos on how to do something if I haven't found a solution myself. We can very warmly recommend Janne for the maintenance, programming and problem solving of the online store.",
+      "reviewer_job_title": "Business Owner"
+    },
+    {
+      "job_title": "Backend Developer and Server Development",
+      "review":  "Janne was such a pleasure to work with!  Janne worked patiently with us - we were slow to respond at times.  But he stayed patient and was fabulous from beginning to end. His research was overboard when we needed solutions for unique issues. Top notch all the way around.",
+      "reviewer_job_title": "Founder, Digital Marketing Agency"
+    },
+    {
+      "job_title": "Shopify Developer Needed for Landing Page Optimization",
+      "review":  "Janne was outstanding! Not only did he quickly find and implement a solution, but he also created a video walkthrough to ensure I fully understood the fix. He's now my go-to expert for all Shopify development needs. Highly recommended!",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "Startup fashion company needs web developer to create a boutique-like e-commerce website",
+      "review":  "Janne was so great to work with! He diligently and patiently worked with me to set up my business website and customize it the way I wanted. He's highly responsive, did all the research, came to me with options and solutions, and advised me on what was needed to keep my website backed up and secure. Janne will always be my #1 go to for my website needs. I highly recommend working with him. 10/10!",
+      "reviewer_job_title": "Merchant"
+    },
+    {
+      "job_title": "30 minute consultation",
+      "review":  "I'm working with Janne at the beginning of planning a new Shopify build. From the start, his reply time has been fantastic - he always gets back to me quickly. We've had helpful video and email sessions during the planning phase, and his communication style is friendly and professional. Janne is clearly focused on delivering value to his clients. For example, he suggested alternative approaches to achieve the same results, which helped keep costs in check. I'm not a developer myself, but I've worked with many in the past, and Janne's questions and insights give me confidence in his technical knowledge.",
+      "reviewer_job_title": "Business Owner"
+    }
+  ],
+  "profile": {
+    "heading": "Shopify Expert | 30+ 5-Star Reviews | Shopify, Liquid, HTML, CSS, JS",
+    "description": "Are you struggling to fully customize your Shopify store and theme to meet your specific business needs? I specialize in building high-converting, visually stunning Shopify stores, focusing on theme customization. Leave the complex code to me and enjoy a seamless, user-friendly experience that drives sales. 🌟 𝐑𝐄𝐒𝐔𝐋𝐓𝐒 My clients consistently experience: ● Tailored theme features that meet specific business needs ● Improved site performance ● Custom features seamlessly integrated 🌟 𝐖𝐄 𝐌𝐀𝐘 𝐁𝐄 𝐀 𝐆𝐑𝐄𝐀𝐓 𝐅𝐈𝐓 𝐈𝐅: ● Your Shopify theme doesn't meet your specific business requirements. ● You want unique features without performance trade-offs. ● Your current customization challenges need expert solutions. 🌟 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐖𝐈𝐓𝐇 𝐌𝐄: ● Eliminate theme customization struggles ● Optimize store performance with clean code ● Get a theme that perfectly matches your business needs ● Enjoy ongoing support post-launch With over 20 years of IT experience and a decade focused on Shopify, I bring deep knowledge and expert solutions to every project, including store creation, migrations, app integration, SEO, and more. As a certified Shopify Partner, I'm committed to top-tier solutions for your e-commerce needs. 🌟 𝐊𝐄𝐘 𝐒𝐓𝐀𝐓𝐒: ● 20+ years in IT ● 50+ Shopify stores customized ● 10+ Shopify stores created ● Certified Shopify Partner ● Shopify Foundations Certification ● Liquid Storefronts for Theme Developers: Verified Skill Badge ● Hotjar Foundations Level 1 Expert Ready to enhance your Shopify store? Click 'Hire' or 'Invite' on my profile to schedule a strategy session. Thank you for reading my profile!",
+    "Total_earnings": 60000,
+    "Total_shopify_jobs": 59,
+    "Total_hours_worked_on-shopify": 2050
+  }
+
+}

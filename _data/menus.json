@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Pages",
+    "items": [
+      {
+      "title": "Home",
+      "link": "#"
+      },
+      {
+      "title": "About",
+      "link": "#about"
+      },
+      {
+      "title": "Portfolio",
+      "link": "#portfolio"
+      },
+      {
+      "title": "Reviews",
+      "link": "#reviews"
+      },
+      {
+      "title": "Contact",
+      "link": "#contact-form"
+      }
+    ] 
+  },
+  {
+    "name": "Find Me Online",
+    "items": [
+      {
+        "title": "Upwork",
+        "link": "https://www.upwork.com/freelancers/jannetielinen"
+      },
+      {
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/jannetielinen/"
+      },
+      {
+        "title": "Facebook",
+        "link": "https://www.facebook.com/janne.tielinen"
+      }
+    ]
+  }
+]
