@@ -1,0 +1,13 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./tailwind.css -o ./assets/output.css --watch",
+    "build": "npm run build:css && eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
