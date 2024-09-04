@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
   // Pass through the CSS file to the _site directory
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("snippets");
 
   // Optional: You can also pass through other assets like images or JavaScript
   // eleventyConfig.addPassthroughCopy("images");

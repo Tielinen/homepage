@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      padding: {
+        sectionDefault: '25px 34px'
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },

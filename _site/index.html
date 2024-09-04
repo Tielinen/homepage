@@ -3,55 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="./assets/output.css" rel="stylesheet">
     <title>Tielinen.pro</title>
   </head>
   <body class="page bg-softWhite text-deepSlate font-montserrat">
-    <header id="header" class="header">
-      <div class="header__logo mt-[30px] text-center mb-[20px]">
-        <a href="#" class="header__logo-link text-[20px] lg:text-[56px] font-extrabold lg:font-bold">Janne Tielinen</a>
+    <header id="header" class="header p-[35px_30px_35px_40px]">
+      <div class="header__logo text-center mb-[20px]">
+        <a href="#" class="header__logo-link lg:text-[56px] font-extrabold lg:font-bold text-[20px]">Janne Tielinen</a>
       </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list"><li class="header__nav-item">
-              <a href="#" class="header__nav-link">Home</a>
-            </li><li class="header__nav-item">
-              <a href="#about" class="header__nav-link">About</a>
-            </li><li class="header__nav-item">
-              <a href="#portfolio" class="header__nav-link">Portfolio</a>
-            </li><li class="header__nav-item">
-              <a href="#reviews" class="header__nav-link">Reviews</a>
-            </li><li class="header__nav-item">
-              <a href="#contact-form" class="header__nav-link">Contact</a>
-            </li></ul>
-      </nav>
-      <div class="header__cta">
-        <a href="#contact" class="header__cta-button">Contact Me</a>
+      <div class="header__actions flex justify-between items-center">
+        <nav class="header__nav">
+          <button class="menu__toggle block md:hidden"><svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M28.5901 9.04472H2.05638C1.69874 9.04472 1.33799 9.04154 0.980354 9.04472H0.933705C0.44545 9.04472 -0.0210361 9.48415 0.000733208 10C0.0225026 10.519 0.411241 10.9553 0.933705 10.9553H27.4674C27.8251 10.9553 28.1858 10.9585 28.5435 10.9553H28.5901C29.0784 10.9553 29.5448 10.5159 29.5231 10C29.4982 9.48096 29.1126 9.04472 28.5901 9.04472ZM28.5901 0.00141523H2.05638C1.69874 0.00141523 1.33799 -0.00176903 0.980354 0.00141523H0.933705C0.44545 0.00141523 -0.0210361 0.440843 0.000733208 0.956694C0.0225026 1.47573 0.411241 1.91197 0.933705 1.91197H27.4674C27.8251 1.91197 28.1858 1.91516 28.5435 1.91197H28.5901C29.0784 1.91197 29.5448 1.47254 29.5231 0.956694C29.4982 0.437659 29.1126 0.00141523 28.5901 0.00141523ZM28.5901 18.088H2.05638C1.69874 18.088 1.33799 18.0848 0.980354 18.088H0.933705C0.44545 18.088 -0.0210361 18.5275 0.000733208 19.0433C0.0225026 19.5623 0.411241 19.9986 0.933705 19.9986H27.4674C27.8251 19.9986 28.1858 20.0018 28.5435 19.9986H28.5901C29.0784 19.9986 29.5448 19.5592 29.5231 19.0433C29.4982 18.5243 29.1126 18.088 28.5901 18.088Z" fill="#2A3439"/>
+</svg></button>
+          <ul class="header__nav-list hidden"><li class="header__nav-item">
+                <a href="#" class="header__nav-link">Home</a>
+              </li><li class="header__nav-item">
+                <a href="#about" class="header__nav-link">About</a>
+              </li><li class="header__nav-item">
+                <a href="#portfolio" class="header__nav-link">Portfolio</a>
+              </li><li class="header__nav-item">
+                <a href="#reviews" class="header__nav-link">Reviews</a>
+              </li><li class="header__nav-item">
+                <a href="#contact-form" class="header__nav-link">Contact</a>
+              </li></ul>
+        </nav>
+        <a href="#contact" class="header__cta-button text-white bg-frostedBlue p-[2px_15px_3px_15px] rounded-md text-[10px] font-semibold">Contact Me</a>
       </div>
     </header>
     <main>
-      <section id="hero" class="hero">
-        <div class="hero__content">
-          <h1 class="hero__heading">Expert Shopify Developer for All Your E-Commerce Needs</h1>
-          <p class="hero__paragraph">
-            With years of experience in custom Shopify themes, store setup, performance optimization, and seamless store
-            migrations, I help businesses thrive online. Let's work together to elevate your Shopify store and turn your
-            e-commerce vision into reality.
+      <section id="hero" class="hero bg-frostedBlue">
+        <div class="hero__content p-sectionDefault">
+          <h1 class="hero__heading text-[22px] font-bold text-center pb-6">Shopify expert and <br>developer<br> at Your service</h1>
+          <p class="hero__paragraph text-center text-[14px]">
+            Whether You need some improvements to Your existing website, or You are thinking of brand new website or webshop on Shopify, great journey starts here.
           </p>
           
         </div>
+        <div class="hero__images max-w-full flex justify-between">
+          <img class="w-[65%] relative -mb-3 sm:-mb-5 md:-mb-6" src="./assets/herofin.png" alt="Screenshot of stores" width="988" height="678">
+          <img class="w-[35%]" src="./assets/janne_tielinen.png" alt="Janne Tielinen" width="162" height="229">
+        </div>
       </section>
       <section id="about" class="about">
-        <h2 class="about__title">Development and consultation can be made simple yet effective</h2>
-        <p class="about__description">
+        <h2 class="about__title p-sectionDefault text-lg text-center tracking-tight mb-5">Development and consultation can be made simple yet effective</h2>
+        <p class="about__description p-sectionDefault text-center mb-7">
           I am here to help you with your web development needs. Whether it's creating a new website, enhancing an
           existing one, or consulting on your online strategy, my goal is to deliver efficient and effective solutions.
         </p>
         <div class="about__service-description">
           <div class="about__service-description-highlights">
             <div class="about__service-description-highlight">
-              <h3 class="about__service-description-highlight-title">I do this</h3>
-              <p class="about__service-description-highlight-description">
+              <h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate">I do this</h3>
+              <p class="about__service-description-highlight-description p-sectionDefault text-center">
                 Details about the first service or feature you offer.
               </p>
             </div>

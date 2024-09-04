@@ -3,11 +3,19 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:css": "tailwindcss -i ./tailwind.css -o ./assets/output.css --watch",
+    "serve:css": "tailwindcss -i ./tailwind.css -o ./assets/output.css --watch",
+    "serve:eleventy": "npx @11ty/eleventy --serve",
     "build": "npm run build:css && eleventy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6"
+  },
+  "prettier": {
+    "plugins": ["prettier-plugin-tailwindcss"]
+}
 }
