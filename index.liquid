@@ -67,28 +67,13 @@
         </p>
         <div class="about__service-description">
           <div class="about__service-description-highlights">
-            <div class="about__service-description-highlight">
-              <h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate shadow-highlightTitle mr-sectionDefaultX py-4 text-2xl">
-                {% comment %}  Shadow!!! |JT|{% endcomment %}
-                {%- render './snippets/arrow-icon-right.svg.liquid' -%}
-                I do this
-              </h3>
-              <p class="about__service-description-highlight-description p-sectionDefault text-center">
-                Details about the first service or feature you offer.
-              </p>
-            </div>
-            <div class="about__service-description-highlight">
-              <h3 class="about__service-description-highlight-title">I do that</h3>
-              <p class="about__service-description-highlight-description">
-                Details about the first service or feature you offer.
-              </p>
-            </div>
-            <div class="about__service-description-highlight">
-              <h3 class="about__service-description-highlight-title">You get this</h3>
-              <p class="about__service-description-highlight-description">
-                Details about the first service or feature you offer.
-              </p>
-            </div>
+            {%- for description_object in service-descriptions -%}
+              {%- render './snippets/service-description.liquid',
+                heading: description_object.heading,
+                description: description_object.description
+              -%}
+            {%- endfor -%}
+
             <div class="service-description__highlight services__highlight--video">
               <div class="services__video">
                 <!-- Replace this with your video embed or video tag -->
