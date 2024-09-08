@@ -5,8 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      padding: {
-        sectionDefault: '25px 34px'
+      boxShadow: {
+        'highlightTitle': '0px 4px 48px 0px rgba(0, 0, 0, 0.12)'
+      },
+      spacing: {
+        sectionDefault: '25px 34px',
+        sectionDefaultX: '34px',
+        sectionDefaultY: '25px',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],

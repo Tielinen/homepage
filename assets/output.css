@@ -568,12 +568,17 @@ video {
   position: relative;
 }
 
+.mx-sectionDefaultX {
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
 .-mb-3 {
   margin-bottom: -0.75rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-7 {
@@ -584,8 +589,24 @@ video {
   margin-bottom: 20px;
 }
 
+.ml-sectionDefaultX {
+  margin-left: 34px;
+}
+
+.mr-sectionDefaultX {
+  margin-right: 34px;
+}
+
+.mt-sectionDefaultY {
+  margin-top: 25px;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -647,6 +668,16 @@ video {
   padding: 25px 34px;
 }
 
+.px-sectionDefaultX {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -657,6 +688,11 @@ video {
 
 .font-montserrat {
   font-family: Montserrat, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-\[10px\] {
@@ -709,6 +745,12 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-highlightTitle {
+  --tw-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.12);
+  --tw-shadow-colored: 0px 4px 48px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 h1, h2, h3, h4, h5, h6 {
