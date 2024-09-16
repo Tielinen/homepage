@@ -1,20 +1,67 @@
 [
   {
-    "image_url": "",
-    "button_label": "Shop store",
-    "title": "The Shop Store",
-    "description": "The Best Online Store Experience with Custom Features"
+    "title": "Health Supplement Store",
+    "button_label": "Versagora",
+    "description": "Tasked with emulating the successful design of a market leader, I developed an intuitive and detail-focused online store for a new health supplement brand.\nTarget Audience:\nHealth-conscious individuals who are looking for quality supplements to enhance their well-being.\nExecution:\nMy role involved customizing and creating Shopify sections with a keen eye on design details to match the client’s vision. Regular reviews on various devices ensured the store’s responsiveness and user experience adhered to the high standards set by the theme author.",
+    "images": [
+      {
+        "url": "/versagora/01_desktop_hero_versagora.jpg",
+        "alt": "Hero section showcasing a stack of balanced stones on a beach with text promoting energy-boosting supplements."
+      },
+      {
+        "url": "/versagora/02_desktop_versagora.jpg",
+        "alt": "Bestselling products section featuring Multivitamin Gummies, Mushroom Extract Complex, and Ashwagandha supplements."
+      },
+      {
+        "url": "/versagora/03_desktop_versagora.jpg",
+        "alt": "Section highlighting athletic performance supplements with a female tennis player and a sliced orange filled with vitamins and supplements."
+      },
+      {
+        "url": "/versagora/04_desktop_versagora.jpg",
+        "alt": "Ashwagandha supplement product page displaying product details, pricing, and health benefits."
+      },
+      {
+        "url": "/versagora/05_desktop_versagora.jpg",
+        "alt": "Suggested use and ingredients section for Ashwagandha supplement, featuring product information and potential health benefits."
+      },
+      {
+        "url": "/versagora/06_mobiili_versagora.jpg",
+        "alt": "Mobile version of the website showcasing various sections, including the hero banner, bestsellers, and Ashwagandha product page."
+      }
+    ]
   },
   {
-    "image_url": "",
-    "button_label": "Affordable App",
-    "title": "The Affordable App",
-    "description": "The Most Affordable App with Top-Notch Functionality."    
+    "title": "Store Creation with Real-Time Stock Sync",
+    "button_label": "Housumaailma",
+    "description": "I developed and customized a Shopify store for a women's trousers brand. The store features a unique solution to sync stock quantities with the manufacturer's inventory, updating four times daily. This ensures accurate, real-time stock levels for customers. My role included creating the store, implementing the stock update solution, and tailoring the site to meet the client's needs.",
+    "images": [
+      {
+        "url": "/housumaailma/jt_desktop_housumaailma1.jpg",
+        "alt": "A homepage of an online store named 'Housumaailma,' featuring two women modeling pants on either side of the logo. The navigation bar includes categories such as 'Koti,' 'Housut,' 'Hameet,' and more. The website highlights a clean, minimalist design with neutral colors and a focus on fashion."
+      },
+      {
+        "url": "/housumaailma/jt_desktop_housumaailma2.jpg",
+        "alt": "A product page for 'Taylor Regular Capri Medium Length - Navy' priced at €99. A woman is modeling the pants, standing confidently with her arms crossed. The page includes size selection, quantity control, and buttons for adding to the shopping cart or purchasing immediately."
+      },
+      {
+        "url": "/housumaailma/jt_desktop_housumaailma3.jpg",
+        "alt": "A product listing page showing various capri pants, including styles like 'Elizabeth Slim Capri Medium Length' and 'Kelly Regular Capri Short Length,' in different colors such as black, blue denim, and navy. Each product includes the price and model wearing the pants."
+      },
+      {
+        "url": "/housumaailma/jt_mobiili_housumaailma1.jpg",
+        "alt": "Mobile views of the Housumaailma website, showcasing a fashion model in a black shirt on the homepage, the 'Taylor Regular Capri' product page, and a capri pants collection page. The mobile version mirrors the clean, minimalist design and highlights product options with large images and simple navigation."
+      }
+    ]
   },
   {
-    "image_url": "",
-    "button_label": "Great App",
-    "title": "The Great App",
-    "description": "An Amazing App that Exceeds Expectations."    
+    "title": "",
+    "button_label": "",
+    "description": "",
+    "images": [
+      {
+        "url": "",
+        "alt": ""
+      }
+    ]
   }
 ]
