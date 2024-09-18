@@ -78,22 +78,35 @@
           -%}
         {%- endfor -%}
       </section>
-      <section id="portfolio" class="portfolio bg-frostedBlue pt-36">
+      <section id="portfolio" class="portfolio bg-frostedBlue pt-36 pb-24">
         <h2 class="portfolio__title  text-3xl text-center mb-9">Portfolio</h2>
         <p class="portfolio__description text-center mb-24">Some projects I enjoyed work with</p>
         <div class="portfolio__items">
-          {%- for portfolio_item in portfolio-items -%}
-            <div class="portfolio__item bg-white mx-7 mb-8 p-5 rounded-xl">
+          {%- for portfolio_item in portfolio-items limit: 3 -%}
+            <div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl">
               <div class="portfolio__item-image mb-5">
-                 <img class="rounded-xl" src="./assets/portfolio-images{{- portfolio_item.images[0].url -}}" alt="{{- portfolio_item.images[0].alt -}}" width="" height="">
+                <img
+                  class="rounded-xl"
+                  src="./assets/portfolio-images{{- portfolio_item.images[0].url -}}"
+                  alt="{{- portfolio_item.images[0].alt -}}"
+                  width=""
+                  height=""
+                >
               </div>
-              <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-full py-2 rounded-xl mb-5">{{- portfolio_item.button_label -}}</button>
-              <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
-              <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100  -}}</p>
-            </div>
-          {%- endfor -%}
-        </div>
-        <button class="portfolio__load-more">Load more</button>
+              <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-full py-2 rounded-xl mb-5">
+                {{- portfolio_item.button_label -}}
+                </button>
+                
+                <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
+                <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100 -}}</p>
+                </div>
+              {%- endfor -%}
+              </div>
+              
+              {%- if portfolio-items.size > 3 -%}              
+                <button class="portfolio__load-more w-full max-w-full mx-2.5 mt-14  py-7 text-softWhite bg-deepSlate ">Load more</button>
+              {%- endif -%}
+              
       </section>
       <section id="featured-services" class="featured-services">
         <h2 class="featured-services__heading">Featured Services</h2>

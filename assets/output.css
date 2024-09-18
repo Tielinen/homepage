@@ -572,6 +572,11 @@ video {
   margin: 25px 34px;
 }
 
+.mx-2\.5 {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
 .mx-7 {
   margin-left: 1.75rem;
   margin-right: 1.75rem;
@@ -619,6 +624,10 @@ video {
 
 .mr-sectionDefaultX {
   margin-right: 34px;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-sectionDefaultY {
@@ -725,6 +734,15 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -812,6 +830,10 @@ video {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   /* Tailwind's utility class for font-weight: 700 */
+}
+
+.last\:mb-0:last-child {
+  margin-bottom: 0px;
 }
 
 @media (min-width: 640px) {

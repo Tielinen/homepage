@@ -54,6 +54,37 @@
     ]
   },
   {
+    "title": "Butique for tall women",
+    "button_label": "whitneyallysyn.com",
+    "description": "Shopify E-commerce creation from scratch, close cooperation with the merchant. Creating high converting E-commerce shops while following closely the merchant design and feature request. We both like to think we have created a beautiful, high-converting site.",
+    "images": [
+      {
+        "url": "/whitney/jt_desktop_whitney1.jpg",
+        "alt": "Fashion model in beige coat adjusting sunglasses, overlayed text reading 'Bring your brand to life' with an optional button for hero video."
+      },
+      {
+        "url": "/whitney/jt_desktop_whitney2.jpg",
+        "alt": "Lifestyle section featuring a woman in a green sweater, large video with a text box showcasing custom orders."
+      },
+      {
+        "url": "/whitney/jt_desktop_whitney3.jpg",
+        "alt": "Blog posts section featuring three thumbnails: group of women, cityscape view, and a drink, with text below each thumbnail."
+      },
+      {
+        "url": "/whitney/jt_desktop_whitney4.jpg",
+        "alt": "Limited-time promotion featuring a woman in a white dress, with a product grid of fashion items below."
+      },
+      {
+        "url": "/whitney/jt_desktop_whitney5.jpg",
+        "alt": "Product detail page for 'Fall/Winter Capsule Jumpsuit,' showing product image, color and size options, and an add-to-cart button."
+      },
+      {
+        "url": "/whitney/jt_mobiili_whitney1.jpg",
+        "alt": "Mobile view of the Whitney Allysyn homepage featuring a hero image of a woman in a beige coat, with overlay text promoting hero videos."
+      }
+    ]
+  },
+  {
     "title": "",
     "button_label": "",
     "description": "",
