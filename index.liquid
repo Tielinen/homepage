@@ -6,6 +6,7 @@
 
     <link href="./assets/output.css" rel="stylesheet">
     <title>Tielinen.pro</title>
+    <script src="./assets/script.js" defer></script>
   </head>
   <body class="page bg-softWhite text-deepSlate font-montserrat">
     <header id="header" class="header p-[35px_30px_35px_40px]">
@@ -93,20 +94,48 @@
                   height=""
                 >
               </div>
-              <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-full py-2 rounded-xl mb-5">
+              <button class="portfolio__item-button text-2xl font-semibold text-softWhite  bg-deepSlate w-full py-2 rounded-xl mb-5">
                 {{- portfolio_item.button_label -}}
+              </button>
+
+              <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
+              <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100 -}}</p>
+            </div>
+
+            <div class="portfolio__modal bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl">
+              {%- render './snippets/close-modal.svg.liquid' -%}
+              <div class="portfolio__modal-image-slider bg-frostedBlue w-full relative">
+                <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">
+                  {{- portfolio_item.button_label -}}
                 </button>
-                
-                <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
-                <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100 -}}</p>
+                <div class="portfolio__modal-image-slider-images flex overflow-hidden max-w-full">
+                  {%- for image in portfolio_item.images -%}
+                    <img
+                      src="./assets/portfolio-images{{- image.url -}}"
+                      alt="{{- image.alt -}}"
+                      width=""
+                      height=""
+                    >
+                  {%- endfor -%}
+                  {%- if portfolio_item.images.size > 1 -%}
+                    <div class="portfolio__modal-image-slider-dots bg-white absolute bottom-2.5 left-1/2 -translate-x-1/2">
+                      {%- for image in portfolio_item.images -%}
+                        <button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button>
+                      {%- endfor -%}
+                    </div>
+                  {%- endif -%}
                 </div>
-              {%- endfor -%}
               </div>
-              
-              {%- if portfolio-items.size > 3 -%}              
-                <button class="portfolio__load-more w-full max-w-full mx-2.5 mt-14  py-7 text-softWhite bg-deepSlate ">Load more</button>
-              {%- endif -%}
-              
+            </div>
+          {%- endfor -%}
+        </div>
+        {%- if portfolio-items.size > 3 -%}
+          <div class="bg-frostedBlue px-2.5">
+            <button class="portfolio__load-more block w-full mt-14 py-7 text-softWhite bg-deepSlate text-3xl font-semibold rounded-xl">
+              Load more
+            </button>
+          </div>
+        {%- endif -%}
       </section>
       <section id="featured-services" class="featured-services">
         <h2 class="featured-services__heading">Featured Services</h2>

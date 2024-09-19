@@ -6,6 +6,7 @@
 
     <link href="./assets/output.css" rel="stylesheet">
     <title>Tielinen.pro</title>
+    <script src="./assets/script.js" defer></script>
   </head>
   <body class="page bg-softWhite text-deepSlate font-montserrat">
     <header id="header" class="header p-[35px_30px_35px_40px]">
@@ -74,7 +75,7 @@
           Your browser does not support the video tag.
         </video>
       </section>
-      <section id="services" class="services"><h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate shadow-highlightTitle mr-sectionDefaultX py-4 text-2xl"><svg
+      <section id="services" class="services"><h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate shadow-highlightTitle mr-sectionDefaultX py-4 text-2xl relative"><svg
   class="inline-block ml-sectionDefaultX"
   width="44"
   height="44"
@@ -85,7 +86,7 @@
   <path d="M29.6542 23.8333H7.33337V20.1666H29.6542L19.3875 9.89998L22 7.33331L36.6667 22L22 36.6666L19.3875 34.1L29.6542 23.8333Z" fill="white"/>
 </svg>
 I do this</h3>
-<p class="about__service-description-highlight-description p-sectionDefault text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate shadow-highlightTitle mr-sectionDefaultX py-4 text-2xl"><svg
+<p class="about__service-description-highlight-description p-sectionDefault text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate shadow-highlightTitle mr-sectionDefaultX py-4 text-2xl relative"><svg
   class="inline-block ml-sectionDefaultX"
   width="44"
   height="44"
@@ -96,7 +97,7 @@ I do this</h3>
   <path d="M29.6542 23.8333H7.33337V20.1666H29.6542L19.3875 9.89998L22 7.33331L36.6667 22L22 36.6666L19.3875 34.1L29.6542 23.8333Z" fill="white"/>
 </svg>
 I do that</h3>
-<p class="about__service-description-highlight-description p-sectionDefault text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate shadow-highlightTitle mr-sectionDefaultX py-4 text-2xl"><svg
+<p class="about__service-description-highlight-description p-sectionDefault text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum dapibus nisl non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p><h3 class="about__service-description-highlight-title text-softWhite bg-deepSlate shadow-highlightTitle mr-sectionDefaultX py-4 text-2xl relative"><svg
   class="inline-block ml-sectionDefaultX"
   width="44"
   height="44"
@@ -121,11 +122,50 @@ You get this</h3>
                   height=""
                 >
               </div>
-              <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-full py-2 rounded-xl mb-5">Versagora</button>
-                
-                <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">Health Supplement Store</h3>
-                <p class="portfolio__item-description text-lg">Tasked with emulating the successful design of a market leader, I developed an intuitive and deta...</p>
-                </div><div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl">
+              <button class="portfolio__item-button text-2xl font-semibold text-softWhite  bg-deepSlate w-full py-2 rounded-xl mb-5">Versagora</button>
+
+              <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">Health Supplement Store</h3>
+              <p class="portfolio__item-description text-lg">Tasked with emulating the successful design of a market leader, I developed an intuitive and deta...</p>
+            </div>
+
+            <div class="portfolio__modal bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl"><svg class="absolute top-2.5 right-2.5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#2A3439"/>
+</svg>
+<div class="portfolio__modal-image-slider bg-frostedBlue w-full relative">
+                <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">Versagora</button>
+                <div class="portfolio__modal-image-slider-images flex overflow-hidden max-w-full"><img
+                      src="./assets/portfolio-images/versagora/01_desktop_hero_versagora.jpg"
+                      alt="Hero section showcasing a stack of balanced stones on a beach with text promoting energy-boosting supplements."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/versagora/02_desktop_versagora.jpg"
+                      alt="Bestselling products section featuring Multivitamin Gummies, Mushroom Extract Complex, and Ashwagandha supplements."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/versagora/03_desktop_versagora.jpg"
+                      alt="Section highlighting athletic performance supplements with a female tennis player and a sliced orange filled with vitamins and supplements."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/versagora/04_desktop_versagora.jpg"
+                      alt="Ashwagandha supplement product page displaying product details, pricing, and health benefits."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/versagora/05_desktop_versagora.jpg"
+                      alt="Suggested use and ingredients section for Ashwagandha supplement, featuring product information and potential health benefits."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/versagora/06_mobiili_versagora.jpg"
+                      alt="Mobile version of the website showcasing various sections, including the hero banner, bestsellers, and Ashwagandha product page."
+                      width=""
+                      height=""
+                    ><div class="portfolio__modal-image-slider-dots bg-white absolute bottom-2.5 left-1/2 -translate-x-1/2"><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button></div></div>
+              </div>
+            </div><div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl">
               <div class="portfolio__item-image mb-5">
                 <img
                   class="rounded-xl"
@@ -135,11 +175,40 @@ You get this</h3>
                   height=""
                 >
               </div>
-              <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-full py-2 rounded-xl mb-5">Housumaailma</button>
-                
-                <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">Store Creation with Real-Time Stock Sync</h3>
-                <p class="portfolio__item-description text-lg">I developed and customized a Shopify store for a women's trousers brand. The store features a uni...</p>
-                </div><div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl">
+              <button class="portfolio__item-button text-2xl font-semibold text-softWhite  bg-deepSlate w-full py-2 rounded-xl mb-5">Housumaailma</button>
+
+              <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">Store Creation with Real-Time Stock Sync</h3>
+              <p class="portfolio__item-description text-lg">I developed and customized a Shopify store for a women's trousers brand. The store features a uni...</p>
+            </div>
+
+            <div class="portfolio__modal bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl"><svg class="absolute top-2.5 right-2.5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#2A3439"/>
+</svg>
+<div class="portfolio__modal-image-slider bg-frostedBlue w-full relative">
+                <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">Housumaailma</button>
+                <div class="portfolio__modal-image-slider-images flex overflow-hidden max-w-full"><img
+                      src="./assets/portfolio-images/housumaailma/jt_desktop_housumaailma1.jpg"
+                      alt="A homepage of an online store named 'Housumaailma,' featuring two women modeling pants on either side of the logo. The navigation bar includes categories such as 'Koti,' 'Housut,' 'Hameet,' and more. The website highlights a clean, minimalist design with neutral colors and a focus on fashion."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/housumaailma/jt_desktop_housumaailma2.jpg"
+                      alt="A product page for 'Taylor Regular Capri Medium Length - Navy' priced at €99. A woman is modeling the pants, standing confidently with her arms crossed. The page includes size selection, quantity control, and buttons for adding to the shopping cart or purchasing immediately."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/housumaailma/jt_desktop_housumaailma3.jpg"
+                      alt="A product listing page showing various capri pants, including styles like 'Elizabeth Slim Capri Medium Length' and 'Kelly Regular Capri Short Length,' in different colors such as black, blue denim, and navy. Each product includes the price and model wearing the pants."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/housumaailma/jt_mobiili_housumaailma1.jpg"
+                      alt="Mobile views of the Housumaailma website, showcasing a fashion model in a black shirt on the homepage, the 'Taylor Regular Capri' product page, and a capri pants collection page. The mobile version mirrors the clean, minimalist design and highlights product options with large images and simple navigation."
+                      width=""
+                      height=""
+                    ><div class="portfolio__modal-image-slider-dots bg-white absolute bottom-2.5 left-1/2 -translate-x-1/2"><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button></div></div>
+              </div>
+            </div><div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl">
               <div class="portfolio__item-image mb-5">
                 <img
                   class="rounded-xl"
@@ -149,11 +218,54 @@ You get this</h3>
                   height=""
                 >
               </div>
-              <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-full py-2 rounded-xl mb-5">whitneyallysyn.com</button>
-                
-                <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">Butique for tall women</h3>
-                <p class="portfolio__item-description text-lg">Shopify E-commerce creation from scratch, close cooperation with the merchant. Creating high conv...</p>
-                </div></div><button class="portfolio__load-more w-full max-w-full mx-2.5 mt-14  py-7 text-softWhite bg-deepSlate ">Load more</button></section>
+              <button class="portfolio__item-button text-2xl font-semibold text-softWhite  bg-deepSlate w-full py-2 rounded-xl mb-5">whitneyallysyn.com</button>
+
+              <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">Butique for tall women</h3>
+              <p class="portfolio__item-description text-lg">Shopify E-commerce creation from scratch, close cooperation with the merchant. Creating high conv...</p>
+            </div>
+
+            <div class="portfolio__modal bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl"><svg class="absolute top-2.5 right-2.5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#2A3439"/>
+</svg>
+<div class="portfolio__modal-image-slider bg-frostedBlue w-full relative">
+                <button class="portfolio__item-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">whitneyallysyn.com</button>
+                <div class="portfolio__modal-image-slider-images flex overflow-hidden max-w-full"><img
+                      src="./assets/portfolio-images/whitney/jt_desktop_whitney1.jpg"
+                      alt="Fashion model in beige coat adjusting sunglasses, overlayed text reading 'Bring your brand to life' with an optional button for hero video."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/whitney/jt_desktop_whitney2.jpg"
+                      alt="Lifestyle section featuring a woman in a green sweater, large video with a text box showcasing custom orders."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/whitney/jt_desktop_whitney3.jpg"
+                      alt="Blog posts section featuring three thumbnails: group of women, cityscape view, and a drink, with text below each thumbnail."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/whitney/jt_desktop_whitney4.jpg"
+                      alt="Limited-time promotion featuring a woman in a white dress, with a product grid of fashion items below."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/whitney/jt_desktop_whitney5.jpg"
+                      alt="Product detail page for 'Fall/Winter Capsule Jumpsuit,' showing product image, color and size options, and an add-to-cart button."
+                      width=""
+                      height=""
+                    ><img
+                      src="./assets/portfolio-images/whitney/jt_mobiili_whitney1.jpg"
+                      alt="Mobile view of the Whitney Allysyn homepage featuring a hero image of a woman in a beige coat, with overlay text promoting hero videos."
+                      width=""
+                      height=""
+                    ><div class="portfolio__modal-image-slider-dots bg-white absolute bottom-2.5 left-1/2 -translate-x-1/2"><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button><button class="w-2 h-2 bg-gray-400 rounded-full first:ml-2 mr-2"></button></div></div>
+              </div>
+            </div></div><div class="bg-frostedBlue px-2.5">
+            <button class="portfolio__load-more block w-full mt-14 py-7 text-softWhite bg-deepSlate text-3xl font-semibold rounded-xl">
+              Load more
+            </button>
+          </div></section>
       <section id="featured-services" class="featured-services">
         <h2 class="featured-services__heading">Featured Services</h2>
         <p class="featured-services__subheading">Featured Services</p>
