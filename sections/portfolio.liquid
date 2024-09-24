@@ -1,0 +1,61 @@
+<section id="portfolio" class="portfolio bg-frostedBlue pt-36 pb-24">
+  <h2 class="portfolio__title  text-3xl text-center mb-9">Portfolio</h2>
+  <p class="portfolio__description text-center mb-24">Some projects I enjoyed work with</p>
+  <div class="portfolio__items">
+    {%- for portfolio_item in portfolio_items limit: 3 -%}
+      <div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl">
+        <div class="portfolio__item-image mb-5">
+          <img
+            class="rounded-xl"
+            src="./assets/portfolio-images{{- portfolio_item.images[0].url -}}"
+            alt="{{- portfolio_item.images[0].alt -}}"
+            width=""
+            height=""
+          >
+        </div>
+        <button class="portfolio__open-modal-button text-2xl font-semibold text-softWhite  bg-deepSlate w-full py-2 rounded-xl mb-5">
+          {{- portfolio_item.button_label -}}
+        </button>
+
+        <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
+        <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100 -}}</p>
+
+        <div class="portfolio__modal hidden bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl">
+          {%- render './snippets/close-modal.svg.liquid' -%}
+          <div class="portfolio__modal-image-slider w-full relative">
+            <button class="portfolio__modal-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">
+              {{- portfolio_item.button_label -}}
+            </button>
+            <div class="portfolio__modal-slider-container overflow-hidden max-w-full">
+              <div class="portfolio__modal-slider-images-wrapper flex relative -z-10">
+                {%- for image in portfolio_item.images -%}
+                  <img
+                    class="rounded-xl"
+                    src="./assets/portfolio-images{{- image.url -}}"
+                    alt="{{- image.alt -}}"
+                    width=""
+                    height=""
+                  >
+                {%- endfor -%}
+              </div>
+              {%- if portfolio_item.images.size > 1 -%}
+                <div class="portfolio__modal-image-slider-dots rounded-xl bg-white absolute bottom-0 -translate-y-1/2 left-1/2 -translate-x-1/2 flex">
+                  {%- for image in portfolio_item.images -%}
+                    <button data-index="{{- forloop.index0 -}}" class="w-2 h-2 bg-gray-400 bg-deepSlate rounded-full first:ml-2 mr-2 my-2"></button>
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+  {%- if portfolio-items.size > 3 -%}
+    <div class="bg-frostedBlue px-2.5">
+      <button class="portfolio__load-more block w-full mt-14 py-7 text-softWhite bg-deepSlate text-3xl font-semibold rounded-xl">
+        Load more
+      </button>
+    </div>
+  {%- endif -%}
+</section>

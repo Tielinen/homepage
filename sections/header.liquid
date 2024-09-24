@@ -1,0 +1,24 @@
+<header id="header" class="header p-[35px_30px_35px_40px]">
+  <div class="header__logo text-center mb-[20px]">
+    <a href="#" class="header__logo-link lg:text-[56px] font-extrabold lg:font-bold text-[20px]">Janne Tielinen</a>
+  </div>
+  <div class="header__actions flex justify-between items-center">
+    <nav class="header__nav">
+      <button class="menu__toggle block md:hidden">
+        {%- render './snippets/hamburger-icon.svg.liquid' -%}
+      </button>
+      <ul class="header__nav-list hidden">
+        {%- for item in menus[0].items -%}
+          <li class="header__nav-item">
+            <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+    <a
+      href="#contact"
+      class="header__cta-button text-white bg-frostedBlue p-[2px_15px_3px_15px] rounded-md text-[10px] font-semibold"
+      >Contact Me</a
+    >
+  </div>
+</header>

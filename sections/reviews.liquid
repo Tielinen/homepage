@@ -1,0 +1,16 @@
+<section id="reviews" class="reviews">
+  <h2 class="reviews__heading">Reviews</h2>
+  <p class="reviews__subheading">Reviews subheading</p>
+  {%- for review in upwork-profile.reviews -%}
+    <div class="reviews__items">
+      <div class="reviews__item">
+        <div class="reviews__item-client">
+          <p class="reviews__item-client-position">{{- review.reviewer_job_title -}}</p>
+        </div>
+        <p class="reviews__item-text">
+          {{- review.review -}}
+        </p>
+      </div>
+    </div>
+  {%- endfor -%}
+</section>
