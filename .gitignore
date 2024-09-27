@@ -1,0 +1,20 @@
+# Ignore node_modules directory where dependencies are installed
+node_modules/
+
+# Ignore build output (if applicable)
+dist/
+public/
+
+# Ignore Tailwind-generated CSS if you're not manually editing it
+css/tailwind.css
+
+# Ignore any temporary or log files
+*.log
+*.tmp
+
+# Ignore environment-specific files
+.env
+
+# Ignore package lock files if you don't want to include them (optional)
+package-lock.json
+yarn.lock

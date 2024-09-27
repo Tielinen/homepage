@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'highlightTitle': '0px 4px 48px 0px rgba(0, 0, 0, 0.12)'
+        'highlightTitle': '0px 4px 48px 0px rgba(0, 0, 0, 0.12)',
+        'modal': '0px 2px 48px 0px rgba(0, 0, 0, 0.12);'
       },
       spacing: {
         sectionDefault: '25px 34px',

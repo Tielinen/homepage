@@ -20,14 +20,14 @@
         <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
         <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100 -}}</p>
 
-        <div class="portfolio__modal hidden bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl">
+        <div class="portfolio__modal hidden shadow-modal bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl">
           {%- render './snippets/close-modal.svg.liquid' -%}
-          <div class="portfolio__modal-image-slider w-full relative">
+          <div class="portfolio__modal-image-slider mb-9 w-full relative">
             <button class="portfolio__modal-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">
               {{- portfolio_item.button_label -}}
             </button>
             <div class="portfolio__modal-slider-container overflow-hidden max-w-full">
-              <div class="portfolio__modal-slider-images-wrapper flex relative -z-10">
+              <div class="portfolio__modal-slider-images-wrapper transform transition-transform duration-500 flex relative -z-10">
                 {%- for image in portfolio_item.images -%}
                   <img
                     class="rounded-xl"
@@ -39,14 +39,19 @@
                 {%- endfor -%}
               </div>
               {%- if portfolio_item.images.size > 1 -%}
-                <div class="portfolio__modal-image-slider-dots rounded-xl bg-white absolute bottom-0 -translate-y-1/2 left-1/2 -translate-x-1/2 flex">
+                <div class="portfolio__modal-image-slider-dots rounded-xl bg-white absolute left-1/2 -translate-x-1/2 flex bottom-0 -translate-y-1/2">
                   {%- for image in portfolio_item.images -%}
-                    <button data-index="{{- forloop.index0 -}}" class="w-2 h-2 bg-gray-400 bg-deepSlate rounded-full first:ml-2 mr-2 my-2"></button>
+                    <button
+                      data-index="{{- forloop.index0 -}}"
+                      class="w-2 h-2 bg-gray-400 bg-deepSlate rounded-full first:ml-2 mr-2 my-2"
+                    ></button>
                   {%- endfor -%}
                 </div>
               {%- endif -%}
             </div>
           </div>
+          <h4 class="text-2xl mb-4">{{- portfolio_item.title -}}</h4>
+          <p>{{- portfolio_item.description -}}</p>
         </div>
       </div>
     {%- endfor -%}

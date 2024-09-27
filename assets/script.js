@@ -33,7 +33,9 @@ portfolioItems.forEach((portfolioItem) => {
   }  
 
   portfolioItem.addEventListener("click", (event) => {
-    if (event.target === modalCloseElement || event.target === openModalButton)
+    console.log('modalCloseElement', modalCloseElement);
+    
+    if (modalCloseElement.contains(event.target) || event.target === openModalButton)
       modalElement.classList.toggle("hidden");
   });
 
