@@ -35,8 +35,13 @@ portfolioItems.forEach((portfolioItem) => {
   portfolioItem.addEventListener("click", (event) => {
     console.log('modalCloseElement', modalCloseElement);
     
-    if (modalCloseElement.contains(event.target) || event.target === openModalButton)
+    if (modalCloseElement.contains(event.target) || event.target === openModalButton) {
       modalElement.classList.toggle("hidden");
+      document.body.classList.toggle('overflow-hidden');
+      portfolioItem.querySelector('.portfolio__modal-backdrop').classList.toggle('hidden');
+      
+
+    }
   });
 
   imageSliderDots.forEach(sliderDot => {

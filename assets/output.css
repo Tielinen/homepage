@@ -576,8 +576,16 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .bottom-0 {
   bottom: 0px;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
 .left-1\/2 {
@@ -602,6 +610,14 @@ video {
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .m-sectionDefault {
@@ -752,6 +768,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -768,6 +788,11 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-deepSlate {
@@ -793,6 +818,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
 }
 
 .p-5 {

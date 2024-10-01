@@ -20,7 +20,9 @@
         <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
         <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100 -}}</p>
 
-        <div class="portfolio__modal hidden shadow-modal bg-white py-16 px-2.5 fixed top-5 left-1/2 -translate-x-1/2 w-11/12 rounded-xl">
+        <!-- Dark layer (backdrop) -->
+        <div class="portfolio__modal-backdrop fixed inset-0 bg-black bg-opacity-75 z-10 hidden"></div>
+        <div class="portfolio__modal hidden shadow-modal bg-white py-16 px-2.5 fixed top-5 bottom-5 left-1/2 -translate-x-1/2 w-11/12 overflow-y-auto rounded-xl z-20">
           {%- render './snippets/close-modal.svg.liquid' -%}
           <div class="portfolio__modal-image-slider mb-9 w-full relative">
             <button class="portfolio__modal-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">
