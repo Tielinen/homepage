@@ -24,5 +24,8 @@ module.exports = {
       }
     },
   },
+  safelist: [
+    'overflow-hidden',
+  ],
   plugins: [],
 }
