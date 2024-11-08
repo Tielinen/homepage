@@ -28,28 +28,18 @@
             <button class="portfolio__modal-button text-2xl font-semibold text-softWhite bg-deepSlate w-4/5 py-2 rounded-xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2">
               {{- portfolio_item.button_label -}}
             </button>
-            <div class="portfolio__modal-slider-container overflow-hidden max-w-full">
-              <div class="portfolio__modal-slider-images-wrapper transform transition-transform duration-500 flex relative -z-10">
+            <div class="portfolio__modal-slider-container">
+              <div class="portfolio__modal-slider-images-wrapper main-carousel">
                 {%- for image in portfolio_item.images -%}
-                  <img
-                    class="rounded-xl"
-                    src="./assets/portfolio-images{{- image.url -}}"
-                    alt="{{- image.alt -}}"
-                    width=""
-                    height=""
-                  >
+                  <div class="carousel-cell">
+                    <img
+                      class="rounded-xl"
+                      src="./assets/portfolio-images{{- image.url -}}"
+                      alt="{{- image.alt -}}"
+                    >
+                  </div>
                 {%- endfor -%}
               </div>
-              {%- if portfolio_item.images.size > 1 -%}
-                <div class="portfolio__modal-image-slider-dots rounded-xl bg-white absolute left-1/2 -translate-x-1/2 flex bottom-0 -translate-y-1/2">
-                  {%- for image in portfolio_item.images -%}
-                    <button
-                      data-index="{{- forloop.index0 -}}"
-                      class="w-2 h-2 bg-gray-400 bg-deepSlate rounded-full first:ml-2 mr-2 my-2"
-                    ></button>
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
             </div>
           </div>
           <h4 class="text-2xl mb-4">{{- portfolio_item.title -}}</h4>

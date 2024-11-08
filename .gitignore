@@ -11,3 +11,6 @@ css/tailwind.css
 .env
 package-lock.json
 yarn.lock
+
+# Ignore VS Code settings
+.vscode/
