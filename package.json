@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "serve:css": "tailwindcss -i ./tailwind.css -o ./assets/output.css --watch",
-    "serve:eleventy": "npx @11ty/eleventy --serve",
+    "css": "tailwindcss -i ./tailwind.css -o ./assets/output.css --watch",
+    "eleventy": "npx @11ty/eleventy --serve",
     "build": "npm run build:css && eleventy"
   },
   "keywords": [],

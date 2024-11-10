@@ -580,10 +580,6 @@ video {
   inset: 0px;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
 .left-1\/2 {
   left: 50%;
 }
@@ -687,6 +683,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.max-h-\[calc\(100vh-2\.5rem\)\] {
+  max-height: calc(100vh - 2.5rem);
 }
 
 .w-11\/12 {
