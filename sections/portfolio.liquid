@@ -2,8 +2,8 @@
   <h2 class="portfolio__title  text-3xl text-center mb-9">Portfolio</h2>
   <p class="portfolio__description text-center mb-24">Some projects I enjoyed work with</p>
   <div class="portfolio__items">
-    {%- for portfolio_item in portfolio_items limit: 3 -%}
-      <div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl">
+    {%- for portfolio_item in portfolio_items -%}
+      <div class="portfolio__item bg-white mx-7 mb-8 p-5 last:mb-0 rounded-xl {% if forloop.index > 3 %}hidden{%- endif -%}">
         <div class="portfolio__item-image mb-5">
           <img
             class="rounded-xl"

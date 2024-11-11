@@ -85,6 +85,53 @@
     ]
   },
   {
+    "title": "Children's fashion store",
+    "button_label": "mamaswildchild.com.au",
+    "description": "On this children's fashion store, I customized Shopify's premium theme Prestige and implemented a hidden password-protected wholesales section, with wholesale prices.",
+    "images": [
+      {
+        "url": "/mamaswildchild/jt_desktop_mamaswildchild1.jpg",
+        "alt": "Website screenshot for Mama's Wild Child. Two children wearing illustrated t-shirts featuring Australian wilderness themes, standing by the ocean. The website promotes kids' clothing inspired by Australian flora and fauna, with original watercolor art prints and accompanying book series about Australia's wild places."
+      },
+      
+      {
+        "url": "/mamaswildchild/jt_desktop_mamaswildchild2.jpg",
+        "alt": "Website section showing categories for Tee's & Rompers, Wildling Books, and Activities & Resources with images of children in nature-themed clothing and a 'View the Range' button below."
+      },
+      {
+        "url": "/mamaswildchild/jt_desktop_mamaswildchild3.jpg",
+        "alt": "Product page featuring a child wearing a two-tone t-shirt with an anglerfish illustration and the text 'Wild One.' The product description highlights original artwork, biodegradable cotton, available sizes 1 to 10 years, and options to add to cart or buy now."
+      },
+      {
+        "url": "/mamaswildchild/jt_mobiili_mamaswildchild1.jpg",
+        "alt": "Mobile view of Mama's Wild Child website showing three different pages: the homepage with kids' clothing inspired by Australian wilderness, a category page for tees and rompers, and a product page for a 'Wild One' anglerfish t-shirt. Each page highlights nature-themed apparel and book offerings, with options to view and purchase items."
+      }
+    ]
+  },
+  {
+    "title": "eCommerce store migration to Shopify",
+    "button_label": "pellavakauppa.fi",
+    "description": " Project:\nMigrating an eCommerce Platform from a Small Local Platform to Shopify\nObjective:\nThe objective of this project was to migrate an eCommerce platform from a local platform to Shopify\nScope:\nThe project scope included transferring all products, customers, orders, and other relevant data from the current platform to Shopify. The migrated store was required to have the same functionalities and features as the existing platform, including payment gateways, shipping options, and customer accounts.\nDeliverables:\nA fully migrated and functional eCommerce store on the Shopify platform.",
+    "images": [
+      {
+        "url": "/mimi/jt_desktop_mimi1.jpg",
+        "alt": "Website screenshot for Mimi.fi, a Finnish clothing store featuring natural material garments. The page displays models wearing striped dresses from the Pont Neuf collection. Navigation includes categories like tunics, jackets, ponchos, and linen art pieces. Store information and opening hours for the physical location in Turku are also provided."
+      },
+      {
+        "url": "/mimi/jt_desktop_mimi2.jpg",
+        "alt": "Product listing page on Mimi.fi featuring tunics, sweaters, and tops in various colors. Each garment is made from natural materials, with prices ranging from €179 to €189. Models wear red, white, grey, and plum-colored tunics, showcasing comfortable and stylish designs."
+      },
+      {
+        "url": "/mimi/jt_desktop_mimi3.jpg",
+        "alt": "Product page on Mimi.fi for the grey 'Sonja' linen tunic priced at €189. The tunic is available in sizes XS to 3XL. Options to select size, quantity, and add to cart are displayed, along with local pickup information and a description of the tunic's soft, comfortable design."
+      },
+      {
+        "url": "/mimi/jt_mobiili_mimi1.jpg",
+        "alt": "Mobile view of the Mimi.fi website showing three different pages: the homepage with store information and featured products, a category page with a black poncho listed at €99, and a product page for the grey 'Sonja' linen tunic priced at €189. The pages highlight natural material clothing options with descriptions, price, and options to add to cart."
+      }
+    ]
+  },
+  {
     "title": "",
     "button_label": "",
     "description": "",

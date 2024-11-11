@@ -10,7 +10,6 @@
 
     <script src="assets/imagesloaded.pkgd.min.js" defer></script>
     <script src="assets/flickity.pkgd.min.js" defer></script>
-    <script src="assets/flickity-fade.js" defer></script>
 
     <script src="./assets/script.js" defer></script>
     
@@ -21,7 +20,7 @@
     <main>
       {%- render './sections/hero.liquid' -%}
       {%- render './sections/about.liquid' -%}
-      {%- render './sections/services.liquid' -%}
+      {%- render './sections/services.liquid', service-descriptions: service-descriptions -%}
       {%- render './sections/portfolio.liquid', portfolio_items: portfolio-items -%}
       {%- render './sections/featured-services.liquid' -%}
       {%- render './sections/reviews.liquid' -%}

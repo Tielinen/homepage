@@ -10,7 +10,6 @@ function initializeFlickity(carouselElement) {
         prevNextButtons: false,
         fade: true,
         draggable: true,
-        // Add any other Flickity options you need
       });
     });
   } else {
@@ -50,6 +49,22 @@ portfolioItems.forEach((portfolioItem) => {
         // Modal is now visible, initialize Flickity
         initializeFlickity(mainCarousel);
       }
+    }
+  });
+});
+
+// Load more
+const loadMoreButton = document.querySelector('.portfolio__load-more');
+loadMoreButton.addEventListener('click', () => {
+  let portfolioItemsToLoad = 3;
+  portfolioItems.forEach(portfolioItem => {
+
+    if (portfolioItem.classList.contains('hidden') && portfolioItemsToLoad) {
+      portfolioItemsToLoad--;
+      portfolioItem.classList.remove('hidden');
+
+      if (!Array.from(portfolioItems).some(item => item.classList.contains('hidden')))
+          loadMoreButton.classList.add('hidden');
     }
   });
 });
