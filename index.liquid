@@ -8,6 +8,7 @@
     <link href="./assets/flickity-fade.css" rel="stylesheet">
     <link href="./assets/output.css" rel="stylesheet">
 
+    <script src="settings.js" defer></script>
     <script src="assets/imagesloaded.pkgd.min.js" defer></script>
     <script src="assets/flickity.pkgd.min.js" defer></script>
 
@@ -20,9 +21,9 @@
     <main>
       {%- render './sections/hero.liquid' -%}
       {%- render './sections/about.liquid' -%}
-      {%- render './sections/services.liquid', service-descriptions: service-descriptions -%}
+      {%- render './sections/services.liquid', service_descriptions: service-descriptions -%}
       {%- render './sections/portfolio.liquid', portfolio_items: portfolio-items -%}
-      {%- render './sections/featured-services.liquid' -%}
+      {%- render './sections/featured-services.liquid', featured_services: featured-services -%}
       {%- render './sections/reviews.liquid' -%}
       {%- render './sections/contact-form.liquid' -%}
     </main>

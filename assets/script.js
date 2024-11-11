@@ -4,13 +4,7 @@
 function initializeFlickity(carouselElement) {
   if (!carouselElement.flickityInstance) {
     imagesLoaded(carouselElement, () => {
-      carouselElement.flickityInstance = new Flickity(carouselElement, {
-        cellAlign: "left",
-        contain: true,
-        prevNextButtons: false,
-        fade: true,
-        draggable: true,
-      });
+      carouselElement.flickityInstance = new Flickity(carouselElement, SETTINGS.flickityObject);
     });
   } else {
     carouselElement.flickityInstance.resize();
@@ -55,16 +49,16 @@ portfolioItems.forEach((portfolioItem) => {
 
 // Load more
 const loadMoreButton = document.querySelector('.portfolio__load-more');
-loadMoreButton.addEventListener('click', () => {
-  let portfolioItemsToLoad = 3;
+loadMoreButton.addEventListener('click', () => {loadPortfolioItems(SETTINGS.portfolioLoadCount)});
+
+function loadPortfolioItems(portfolioLoadCount)  {
   portfolioItems.forEach(portfolioItem => {
-
-    if (portfolioItem.classList.contains('hidden') && portfolioItemsToLoad) {
-      portfolioItemsToLoad--;
+    if (portfolioItem.classList.contains('hidden') && portfolioLoadCount) {
+      portfolioLoadCount--;
       portfolioItem.classList.remove('hidden');
-
-      if (!Array.from(portfolioItems).some(item => item.classList.contains('hidden')))
-          loadMoreButton.classList.add('hidden');
+      if (!Array.from(portfolioItems).some(item => item.classList.contains('hidden'))) {
+        loadMoreButton.classList.add('hidden');
+      }
     }
   });
-});
+}

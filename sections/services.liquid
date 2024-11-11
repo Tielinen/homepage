@@ -1,5 +1,5 @@
 <section id="services" class="services">
-  {%- for description_object in service-descriptions -%}
+  {%- for description_object in service_descriptions -%}
     {%- render './snippets/service-description.liquid',
       heading: description_object.heading,
       description: description_object.description
