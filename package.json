@@ -13,11 +13,13 @@
   "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@shopify/prettier-plugin-liquid": "^1.6.0",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6"
   },
   "prettier": {
     "plugins": [
+      "@shopify/prettier-plugin-liquid",
       "prettier-plugin-tailwindcss"
     ]
   }

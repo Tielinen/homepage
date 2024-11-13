@@ -5,11 +5,9 @@ _site/
 node_modules/
 dist/
 public/
-css/tailwind.css
 *.log
 *.tmp
 .env
-package-lock.json
 yarn.lock
 
 # Ignore VS Code settings

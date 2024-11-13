@@ -4,7 +4,10 @@
 function initializeFlickity(carouselElement) {
   if (!carouselElement.flickityInstance) {
     imagesLoaded(carouselElement, () => {
-      carouselElement.flickityInstance = new Flickity(carouselElement, SETTINGS.flickityObject);
+      carouselElement.flickityInstance = new Flickity(
+        carouselElement,
+        SETTINGS.flickityObject,
+      );
     });
   } else {
     carouselElement.flickityInstance.resize();
@@ -16,8 +19,12 @@ const portfolioItems = document.querySelectorAll(".portfolio__item");
 portfolioItems.forEach((portfolioItem) => {
   const modalElement = portfolioItem.querySelector(".portfolio__modal");
   const mainCarousel = modalElement.querySelector(".main-carousel");
-  const modalCloseElement = modalElement.querySelector(".portfolio__modal-close");
-  const openModalButton = portfolioItem.querySelector(".portfolio__open-modal-button");
+  const modalCloseElement = modalElement.querySelector(
+    ".portfolio__modal-close",
+  );
+  const openModalButton = portfolioItem.querySelector(
+    ".portfolio__open-modal-button",
+  );
 
   // Modal Toggle
   portfolioItem.addEventListener("click", (event) => {
@@ -32,7 +39,9 @@ portfolioItems.forEach((portfolioItem) => {
     ) {
       modalElement.classList.toggle("hidden");
       document.body.classList.toggle("overflow-hidden");
-      const backdrop = portfolioItem.querySelector(".portfolio__modal-backdrop");
+      const backdrop = portfolioItem.querySelector(
+        ".portfolio__modal-backdrop",
+      );
       if (backdrop) {
         backdrop.classList.toggle("hidden");
       } else {
@@ -48,16 +57,22 @@ portfolioItems.forEach((portfolioItem) => {
 });
 
 // Load more
-const loadMoreButton = document.querySelector('.portfolio__load-more');
-loadMoreButton.addEventListener('click', () => {loadPortfolioItems(SETTINGS.portfolioLoadCount)});
+const loadMoreButton = document.querySelector(".portfolio__load-more");
+loadMoreButton.addEventListener("click", () => {
+  loadPortfolioItems(SETTINGS.portfolioLoadCount);
+});
 
-function loadPortfolioItems(portfolioLoadCount)  {
-  portfolioItems.forEach(portfolioItem => {
-    if (portfolioItem.classList.contains('hidden') && portfolioLoadCount) {
+function loadPortfolioItems(portfolioLoadCount) {
+  portfolioItems.forEach((portfolioItem) => {
+    if (portfolioItem.classList.contains("hidden") && portfolioLoadCount) {
       portfolioLoadCount--;
-      portfolioItem.classList.remove('hidden');
-      if (!Array.from(portfolioItems).some(item => item.classList.contains('hidden'))) {
-        loadMoreButton.classList.add('hidden');
+      portfolioItem.classList.remove("hidden");
+      if (
+        !Array.from(portfolioItems).some((item) =>
+          item.classList.contains("hidden"),
+        )
+      ) {
+        loadMoreButton.classList.add("hidden");
       }
     }
   });

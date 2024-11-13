@@ -621,6 +621,10 @@ video {
   margin-bottom: -0.75rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .mb-2\.5 {
   margin-bottom: 0.625rem;
 }
@@ -667,10 +671,6 @@ video {
 
 .mt-sectionDefaultY {
   margin-top: 25px;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .block {
