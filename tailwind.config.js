@@ -20,7 +20,8 @@ module.exports = {
       colors: {
         frostedBlue: '#c7d3dd',
         softWhite: '#fafafa',
-        deepSlate: '#2a3439'
+        deepSlate: '#2a3439',
+        dissolvedDenim: '#e3ebf4'
       }
     },
   },

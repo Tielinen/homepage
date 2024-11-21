@@ -1,9 +1,10 @@
-<section id="reviews" class="reviews">
-  <h2 class="reviews__heading">Reviews</h2>
-  <p class="reviews__subheading">Reviews subheading</p>
-  {%- for review in upwork-profile.reviews -%}
-    <div class="reviews__items">
-      <div class="reviews__item">
+<section id="reviews" class="reviews bg-frostedBlue pt-20">
+  <h2 class="reviews__heading text-center text-2xl">Reviews</h2>
+  <p class="reviews__subheading mb-44 text-center text-lg">Reviews subheading</p>
+  <div class="reviews__items">
+    {%- for review in reviews limit: 2 -%}
+      <div class="reviews__item relative bg-white pt-28 mb-40">
+        <div class="circle bg-dissolvedDenim absolute left-1/2 h-44 w-44 rounded-full top-0 translate-x-[-50%] translate-y-[-50%]"></div>
         <div class="reviews__item-client">
           <p class="reviews__item-client-position">{{- review.reviewer_job_title -}}</p>
         </div>
@@ -11,6 +12,6 @@
           {{- review.review -}}
         </p>
       </div>
-    </div>
-  {%- endfor -%}
+    {%- endfor -%}
+  </div>
 </section>

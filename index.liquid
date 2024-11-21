@@ -24,7 +24,7 @@
       {%- render './sections/services.liquid', service_descriptions: service-descriptions -%}
       {%- render './sections/portfolio.liquid', portfolio_items: portfolio-items -%}
       {%- render './sections/featured-services.liquid', featured_services: featured-services -%}
-      {%- render './sections/reviews.liquid' -%}
+      {%- render './sections/reviews.liquid', reviews: upwork-profile.reviews -%}
       {%- render './sections/contact-form.liquid' -%}
     </main>
     {%- render './sections/footer.liquid' -%}
