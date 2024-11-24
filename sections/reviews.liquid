@@ -1,17 +1,23 @@
-<section id="reviews" class="reviews bg-frostedBlue pt-20">
+<section id="reviews" class="reviews bg-frostedBlue px-10 pt-20">
   <h2 class="reviews__heading text-center text-2xl">Reviews</h2>
   <p class="reviews__subheading mb-44 text-center text-lg">Reviews subheading</p>
   <div class="reviews__items">
     {%- for review in reviews limit: 2 -%}
-      <div class="reviews__item relative bg-white pt-28 mb-40">
-        <div class="circle bg-dissolvedDenim absolute left-1/2 h-44 w-44 rounded-full top-0 translate-x-[-50%] translate-y-[-50%]"></div>
+      <div class="reviews__item relative mb-40 rounded-xl bg-white px-11 pb-24 pt-28">
+        <div
+          class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] rounded-full bg-dissolvedDenim"
+        ></div>
+        {%- render './snippets/quotes-start.svg.liquid' -%}
         <div class="reviews__item-client">
-          <p class="reviews__item-client-position">{{- review.reviewer_job_title -}}</p>
+          <p class="reviews__item-client-position mb-7 text-center text-2xl font-semibold">
+            {{- review.reviewer_job_title -}}
+          </p>
         </div>
         <p class="reviews__item-text">
           {{- review.review -}}
-        </p>
-      </div>
+          </p>
+          {%- render './snippets/quotes-end.svg.liquid', classes: 'float-right' -%}
+          </div>
     {%- endfor -%}
   </div>
 </section>

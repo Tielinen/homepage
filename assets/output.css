@@ -608,6 +608,10 @@ video {
   z-index: 20;
 }
 
+.float-right {
+  float: right;
+}
+
 .m-sectionDefault {
   margin: 25px 34px;
 }
@@ -640,6 +644,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
 }
 
 .mb-44 {
@@ -684,10 +692,6 @@ video {
 
 .mt-sectionDefaultY {
   margin-top: 25px;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
 }
 
 .block {
@@ -848,6 +852,16 @@ video {
 
 .p-sectionDefault {
   padding: 25px 34px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 
 .px-2\.5 {
