@@ -14,6 +14,13 @@ function initializeFlickity(carouselElement) {
   }
 }
 
+const reviewsFlickity = new Flickity('.reviews__items', {
+  // cellAlign: 'left',       // Align the first cell to the left
+  contain: true,           // Contain cells to the container, won't scroll past the last cell
+  pageDots: false,         // Disable dots indicator
+  prevNextButtons: true    // Enable previous/next buttons
+});
+
 const portfolioItems = document.querySelectorAll(".portfolio__item");
 
 portfolioItems.forEach((portfolioItem) => {

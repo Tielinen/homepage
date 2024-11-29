@@ -5,7 +5,8 @@
   "scripts": {
     "css": "tailwindcss -i ./tailwind.css -o ./assets/output.css --watch",
     "eleventy": "npx @11ty/eleventy --serve",
-    "build": "npm run build:css && eleventy"
+    "build-eleventy": "eleventy",
+    "build-css": "tailwindcss -i ./tailwind.css -o ./assets/output.css"
   },
   "keywords": [],
   "author": "",

@@ -3,24 +3,31 @@
   <p class="reviews__subheading mb-20 text-center text-lg">Reviews subheading</p>
   <div class="reviews__items">
     {%- for review in reviews %}
-      <div class="reviews__item relative mb-40 mt-24 rounded-xl bg-white px-11 pb-24 pt-28  {% if forloop.index > 3 %}hidden{%- endif -%}">
+      <div class="reviews__item relative mb-20 mr-3 mt-24 flex min-h-[485px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28">
         <div
-          class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] rounded-full bg-dissolvedDenim"
+          class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full bg-dissolvedDenim"
         >
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 -translate-x-[150%]' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-6 -translate-x-1/2' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 translate-x-1/2' -%}
+          <h6 class="absolute top-1/2 w-full text-center text-base font-semibold leading-tight">
+            {{- review.job_title | truncate: 45 -}}
+            {% comment %} 5-STAR Review<br>{{- forloop.index -}}/{{- reviews.size -}} {% endcomment %}
+          </h6>
         </div>
-        <div class="reviews__item-client">
-          <p class="reviews__item-client-position mb-7 text-center text-2xl font-semibold">
-            {{- review.reviewer_job_title -}}
+
+        <div class="reviews__item-text-content relative">
+          {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-5 -left-1' -%}
+          <div class="reviews__item-client">
+            <p class="reviews__item-client-position mb-7 text-center text-2xl font-semibold">
+              {{- review.reviewer_job_title -}}
+            </p>
+          </div>
+          <p class="reviews__item-text relative text-justify text-sm">
+            {{- review.review | truncate: 120 -}}
           </p>
+          {%- render './snippets/quotes-end.svg.liquid', classes: 'absolute right-0 -bottom-6' -%}
         </div>
-        <p class="reviews__item-text relative">
-          {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-20' -%}
-          {{- review.review | truncate: 120 -}}
-          {%- render './snippets/quotes-end.svg.liquid', classes: 'absolute right-0 -bottom-10' -%}
-        </p>
       </div>
     {%- endfor %}
   </div>
