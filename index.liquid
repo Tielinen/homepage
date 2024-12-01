@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-black">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 
     <title>Tielinen.pro</title>
   </head>
-  <body class="page bg-softWhite font-montserrat text-deepSlate">
+  <body class="page bg-softWhite font-montserrat text-deepSlate max-w-md m-auto">
     {%- render './sections/header.liquid' -%}
     <main>
       {%- render './sections/hero.liquid' -%}
@@ -31,6 +31,6 @@
       {%- render './sections/reviews.liquid', reviews: upwork-profile.reviews -%}
       {%- render './sections/contact-form.liquid' -%}
     </main>
-    {%- render './sections/footer.liquid' -%}
+    {%- render './sections/footer.liquid', menus: menus -%}
   </body>
 </html>

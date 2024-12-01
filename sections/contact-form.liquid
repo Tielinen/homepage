@@ -4,8 +4,9 @@
     Have a question or want to work together? Fill out the form below, and I'll get back to you as soon as possible.
   </p>
   <form class="contact-form__form text-sm flex justify-center flex-col" action="#" method="post">
+    {% assign input_classes = 'contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5' %}
     <input
-      class="contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5"
+      class="{{ input_classes }}"
       type="text"
       id="name"
       name="name"
@@ -13,7 +14,7 @@
       required
     >
     <input
-      class="contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5"
+      class="{{ input_classes }}"
       type="email"
       id="email"
       name="email"
@@ -21,7 +22,7 @@
       required
     >
     <textarea
-      class="contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5"
+      class="{{ input_classes }}"
       id="message"
       name="message"
       placeholder="Your Message"

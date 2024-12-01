@@ -3,7 +3,7 @@
   <p class="featured-services__subheading mb-16">Featured Services</p>
   <div class="featured-services__items">
     {%- for servive_item in featured_services -%}
-      <div class="featured-services__item mt-11 bg-white px-8 py-16">
+      <div class="featured-services__item mt-11 rounded-xl bg-white px-8 py-16">
         {%- render './snippets/star.svg.liquid' -%}
         <h3 class="featured-services__item-title my-12 text-2xl font-semibold">{{- servive_item.title -}}</h3>
         <p class="featured-services__item-description text-lg">

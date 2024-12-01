@@ -1,20 +1,22 @@
-<footer id="footer" class="footer">
-  <div class="fooder__logo">
-    <a href="#" class="header__logo-link">Janne Tielinen</a>
+<footer id="footer" class="footer bg-[#101010] pt-16 text-center text-white">
+  <div class="inline-block">
+    <a href="#" class="header__logo-link mb-16 text-4xl font-semibold inline-block"><span class="font-bold">Janne</span> Tielinen</a>
+    <nav class="footer__nav flex justify-between mb-28">
+      {%- for menu in menus -%}
+        <div class="footer__nav-menu text-left last:text-right">
+          <h6>{{- menu.name -}}</h6>
+          <ul class="list-none">
+            {%- for item in menu.items -%}
+              <li class="header__nav-item">
+                <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endfor -%}
+    </nav>
   </div>
-  <nav class="footer__nav">
-    {%- for menu in menus -%}
-      <div class="footer__nav-menu">
-        <h6>{{- menu.name -}}</h6>
-        {%- for item in menu.items -%}
-          <li class="header__nav-item">
-            <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
-          </li>
-        {%- endfor -%}
-      </div>
-    {%- endfor -%}
-  </nav>
   <div class="footer__copyright">
-    <small>&copy; {{ 'now' | date: '%Y' }} Janne Tielinen. All rights reserved.</small>s
+    <small class="font-semibold">&copy; {{ 'now' | date: '%Y' }} Janne Tielinen. All rights reserved.</small>
   </div>
 </footer>

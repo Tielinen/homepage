@@ -1,6 +1,23 @@
 [
   {
-    "name": "Pages",
+    "name": "Find Me Online",
+    "items": [
+      {
+        "title": "Upwork",
+        "link": "https://www.upwork.com/freelancers/jannetielinen"
+      },
+      {
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/jannetielinen/"
+      },
+      {
+        "title": "Facebook",
+        "link": "https://www.facebook.com/janne.tielinen"
+      }
+    ]
+  },
+  {
+    "name": "Menu",
     "items": [
       {
       "title": "Home",
@@ -23,22 +40,5 @@
       "link": "#contact-form"
       }
     ] 
-  },
-  {
-    "name": "Find Me Online",
-    "items": [
-      {
-        "title": "Upwork",
-        "link": "https://www.upwork.com/freelancers/jannetielinen"
-      },
-      {
-        "title": "LinkedIn",
-        "link": "https://www.linkedin.com/in/jannetielinen/"
-      },
-      {
-        "title": "Facebook",
-        "link": "https://www.facebook.com/janne.tielinen"
-      }
-    ]
   }
 ]
