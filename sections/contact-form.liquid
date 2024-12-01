@@ -1,27 +1,33 @@
-<section id="contact-form" class="contact-form">
-  <h2 class="contact-form__title">Get in Touch</h2>
-  <p class="contact-form__description">
+<section id="contact-form" class="contact-form px-10 py-24 text-lg">
+  <h2 class="contact-form__title mb-8 text-center">Get in Touch</h2>
+  <p class="contact-form__description mb-14 leading-snug">
     Have a question or want to work together? Fill out the form below, and I'll get back to you as soon as possible.
   </p>
-  <form class="contact-form__form" action="#" method="post">
-    <div class="contact-form__group">
-      <label for="name" class="contact-form__label">Name</label>
-      <input type="text" id="name" name="name" class="contact-form__input" placeholder="Your Name" required>
-    </div>
-    <div class="contact-form__group">
-      <label for="email" class="contact-form__label">Email</label>
-      <input type="email" id="email" name="email" class="contact-form__input" placeholder="Your Email" required>
-    </div>
-    <div class="contact-form__group">
-      <label for="message" class="contact-form__label">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        class="contact-form__textarea"
-        placeholder="Your Message"
-        required
-      ></textarea>
-    </div>
-    <button type="submit" class="contact-form__button">Send Message</button>
+  <form class="contact-form__form text-sm flex justify-center flex-col" action="#" method="post">
+    <input
+      class="contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Name"
+      required
+    >
+    <input
+      class="contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="example@email.fi"
+      required
+    >
+    <textarea
+      class="contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5"
+      id="message"
+      name="message"
+      placeholder="Your Message"
+      rows="9"
+      required
+    ></textarea>
+    <button type="submit" class="contact-form__button bg-dissolvedDenim px-12 py-5 grow-0 m-auto rounded-xl">Send Message</button>
   </form>
 </section>
