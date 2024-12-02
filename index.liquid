@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="bg-black">
+<html lang="en" class="bg-black" class="scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link href="./assets/flickity-fade.css" rel="stylesheet">
 
     {% comment %} Development, build output css and remove line below before publishing  {% endcomment %}
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
 
     <link href="./assets/output.css" rel="stylesheet">
 
@@ -20,8 +20,8 @@
 
     <title>Tielinen.pro</title>
   </head>
-  <body class="page bg-softWhite font-montserrat text-deepSlate max-w-md m-auto">
-    {%- render './sections/header.liquid' -%}
+  <body class="page m-auto max-w-md bg-softWhite font-montserrat text-deepSlate">
+    {%- render './sections/header.liquid', menus: menus -%}
     <main>
       {%- render './sections/hero.liquid' -%}
       {%- render './sections/about.liquid' -%}

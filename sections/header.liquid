@@ -1,14 +1,15 @@
-<header id="header" class="header p-[35px_30px_35px_40px]">
+<header id="header" class="header relative px-10 py-9">
   <div class="header__logo mb-[20px] text-center">
     <a href="#" class="header__logo-link text-[20px] font-extrabold lg:text-[56px] lg:font-bold">Janne Tielinen</a>
   </div>
   <div class="header__actions flex items-center justify-between">
     <nav class="header__nav">
-      <button class="menu__toggle block md:hidden">
-        {%- render './snippets/hamburger-icon.svg.liquid' -%}
+      <button class="menu__toggle relative block md:hidden">
+        {%- render './snippets/hamburger-icon.svg.liquid', size: 30, fill_color: '#2a3439' -%}
+        {%- render './snippets/xmark.svg.liquid', size: 30, classes: 'hidden', fill_color: '#2a3439' -%}
       </button>
-      <ul class="header__nav-list hidden">
-        {%- for item in menus[0].items -%}
+      <ul class="header__nav-list absolute top-full bg-black">
+        {%- for item in menus[1].items -%}
           <li class="header__nav-item">
             <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
           </li>

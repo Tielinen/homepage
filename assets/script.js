@@ -1,44 +1,43 @@
-"use strict";
+`use strict`;
 
-// Function to initialize Flickity on a carousel
-function initializeFlickity(carouselElement) {
-  if (!carouselElement.flickityInstance) {
-    imagesLoaded(carouselElement, () => {
-      carouselElement.flickityInstance = new Flickity(
-        carouselElement,
-        SETTINGS.flickityObject,
-      );
-    });
-  } else {
-    carouselElement.flickityInstance.resize();
-  }
-}
+// Mobile menu
+document.querySelector(`.menu__toggle`).addEventListener(`click`, event => {
+  
+  Array.from(event.currentTarget.children).forEach(child => {
+    child.classList.toggle(`hidden`);
+  })
+})
 
-const reviewsFlickity = new Flickity('.reviews__items', {
-  // cellAlign: 'left',       // Align the first cell to the left
-  contain: true,           // Contain cells to the container, won't scroll past the last cell
-  pageDots: false,         // Disable dots indicator
-  prevNextButtons: true,    // Enable previous/next buttons
-  initialIndex: 1,
-  adaptiveHeight: true
-});
-
-const portfolioItems = document.querySelectorAll(".portfolio__item");
+const portfolioItems = document.querySelectorAll(`.portfolio__item`);
 
 portfolioItems.forEach((portfolioItem) => {
-  const modalElement = portfolioItem.querySelector(".portfolio__modal");
-  const mainCarousel = modalElement.querySelector(".main-carousel");
+  const modalElement = portfolioItem.querySelector(`.portfolio__modal`);
+  const mainCarousel = modalElement.querySelector(`.main-carousel`);
   const modalCloseElement = modalElement.querySelector(
-    ".portfolio__modal-close",
+    `.portfolio__modal-close`,
   );
   const openModalButton = portfolioItem.querySelector(
-    ".portfolio__open-modal-button",
+    `.portfolio__open-modal-button`,
   );
 
+  // Function to initialize Flickity on a carousel
+  function initializeFlickity(carouselElement) {
+    if (!carouselElement.flickityInstance) {
+      imagesLoaded(carouselElement, () => {
+        carouselElement.flickityInstance = new Flickity(
+          carouselElement,
+          SETTINGS.portfolioFlickityObject,
+        );
+      });
+    } else {
+      carouselElement.flickityInstance.resize();
+    }
+  }
+
   // Modal Toggle
-  portfolioItem.addEventListener("click", (event) => {
+  portfolioItem.addEventListener(`click`, (event) => {
     if (!modalCloseElement || !openModalButton) {
-      console.error("Modal close element or open button not found.");
+      console.error(`Modal close element or open button not found.`);
       return;
     }
 
@@ -46,18 +45,18 @@ portfolioItems.forEach((portfolioItem) => {
       modalCloseElement.contains(event.target) ||
       event.target === openModalButton
     ) {
-      modalElement.classList.toggle("hidden");
-      document.body.classList.toggle("overflow-hidden");
+      modalElement.classList.toggle(`hidden`);
+      document.body.classList.toggle(`overflow-hidden`);
       const backdrop = portfolioItem.querySelector(
-        ".portfolio__modal-backdrop",
+        `.portfolio__modal-backdrop`,
       );
       if (backdrop) {
-        backdrop.classList.toggle("hidden");
+        backdrop.classList.toggle(`hidden`);
       } else {
-        console.error("Backdrop element not found.");
+        console.error(`Backdrop element not found.`);
       }
 
-      if (!modalElement.classList.contains("hidden")) {
+      if (!modalElement.classList.contains(`hidden`)) {
         // Modal is now visible, initialize Flickity
         initializeFlickity(mainCarousel);
       }
@@ -66,23 +65,28 @@ portfolioItems.forEach((portfolioItem) => {
 });
 
 // Load more
-const loadMoreButton = document.querySelector(".portfolio__load-more");
-loadMoreButton.addEventListener("click", () => {
+const loadMoreButton = document.querySelector(`.portfolio__load-more`);
+loadMoreButton.addEventListener(`click`, () => {
   loadPortfolioItems(SETTINGS.portfolioLoadCount);
 });
 
 function loadPortfolioItems(portfolioLoadCount) {
   portfolioItems.forEach((portfolioItem) => {
-    if (portfolioItem.classList.contains("hidden") && portfolioLoadCount) {
+    if (portfolioItem.classList.contains(`hidden`) && portfolioLoadCount) {
       portfolioLoadCount--;
-      portfolioItem.classList.remove("hidden");
+      portfolioItem.classList.remove(`hidden`);
       if (
         !Array.from(portfolioItems).some((item) =>
-          item.classList.contains("hidden"),
+          item.classList.contains(`hidden`),
         )
       ) {
-        loadMoreButton.classList.add("hidden");
+        loadMoreButton.classList.add(`hidden`);
       }
     }
   });
 }
+
+const reviewsFlickity = new Flickity(
+  `.reviews__items`,
+  SETTINGS.reviewsFlickityObject
+);
