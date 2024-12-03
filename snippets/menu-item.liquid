@@ -1,0 +1,8 @@
+<h6>{{- menu.name -}}</h6>
+<ul class="header__nav-list mb-7">
+  {% for item in menu.items %}
+    <li class="header__nav-item pl-2">
+      <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
+    </li>
+  {% endfor %}
+</ul>

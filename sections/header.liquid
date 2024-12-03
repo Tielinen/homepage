@@ -1,4 +1,4 @@
-<header id="header" class="header relative px-10 py-9">
+<header id="header" class="header sticky top-0 z-10 bg-softWhite px-10 py-7">
   <div class="header__logo mb-[20px] text-center">
     <a href="#" class="header__logo-link text-[20px] font-extrabold lg:text-[56px] lg:font-bold">Janne Tielinen</a>
   </div>
@@ -8,13 +8,16 @@
         {%- render './snippets/hamburger-icon.svg.liquid', size: 30, fill_color: '#2a3439' -%}
         {%- render './snippets/xmark.svg.liquid', size: 30, classes: 'hidden', fill_color: '#2a3439' -%}
       </button>
-      <ul class="header__nav-list absolute top-full bg-black">
-        {%- for item in menus[1].items -%}
-          <li class="header__nav-item">
-            <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
-          </li>
-        {%- endfor -%}
-      </ul>
+      <div class="header__menus absolute left-0 top-full h-screen w-full bg-frostedBlue pl-10 pt-7 hidden">
+        {%- assign menu_order = "Sections, Find Me Online" | split: ',' -%}
+        {% for menu_name in menu_order %}
+          {%- assign menu_in_order = menu_name | strip -%}
+          {% assign menu = menus | where: 'name', menu_in_order | first %}
+          {% if menu %}
+            {%- render './snippets/menu-item.liquid', menu: menu -%}
+          {% endif %}
+        {% endfor %}
+      </div>
     </nav>
     <a
       href="#contact-form"

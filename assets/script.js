@@ -1,12 +1,29 @@
 `use strict`;
 
 // Mobile menu
+const headerMenusElement = document.querySelector(`.header__menus`);
 document.querySelector(`.menu__toggle`).addEventListener(`click`, event => {
   
   Array.from(event.currentTarget.children).forEach(child => {
     child.classList.toggle(`hidden`);
-  })
-})
+  });
+
+  headerMenusElement.classList.toggle(`hidden`);
+  document.body.classList.toggle(`overflow-hidden`);
+});
+
+headerMenusElement.addEventListener(`click`, event => {
+  if (event.target.tagName === `A`) {
+    headerMenusElement.classList.add (`hidden`);
+    console.log('jjjeeeee');
+  }
+  
+});
+
+
+
+
+
 
 const portfolioItems = document.querySelectorAll(`.portfolio__item`);
 

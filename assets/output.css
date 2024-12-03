@@ -576,6 +576,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -590,6 +594,10 @@ video {
 
 .-top-5 {
   top: -1.25rem;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .left-1\/2 {
@@ -760,6 +768,10 @@ video {
 
 .h-44 {
   height: 11rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[calc\(100vh-2\.5rem\)\] {
