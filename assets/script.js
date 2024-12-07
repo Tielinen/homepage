@@ -2,9 +2,8 @@
 
 // Mobile menu
 const headerMenusElement = document.querySelector(`.header__menus`);
-document.querySelector(`.menu__toggle`).addEventListener(`click`, event => {
-  
-  Array.from(event.currentTarget.children).forEach(child => {
+document.querySelector(`.menu__toggle`).addEventListener(`click`, (event) => {
+  Array.from(event.currentTarget.children).forEach((child) => {
     child.classList.toggle(`hidden`);
   });
 
@@ -12,18 +11,11 @@ document.querySelector(`.menu__toggle`).addEventListener(`click`, event => {
   document.body.classList.toggle(`overflow-hidden`);
 });
 
-headerMenusElement.addEventListener(`click`, event => {
+headerMenusElement.addEventListener(`click`, (event) => {
   if (event.target.tagName === `A`) {
-    headerMenusElement.classList.add (`hidden`);
-    console.log('jjjeeeee');
+    headerMenusElement.classList.add(`hidden`);
   }
-  
 });
-
-
-
-
-
 
 const portfolioItems = document.querySelectorAll(`.portfolio__item`);
 
@@ -105,5 +97,5 @@ function loadPortfolioItems(portfolioLoadCount) {
 
 const reviewsFlickity = new Flickity(
   `.reviews__items`,
-  SETTINGS.reviewsFlickityObject
+  SETTINGS.reviewsFlickityObject,
 );

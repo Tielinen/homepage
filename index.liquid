@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="bg-black">
+<html lang="en" class="bg-black scroll-smooth">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
   <body class="page m-auto max-w-md bg-softWhite font-montserrat text-deepSlate">
     {%- render './sections/header.liquid', menus: menus -%}
     <main>
-      {%- render './sections/hero.liquid' -%}
+      {% comment %} {%- render './sections/hero.liquid' -%} {% endcomment %}
       {%- render './sections/about.liquid' -%}
       {%- render './sections/services.liquid', service_descriptions: service-descriptions -%}
       {%- render './sections/portfolio.liquid', portfolio_items: portfolio-items -%}
