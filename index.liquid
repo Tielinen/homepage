@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/flickity.css">
     <link href="./assets/flickity-fade.css" rel="stylesheet">
 
-    {% comment %} Development, build output css and remove line below before publishing  {% endcomment %}
+      {% comment %} Development, build output css and remove line below before publishing  {% endcomment %}
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
 
     <link href="./assets/output.css" rel="stylesheet">
@@ -21,16 +21,26 @@
     <title>Tielinen.pro</title>
   </head>
   <body class="page m-auto max-w-md bg-softWhite font-montserrat text-deepSlate">
-    {%- render './sections/header.liquid', menus: menus -%}
+    {%- render './sections/header.liquid'
+      , menus: menus -%}
     <main>
-      {% comment %} {%- render './sections/hero.liquid' -%} {% endcomment %}
+      {%- render './sections/hero.liquid' -%}
       {%- render './sections/about.liquid' -%}
-      {%- render './sections/services.liquid', service_descriptions: service-descriptions -%}
-      {%- render './sections/portfolio.liquid', portfolio_items: portfolio-items -%}
-      {%- render './sections/featured-services.liquid', featured_services: featured-services -%}
-      {%- render './sections/reviews.liquid', reviews: upwork-profile.reviews -%}
+      {%- render './sections/services.liquid'
+        , service_descriptions: service-descriptions -%}
+
+      {%- render './sections/portfolio.liquid'
+        , portfolio_items: portfolio-items -%}
+
+      {%- render './sections/featured-services.liquid'
+        , featured_services: featured-services -%}
+
+      {%- render './sections/reviews.liquid'
+        , reviews: upwork-profile.reviews -%}
+
       {%- render './sections/contact-form.liquid' -%}
     </main>
-    {%- render './sections/footer.liquid', menus: menus -%}
+    {%- render './sections/footer.liquid'
+      , menus: menus -%}
   </body>
 </html>

@@ -1,22 +1,32 @@
 `use strict`;
 
 // Mobile menu
+const menuToggleElement = document.querySelector(`.menu__toggle`);
+const mobileMenuIconElements = Array.from(menuToggleElement.children);
 const headerMenusElement = document.querySelector(`.header__menus`);
-document.querySelector(`.menu__toggle`).addEventListener(`click`, (event) => {
-  Array.from(event.currentTarget.children).forEach((child) => {
-    child.classList.toggle(`hidden`);
-  });
 
-  headerMenusElement.classList.toggle(`hidden`);
-  document.body.classList.toggle(`overflow-hidden`);
+menuToggleElement.addEventListener(`click`, (event) => {
+  toggleMobileMenu();
 });
 
 headerMenusElement.addEventListener(`click`, (event) => {
   if (event.target.tagName === `A`) {
-    headerMenusElement.classList.add(`hidden`);
+    toggleMobileMenu();
   }
 });
 
+function toggleMobileMenu() {
+  toggleHiddenClasses([...mobileMenuIconElements, headerMenusElement]);
+  document.body.classList.toggle(`overflow-hidden`);
+}
+
+function toggleHiddenClasses(arrayOfElements) {
+  arrayOfElements.forEach((element) => {
+    element.classList.toggle(`hidden`);
+  });
+}
+
+// Portfolio
 const portfolioItems = document.querySelectorAll(`.portfolio__item`);
 
 portfolioItems.forEach((portfolioItem) => {
@@ -95,6 +105,7 @@ function loadPortfolioItems(portfolioLoadCount) {
   });
 }
 
+// Reviews
 const reviewsFlickity = new Flickity(
   `.reviews__items`,
   SETTINGS.reviewsFlickityObject,
