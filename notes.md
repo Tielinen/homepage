@@ -6,3 +6,4 @@ Notes:
 + porfolio modal heading
 + WHy class="scroll-smooth" don't work in html
 + target linkkeihin
++ hero and about font size
