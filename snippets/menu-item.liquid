@@ -1,8 +1,14 @@
 <h6>{{- menu.name -}}</h6>
 <ul class="header__nav-list mb-7">
   {% for item in menu.items %}
+    {%- assign item_link_first_letter = item.link | slice: 0, 1 -%}
     <li class="header__nav-item pl-2">
-      <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
+      <a
+        href="{{- item.link -}}"
+        class="header__nav-link"
+        {% unless item_link_first_letter == "#" %}
+        target="_blank"
+        {% endunless %}>{{- item.title -}}</a>
     </li>
   {% endfor %}
 </ul>

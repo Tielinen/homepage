@@ -1,8 +1,9 @@
 <section id="services" class="services">
+  <h2 class="about__title mb-4 mt-sectionDefaultY text-center text-lg">Working With Me</h2>
+  <p class="mx-sectionDefaultX text-center mb-8">I believe in a personalized approach to each project. By focusing on your unique needs, I ensure a seamless and productive partnership that leads to outstanding results.</p>
   {%- for description_object in service_descriptions -%}
-    {%- render './snippets/service-description.liquid',
-      heading: description_object.heading,
-      description: description_object.description
-    -%}
+    {%- render './snippets/service-description.liquid'
+      , heading: description_object.heading
+      , description: description_object.description -%}
   {%- endfor -%}
 </section>

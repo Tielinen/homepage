@@ -35,9 +35,10 @@ portfolioItems.forEach((portfolioItem) => {
   const modalCloseElement = modalElement.querySelector(
     `.portfolio__modal-close`,
   );
-  const openModalButton = portfolioItem.querySelector(
-    `.portfolio__open-modal-button`,
-  );
+  const openModalButtons = Array.from(portfolioItem.querySelectorAll(
+    `.js-open-modal`,
+  ));
+
 
   // Function to initialize Flickity on a carousel
   function initializeFlickity(carouselElement) {
@@ -55,15 +56,16 @@ portfolioItems.forEach((portfolioItem) => {
 
   // Modal Toggle
   portfolioItem.addEventListener(`click`, (event) => {
-    if (!modalCloseElement || !openModalButton) {
+    if (!modalCloseElement || !openModalButtons) {
       console.error(`Modal close element or open button not found.`);
       return;
     }
 
     if (
       modalCloseElement.contains(event.target) ||
-      event.target === openModalButton
+      openModalButtons.includes(event.target)
     ) {
+// !!! if needs to check actual target, img etc !!!
       modalElement.classList.toggle(`hidden`);
       document.body.classList.toggle(`overflow-hidden`);
       const backdrop = portfolioItem.querySelector(
