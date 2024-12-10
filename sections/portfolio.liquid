@@ -9,9 +9,9 @@
  or portfolio_item.description == blank
       -%}
         <div class="portfolio__item mx-7 mb-8 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
-          <div class="js-open-modal portfolio__item-image mb-5">
+          <div class="portfolio__item-image mb-5">
             <img
-              class="rounded-xl"
+              class="js-open-modal rounded-xl"
               src="./assets/portfolio-images{{- portfolio_item.images[0].url -}}"
               alt="{{- portfolio_item.images[0].alt -}}"
               width=""

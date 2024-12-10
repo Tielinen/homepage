@@ -56,6 +56,7 @@ portfolioItems.forEach((portfolioItem) => {
 
   // Modal Toggle
   portfolioItem.addEventListener(`click`, (event) => {
+    console.log(event.currentTarget);
     if (!modalCloseElement || !openModalButtons) {
       console.error(`Modal close element or open button not found.`);
       return;

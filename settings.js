@@ -11,7 +11,7 @@ const SETTINGS = {
     pageDots: false,         // Disable dots indicator
     prevNextButtons: true,    // Enable previous/next buttons
     initialIndex: 1,
-    adaptiveHeight: true
+    // adaptiveHeight: true
   },
   portfolioLoadCount: 3
 }

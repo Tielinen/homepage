@@ -1,14 +1,26 @@
 Notes:
-
-+ Header contact me cta coloring
-+ Hover states?
++ tailwind class order
++ style featured services end
++ add contact me button to feature services end
 + truncated reviews popup?
++ Video
++ Featured Services subheading / paragraph
+
+### Susan?
++ Primary secondary buttons?
++ favicon
++ Hover states?
 + porfolio modal heading
-+ target linkkeihin
 + hero and about font size
-+ cta button to Next Steps
 + [Shopify partner / logo](https://help.shopify.com/pdf/partners/Shopify_Partner_Toolkit_Marketing_and_Brand_Guidelines_2024.pdf)
-+ fixed contact form (render one input at the time)
++ Send Message button color?
++ Should revies have numbers 17/41
++ Coloring of header
+
+### After launch
+
+
+
 
 
 # Techniques for low-traffic websites
