@@ -1,27 +1,19 @@
 Notes:
-+ tailwind class order
-+ style featured services end
-+ add contact me button to feature services end
-+ truncated reviews popup?
 + Video
 + Featured Services subheading / paragraph
 
 ### Susan?
++ Sticky header?
++ truncated reviews popup? (If yes, how to tell object is linkable)
 + Primary secondary buttons?
 + favicon
 + Hover states?
 + porfolio modal heading
 + hero and about font size
-+ [Shopify partner / logo](https://help.shopify.com/pdf/partners/Shopify_Partner_Toolkit_Marketing_and_Brand_Guidelines_2024.pdf)
++ [Shopify partner / logo?](https://help.shopify.com/pdf/partners/Shopify_Partner_Toolkit_Marketing_and_Brand_Guidelines_2024.pdf) (https://www.shopify.com/brand-assets)
 + Send Message button color?
 + Should revies have numbers 17/41
 + Coloring of header
-
-### After launch
-
-
-
-
 
 # Techniques for low-traffic websites
 ## Why conversion is hard for low-traffic websites

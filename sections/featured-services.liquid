@@ -1,10 +1,15 @@
 <section id="featured-services" class="featured-services bg-softWhite px-5 py-24 text-center">
   <h2 class="featured-services__heading mb-7 text-2xl">Featured Services</h2>
-  <p class="featured-services__subheading mb-16">Explore my core Shopify services designed to launch, enhance, and optimize your online presence. From a polished initial setup to custom-coded features and smooth platform migrations, I handle the technical details so you can focus on growth.</p>
+  <p class="featured-services__subheading mb-16">
+    Explore my core Shopify services designed to launch, enhance, and optimize your online presence. From a polished
+    initial setup to custom-coded features and smooth platform migrations, I handle the technical details so you can
+    focus on growth.
+  </p>
   <div class="featured-services__items">
     {%- for servive_item in featured_services -%}
       <div class="featured-services__item mt-11 rounded-xl bg-white px-8 py-16">
-        {%- render './snippets/star.svg.liquid' -%}
+        {% comment %} {%- render './snippets/star.svg.liquid' -%} {% endcomment %}
+        <img class="mx-auto mb-4 block w-1/2" src="./assets/images/shopify_logo_black.png" alt="Shopify logo">
         <h3 class="featured-services__item-title my-12 text-2xl font-semibold">{{- servive_item.title -}}</h3>
         <p class="featured-services__item-description text-lg">
           {{- servive_item.description -}}
@@ -12,5 +17,14 @@
       </div>
     {%- endfor -%}
   </div>
-  <p>Looking for something else? I’m happy to discuss any Shopify-related needs not listed here. Let’s chat about your unique goals and find the perfect solution for your store.</p>
+  <div class="mt-11 rounded-xl bg-white p-8">
+    <h3 class="mb-12 text-2xl font-semibold">Looking for something else?</h3>
+    <p class="mb-sectionDefaultY">
+      I’m happy to discuss any Shopify-related needs not listed here. Let’s chat about your unique goals and find the
+      perfect solution for your store.
+    </p>
+    <a href="#contact-form" class="mx-auto mb-5 block w-fit rounded-xl  bg-deepSlate p-2 font-semibold text-softWhite"
+      >Contact Me</a
+    >
+  </div>
 </section>

@@ -1,31 +1,28 @@
 <header id="header" class="header sticky top-0 z-10 bg-softWhite px-10 py-7">
   <div class="header__logo mb-5 text-center">
     <a href="#" class="header__logo-link text-xl font-semibold">
-      <span class="font-extrabold lg:font-bold">Janne</span>Tielinen</a>
+      <span class="font-extrabold lg:font-bold">Janne</span>Tielinen</a
+    >
   </div>
   <div class="header__actions flex items-center justify-between">
     <nav class="header__nav">
       <button class="menu__toggle relative block md:hidden">
-        {%- render './snippets/hamburger-icon.svg.liquid'
-          , size: 30
-          , fill_color: '#2a3439' -%}
-        {%- render './snippets/xmark.svg.liquid'
-          , size: 30
-          , classes: 'hidden'
-          , fill_color: '#2a3439' -%}
+        {%- render './snippets/hamburger-icon.svg.liquid', size: 30, fill_color: '#2a3439' -%}
+        {%- render './snippets/xmark.svg.liquid', size: 30, classes: 'hidden', fill_color: '#2a3439' -%}
       </button>
-      <div class="header__menus absolute left-0 top-full h-screen w-full bg-frostedBlue pl-10 pt-7 hidden">
-        {%- assign menu_order = "Sections, Find Me Online" | split: ',' -%}
+      <div class="header__menus absolute left-0 top-full hidden h-screen w-full bg-frostedBlue pl-10 pt-7">
+        {%- assign menu_order = 'Sections, Find Me Online' | split: ',' -%}
         {% for menu_name in menu_order %}
           {%- assign menu_in_order = menu_name | strip -%}
           {% assign menu = menus | where: 'name', menu_in_order | first %}
           {% if menu %}
-            {%- render './snippets/menu-item.liquid'
-              , menu: menu -%}
+            {%- render './snippets/menu-item.liquid', menu: menu -%}
           {% endif %}
         {% endfor %}
       </div>
     </nav>
-    <a href="#contact-form" class="header__cta-button rounded-xl bg-deepSlate p-2 font-semibold text-softWhite text-sm">Contact Me</a>
+    <a href="#contact-form" class="header__cta-button rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite"
+      >Contact Me</a
+    >
   </div>
 </header>
