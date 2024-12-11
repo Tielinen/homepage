@@ -3,7 +3,7 @@ Notes:
 + Featured Services subheading / paragraph
 
 ### Susan?
-+ Sticky header?
++ Sticky header? (If yes, remember offset of inpage anchors)
 + truncated reviews popup? (If yes, how to tell object is linkable)
 + Primary secondary buttons?
 + favicon
@@ -14,6 +14,11 @@ Notes:
 + Send Message button color?
 + Should revies have numbers 17/41
 + Coloring of header
+
+
+### After launch
++ Sticky header that disapears on scroll down
+
 
 # Techniques for low-traffic websites
 ## Why conversion is hard for low-traffic websites

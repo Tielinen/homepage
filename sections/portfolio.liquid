@@ -1,12 +1,15 @@
 <section id="portfolio" class="portfolio bg-frostedBlue pb-24 pt-20">
   <h2 class="portfolio__title  mb-9 text-center text-3xl">My Portfolio</h2>
-  <p class="portfolio__description mb-24 text-center mx-sectionDefaultX">View a comprehensive collection of my projects that demonstrate my technical skills, creativity, and dedication to providing exceptional service.</p>
+  <p class="portfolio__description mx-sectionDefaultX mb-24 text-center">
+    View a comprehensive collection of my projects that demonstrate my technical skills, creativity, and dedication to
+    providing exceptional service.
+  </p>
   <div class="portfolio__items">
     {%- assign portfolios_rendered = 0 -%}
     {%- for portfolio_item in portfolio_items -%}
       {%- unless portfolio_item.title == blank
- or portfolio_item.button_label == blank
- or portfolio_item.description == blank
+        or portfolio_item.button_label == blank
+        or portfolio_item.description == blank
       -%}
         <div class="portfolio__item mx-7 mb-8 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
           <div class="portfolio__item-image mb-5">
@@ -15,7 +18,8 @@
               src="./assets/portfolio-images{{- portfolio_item.images[0].url -}}"
               alt="{{- portfolio_item.images[0].alt -}}"
               width=""
-              height="">
+              height=""
+            >
           </div>
           <button class="portfolio__open-modal-button js-open-modal mb-5 w-full rounded-xl  bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
             {{- portfolio_item.button_label -}}
@@ -39,7 +43,8 @@
                       <img
                         class="rounded-xl"
                         src="./assets/portfolio-images{{- image.url -}}"
-                        alt="{{- image.alt -}}">
+                        alt="{{- image.alt -}}"
+                      >
                     </div>
                   {%- endfor -%}
                 </div>
