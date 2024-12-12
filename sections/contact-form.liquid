@@ -1,4 +1,4 @@
-<section id="contact-form" class="contact-form px-10 py-24 text-lg">
+<section id="contact-form" class="contact-form px-10 py-16 text-lg">
   <h2 class="contact-form__title mb-8 text-center">Get in Touch</h2>
   <p class="contact-form__description mb-14 leading-snug">
     Have a question or want to work together? Fill out the form below, and I'll get back to you as soon as possible.
@@ -6,9 +6,10 @@
   <form
     action="https://formsubmit.co/8ff01a82068cb3452aa2de06188362d0"
     method="POST"
-    class="contact-form__form text-sm flex justify-center flex-col"
+    class="contact-form__form flex flex-col justify-center text-sm"
     action="#"
-    method="post">
+    method="post"
+  >
     {% assign input_classes = 'contact-form__input mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5 border border-deepSlate' %}
     <input
       class="{{ input_classes }}"
@@ -16,26 +17,32 @@
       id="name"
       name="name"
       placeholder="Name"
-      required>
+      required
+    >
     <input
       class="{{ input_classes }}"
       type="email"
       id="email"
       name="email"
       placeholder="example@email.fi"
-      required>
+      required
+    >
     <textarea
       class="{{ input_classes }}"
       id="message"
       name="message"
       placeholder="Your Message"
       rows="9"
-      required></textarea>
+      required
+    ></textarea>
     <input
       class="hidden"
       type="text"
       name="_honey"
-      style="display:none">
-    <button type="submit" class="contact-form__button bg-dissolvedDenim px-12 py-5 grow-0 m-auto rounded-xl">Send Message</button>
+      style="display:none"
+    >
+    <button type="submit" class="contact-form__button m-auto grow-0 rounded-xl bg-dissolvedDenim px-12 py-5">
+      Send Message
+    </button>
   </form>
 </section>

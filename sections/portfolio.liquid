@@ -1,4 +1,4 @@
-<section id="portfolio" class="portfolio bg-frostedBlue pb-24 pt-20">
+<section id="portfolio" class="portfolio bg-frostedBlue pb-20 pt-16">
   <h2 class="portfolio__title  mb-9 text-center text-3xl">My Portfolio</h2>
   <p class="portfolio__description mx-sectionDefaultX mb-24 text-center">
     View a comprehensive collection of my projects that demonstrate my technical skills, creativity, and dedication to
@@ -26,7 +26,7 @@
           </button>
 
           <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
-          <p class="portfolio__item-description text-lg">{{- portfolio_item.description | truncate: 100 -}}</p>
+          <p class="portfolio__item-description">{{- portfolio_item.description | truncate: 250 -}}</p>
 
           <!-- Dark layer (backdrop) -->
           <div class="portfolio__modal-backdrop fixed inset-0 z-10 hidden bg-black bg-opacity-75"></div>

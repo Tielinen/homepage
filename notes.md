@@ -1,11 +1,8 @@
 Notes:
 + Video
-+ Featured Services subheading / paragraph
 
 ### Susan?
-+ Sticky header? (If yes, remember offset of inpage anchors)
 + truncated reviews popup? (If yes, how to tell object is linkable)
-+ Primary secondary buttons?
 + favicon
 + Hover states?
 + porfolio modal heading
@@ -17,7 +14,7 @@ Notes:
 
 
 ### After launch
-+ Sticky header that disapears on scroll down
++ On scroll down images change on portfolio
 
 
 # Techniques for low-traffic websites
