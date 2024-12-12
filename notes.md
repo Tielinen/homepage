@@ -6,7 +6,7 @@ Notes:
 + favicon
 + Hover states?
 + porfolio modal heading
-+ hero and about font size
++ body font size
 + [Shopify partner / logo?](https://help.shopify.com/pdf/partners/Shopify_Partner_Toolkit_Marketing_and_Brand_Guidelines_2024.pdf) (https://www.shopify.com/brand-assets)
 + Send Message button color?
 + Should revies have numbers 17/41
