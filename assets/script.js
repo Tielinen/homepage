@@ -21,6 +21,7 @@ function toggleMobileMenu() {
 }
 
 function toggleHiddenClasses(arrayOfElements) {
+  console.log(arrayOfElements);
   arrayOfElements.forEach((element) => {
     element.classList.toggle(`hidden`);
   });
@@ -35,10 +36,9 @@ portfolioItems.forEach((portfolioItem) => {
   const modalCloseElement = modalElement.querySelector(
     `.portfolio__modal-close`,
   );
-  const openModalButtons = Array.from(portfolioItem.querySelectorAll(
-    `.js-open-modal`,
-  ));
-
+  const openModalButtons = Array.from(
+    portfolioItem.querySelectorAll(`.js-open-modal`),
+  );
 
   // Function to initialize Flickity on a carousel
   function initializeFlickity(carouselElement) {
@@ -66,7 +66,7 @@ portfolioItems.forEach((portfolioItem) => {
       modalCloseElement.contains(event.target) ||
       openModalButtons.includes(event.target)
     ) {
-// !!! if needs to check actual target, img etc !!!
+      // !!! if needs to check actual target, img etc !!!
       modalElement.classList.toggle(`hidden`);
       document.body.classList.toggle(`overflow-hidden`);
       const backdrop = portfolioItem.querySelector(
