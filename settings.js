@@ -7,11 +7,12 @@ const SETTINGS = {
     draggable: true,
   },
   reviewsFlickityObject: {
-    contain: true,           // Contain cells to the container, won't scroll past the last cell
-    pageDots: false,         // Disable dots indicator
-    prevNextButtons: true,    // Enable previous/next buttons
+    contain: true, // Contain cells to the container, won't scroll past the last cell
+    pageDots: false, // Disable dots indicator
+    prevNextButtons: true, // Enable previous/next buttons
     initialIndex: 1,
+    setGallerySize: true,
     // adaptiveHeight: true
   },
-  portfolioLoadCount: 3
-}
+  portfolioLoadCount: 3,
+};

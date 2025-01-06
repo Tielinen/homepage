@@ -5,10 +5,13 @@
     <li class="header__nav-item pl-2">
       <a
         href="{{- item.link -}}"
-        class="header__nav-link"
-        {% unless item_link_first_letter == "#" %}
-        target="_blank"
-        {% endunless %}>{{- item.title -}}</a>
+        class="header__nav-link leading-7"
+        {% unless item_link_first_letter == '#' %}
+          target="_blank"
+        {% endunless %}
+      >
+        {{- item.title -}}
+      </a>
     </li>
   {% endfor %}
 </ul>

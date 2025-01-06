@@ -752,6 +752,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-3\.5 {
+  margin-top: 0.875rem;
+}
+
 .mt-sectionDefaultY {
   margin-top: 25px;
 }
@@ -782,6 +786,10 @@ video {
 
 .max-h-\[calc\(100vh-2\.5rem\)\] {
   max-height: calc(100vh - 2.5rem);
+}
+
+.min-h-\[448px\] {
+  min-height: 448px;
 }
 
 .w-1\/2 {
@@ -1035,11 +1043,6 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1053,6 +1056,10 @@ video {
 .py-7 {
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pb-24 {
@@ -1099,10 +1106,6 @@ video {
   text-align: center;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
 .font-montserrat {
   font-family: Montserrat, sans-serif;
 }
@@ -1120,14 +1123,6 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .text-base {
@@ -1160,6 +1155,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .leading-snug {
@@ -1227,10 +1226,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .md\:-mb-6 {
     margin-bottom: -1.5rem;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 }
 

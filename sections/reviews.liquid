@@ -3,7 +3,7 @@
   <p class="reviews__subheading mb-16 text-center text-lg">
     These reviews come from real clients on Upwork, a trusted freelance platform.
     <a
-      class="underline"
+      class="font-bold underline"
       target="_blank"
       href="https://www.upwork.com/freelancers/jannetielinen"
       >View my Upwork profile.</a
@@ -11,32 +11,28 @@
   </p>
   <div class="reviews__items">
     {%- for review in reviews %}
-      <div class="reviews__item relative mb-10 mr-3 mt-24 flex w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28">
+      <div class="reviews__item relative mb-10 mr-3 mt-24 flex min-h-[448px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28">
         <div class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full bg-dissolvedDenim">
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 -translate-x-[150%]' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-6 -translate-x-1/2' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 translate-x-1/2' -%}
-          <h6 class="absolute top-1/2 w-full text-center text-base font-semibold leading-tight">
-            {{- review.job_title | truncate: 45 -}}
+          <h6 class="absolute top-1/2 w-full px-1 text-center text-sm font-semibold leading-tight">
+            {{- review.job_title | truncate: 30 -}}
           </h6>
         </div>
 
         <div class="reviews__item-text-content relative">
           {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-6' -%}
-
-          {% comment %}
-            <div class="reviews__item-client">
-              <p class="reviews__item-client-position mb-7 text-center text-2xl font-semibold">
-                {{- review.reviewer_job_title -}}
-              </p>
-            </div>
-          {% endcomment %}
-
-          <p class="reviews__item-text relative text-justify text-sm">
+          <p class="reviews__item-text relative text-sm">
             {{- review.review | truncate: 240 -}}
           </p>
           {%- render './snippets/quotes-end.svg.liquid', classes: 'absolute right-0 -bottom-6' -%}
         </div>
+        <span class="absolute bottom-3 right-3 font-bold">
+          {{- forloop.index -}}
+          /
+          {{- reviews.size -}}
+        </span>
       </div>
     {%- endfor %}
   </div>

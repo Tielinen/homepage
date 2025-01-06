@@ -11,24 +11,25 @@ Notes:
 + Send Message button color?
 
 ### Go
-+ mobile menu riviväli.
-+ padding top front
-
-+ hero alle margin
-+ columbia linkki Susanille
-
-+ portfolio image hover
 + portfolio inner image change
 
+
+
+### Done
++ mobile menu riviväli.
++ banner padding top front
++ hero alle margin
++ portfolio image hover
 + review left align
 + review linkki boldaus
-
++ review 100% height
 + oikea alakulma review no
-+ 100% height
 + review otsikko pienemmäksi
 + pylpyrä padding, lyhennä merkkimäärää, fontti -
++ form button color.
 
-form button color.
+
++ columbia linkki Susanille
 
 
 
