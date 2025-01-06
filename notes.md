@@ -2,15 +2,34 @@ Notes:
 + Video
 
 ### Susan?
-+ favicon
 + Hover states?
 + porfolio modal heading
 + truncated reviews popup? (If yes, how to tell object is linkable)
 + body font size
 + Should revies have numbers 17/41
-+ Coloring of header
 + [Shopify partner / logo?](https://help.shopify.com/pdf/partners/Shopify_Partner_Toolkit_Marketing_and_Brand_Guidelines_2024.pdf) (https://www.shopify.com/brand-assets)
 + Send Message button color?
+
+### Go
++ mobile menu riviväli.
++ padding top front
+
++ hero alle margin
++ columbia linkki Susanille
+
++ portfolio image hover
++ portfolio inner image change
+
++ review left align
++ review linkki boldaus
+
++ oikea alakulma review no
++ 100% height
++ review otsikko pienemmäksi
++ pylpyrä padding, lyhennä merkkimäärää, fontti -
+
+form button color.
+
 
 
 ### After launch
