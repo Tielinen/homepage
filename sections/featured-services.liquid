@@ -1,16 +1,16 @@
-<section id="featured-services" class="featured-services bg-softWhite px-sectionDefaultX py-20 text-center">
-  <h2 class="featured-services__heading mb-7 text-2xl">Featured Services</h2>
-  <p class="featured-services__subheading mb-16">
+<section id="featured-services" class="bg-softWhite px-sectionDefaultX py-20 text-center">
+  <h2 class="mb-7 text-2xl">Featured Services</h2>
+  <p class="mb-16">
     Explore my Shopify services to launch, enhance, and optimize your online presence. I handle setup, custom features,
     and migrations, so you can focus on growth.
   </p>
-  <div class="featured-services__items">
+  <div>
     {%- for servive_item in featured_services -%}
-      <div class="featured-services__item mt-11 rounded-xl bg-white px-8 py-16">
+      <div class="mt-11 rounded-xl bg-white px-8 py-16">
         {% comment %} {%- render './snippets/star.svg.liquid' -%} {% endcomment %}
         <img class="mx-auto mb-4 block w-1/2" src="./assets/images/shopify_logo_black.png" alt="Shopify logo">
-        <h3 class="featured-services__item-title my-12 text-2xl font-semibold">{{- servive_item.title -}}</h3>
-        <p class="featured-services__item-description">
+        <h3 class="my-12 text-2xl font-semibold">{{- servive_item.title -}}</h3>
+        <p>
           {{- servive_item.description -}}
         </p>
       </div>

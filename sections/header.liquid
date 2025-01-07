@@ -1,16 +1,14 @@
-<header id="header" class="header relative bg-softWhite px-10 py-7">
-  <div class="header__logo mb-5 text-center">
-    <a href="#" class="header__logo-link text-xl font-semibold">
-      <span class="font-extrabold lg:font-bold">Janne</span>Tielinen</a
-    >
+<header id="header" class="relative bg-softWhite px-10 py-7">
+  <div class="mb-5 text-center">
+    <a href="#" class="text-xl font-semibold"> <span class="font-extrabold lg:font-bold">Janne</span>Tielinen</a>
   </div>
-  <div class="header__actions flex items-center justify-between">
-    <nav class="header__nav">
-      <button class="menu__toggle relative block">
+  <div class="flex items-center justify-between">
+    <nav id="header-nav">
+      <button id="js-menu-toggle" class="relative block">
         {%- render './snippets/hamburger-icon.svg.liquid', size: 30, fill_color: '#2a3439' -%}
         {%- render './snippets/xmark.svg.liquid', size: 30, classes: 'hidden', fill_color: '#2a3439' -%}
       </button>
-      <div class="header__menus absolute left-0 top-full z-10 hidden h-screen w-full bg-frostedBlue pl-10 pt-7">
+      <div id="js-header-menus" class="absolute left-0 top-full z-10 hidden h-screen w-full bg-frostedBlue pl-10 pt-7">
         {%- assign menu_order = 'Sections, Find Me Online' | split: ',' -%}
         {% for menu_name in menu_order %}
           {%- assign menu_in_order = menu_name | strip -%}
@@ -21,7 +19,10 @@
         {% endfor %}
       </div>
     </nav>
-    <a href="#contact-form" class="header__cta-button rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite"
+    <a
+      href="#contact-form"
+      id="header-cta-button"
+      class="rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite"
       >Contact Me</a
     >
   </div>

@@ -1,17 +1,17 @@
-<footer id="footer" class="footer bg-[#101010] pt-16 text-center text-white">
+<footer id="footer" class="bg-[#101010] pt-16 text-center text-white">
   <div class="inline-block">
     <a href="#" class="mb-16 inline-block text-4xl font-semibold">
       <span class="font-bold">Janne</span>
       Tielinen</a
     >
-    <nav class="footer__nav mb-28 flex justify-between">
+    <nav class="mb-28 flex justify-between">
       {%- for menu in menus -%}
-        <div class="footer__nav-menu text-left last:text-right">
+        <div class="text-left last:text-right">
           <h6>{{- menu.name -}}</h6>
           <ul class="list-none">
             {%- for item in menu.items -%}
-              <li class="footer__nav-item">
-                <a href="{{- item.link -}}" class="header__nav-link">{{- item.title -}}</a>
+              <li>
+                <a href="{{- item.link -}}">{{- item.title -}}</a>
               </li>
             {%- endfor -%}
           </ul>

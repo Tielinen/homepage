@@ -1,18 +1,18 @@
-<section id="portfolio" class="portfolio bg-frostedBlue pb-20 pt-16">
-  <h2 class="portfolio__title  mb-9 text-center text-3xl">My Portfolio</h2>
-  <p class="portfolio__description mx-sectionDefaultX mb-24 text-center">
+<section id="portfolio" class="bg-frostedBlue pb-20 pt-16">
+  <h2 class="mb-9 text-center text-3xl">My Portfolio</h2>
+  <p class="mx-sectionDefaultX mb-24 text-center">
     View a comprehensive collection of my projects that demonstrate my technical skills, creativity, and dedication to
     providing exceptional service.
   </p>
-  <div class="portfolio__items">
+  <div>
     {%- assign portfolios_rendered = 0 -%}
     {%- for portfolio_item in portfolio_items -%}
       {%- unless portfolio_item.title == blank
         or portfolio_item.button_label == blank
         or portfolio_item.description == blank
       -%}
-        <div class="portfolio__item mx-7 mb-8 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
-          <div class="portfolio__item-image mb-5">
+        <div class="js-portfolio-item mx-7 mb-8 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
+          <div class="mb-5">
             <img
               class="js-open-modal cursor-pointer rounded-xl"
               src="./assets/portfolio-images{{- portfolio_item.images[0].url -}}"
@@ -21,25 +21,25 @@
               height=""
             >
           </div>
-          <button class="portfolio__open-modal-button js-open-modal mb-5 w-full rounded-xl  bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
+          <button class="js-open-modal mb-5 w-full rounded-xl  bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
             {{- portfolio_item.button_label -}}
           </button>
 
-          <h3 class="portfolio__item-title mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
-          <p class="portfolio__item-description">{{- portfolio_item.description | truncate: 250 -}}</p>
+          <h3 class="mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
+          <p>{{- portfolio_item.description | truncate: 250 -}}</p>
 
           <!-- Dark layer (backdrop) -->
-          <div class="portfolio__modal-backdrop fixed inset-0 z-10 hidden bg-black bg-opacity-75"></div>
-          <div class="portfolio__modal fixed left-1/2 top-5 z-20 hidden max-h-[calc(100vh-2.5rem)] w-11/12 -translate-x-1/2 overflow-y-auto rounded-xl bg-white py-16 shadow-modal">
+          <div class="js-portfolio-modal-backdrop fixed inset-0 z-10 hidden bg-black bg-opacity-75"></div>
+          <div class="js-portfolio-modal fixed left-1/2 top-5 z-20 hidden max-h-[calc(100vh-2.5rem)] w-11/12 -translate-x-1/2 overflow-y-auto rounded-xl bg-white py-16 shadow-modal">
             {%- render './snippets/close-modal.svg.liquid' -%}
-            <div class="portfolio__modal-image-slider relative mb-9 w-full">
-              <button class="portfolio__modal-button absolute left-1/2 top-0 z-10 w-4/5 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
+            <div class="relative mb-9 w-full">
+              <button class="absolute left-1/2 top-0 z-10 w-4/5 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
                 {{- portfolio_item.button_label -}}
               </button>
-              <div class="portfolio__modal-slider-container">
-                <div class="portfolio__modal-slider-images-wrapper main-carousel">
+              <div>
+                <div class="js-main-carousel">
                   {%- for image in portfolio_item.images -%}
-                    <div class="carousel-cell px-2.5">
+                    <div class="px-2.5">
                       <img
                         class="rounded-xl"
                         src="./assets/portfolio-images{{- image.url -}}"
@@ -60,7 +60,7 @@
   </div>
   {%- if portfolio_items.size > 3 -%}
     <div class="bg-frostedBlue px-2.5">
-      <button class="portfolio__load-more mt-14 block w-full rounded-xl bg-deepSlate py-7 text-3xl font-semibold text-softWhite">
+      <button class="js-portfolio-load-more mt-14 block w-full rounded-xl bg-deepSlate py-7 text-3xl font-semibold text-softWhite">
         Load more
       </button>
     </div>

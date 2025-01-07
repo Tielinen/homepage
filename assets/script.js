@@ -1,9 +1,9 @@
 `use strict`;
 
 // Mobile menu
-const menuToggleElement = document.querySelector(`.menu__toggle`);
+const menuToggleElement = document.querySelector(`#js-menu-toggle`);
 const mobileMenuIconElements = Array.from(menuToggleElement.children);
-const headerMenusElement = document.querySelector(`.header__menus`);
+const headerMenusElement = document.querySelector(`#js-header-menus`);
 
 menuToggleElement.addEventListener(`click`, (event) => {
   toggleMobileMenu();
@@ -21,21 +21,22 @@ function toggleMobileMenu() {
 }
 
 function toggleHiddenClasses(arrayOfElements) {
-  console.log(arrayOfElements);
   arrayOfElements.forEach((element) => {
     element.classList.toggle(`hidden`);
   });
 }
 
 // Portfolio
-const portfolioItems = document.querySelectorAll(`.portfolio__item`);
+const portfolioItems = document.querySelectorAll(`.js-portfolio-item`);
 
 portfolioItems.forEach((portfolioItem) => {
-  const modalElement = portfolioItem.querySelector(`.portfolio__modal`);
-  const mainCarousel = modalElement.querySelector(`.main-carousel`);
+  const modalElement = portfolioItem.querySelector(`.js-portfolio-modal`);
+  const mainCarousel = modalElement.querySelector(`.js-main-carousel`);
   const modalCloseElement = modalElement.querySelector(
-    `.portfolio__modal-close`,
+    `.js-portfolio-modal-close`,
   );
+
+  const backdrop = portfolioItem.querySelector(`.js-portfolio-modal-backdrop`);
   const openModalButtons = Array.from(
     portfolioItem.querySelectorAll(`.js-open-modal`),
   );
@@ -56,27 +57,15 @@ portfolioItems.forEach((portfolioItem) => {
 
   // Modal Toggle
   portfolioItem.addEventListener(`click`, (event) => {
-    console.log(event.currentTarget);
-    if (!modalCloseElement || !openModalButtons) {
-      console.error(`Modal close element or open button not found.`);
-      return;
-    }
-
     if (
       modalCloseElement.contains(event.target) ||
-      openModalButtons.includes(event.target)
+      openModalButtons.includes(event.target) ||
+      event.target === backdrop
     ) {
-      // !!! if needs to check actual target, img etc !!!
       modalElement.classList.toggle(`hidden`);
       document.body.classList.toggle(`overflow-hidden`);
-      const backdrop = portfolioItem.querySelector(
-        `.portfolio__modal-backdrop`,
-      );
-      if (backdrop) {
-        backdrop.classList.toggle(`hidden`);
-      } else {
-        console.error(`Backdrop element not found.`);
-      }
+
+      backdrop.classList.toggle(`hidden`);
 
       if (!modalElement.classList.contains(`hidden`)) {
         // Modal is now visible, initialize Flickity
@@ -87,7 +76,7 @@ portfolioItems.forEach((portfolioItem) => {
 });
 
 // Load more
-const loadMoreButton = document.querySelector(`.portfolio__load-more`);
+const loadMoreButton = document.querySelector(`.js-portfolio-load-more`);
 loadMoreButton.addEventListener(`click`, () => {
   loadPortfolioItems(SETTINGS.portfolioLoadCount);
 });
@@ -110,6 +99,6 @@ function loadPortfolioItems(portfolioLoadCount) {
 
 // Reviews
 const reviewsFlickity = new Flickity(
-  `.reviews__items`,
+  `#js-reviews-items`,
   SETTINGS.reviewsFlickityObject,
 );

@@ -1,6 +1,6 @@
 <section id="reviews" class="reviews bg-frostedBlue px-10 pt-20">
-  <h2 class="reviews__heading mb-10 text-center text-2xl">Reviews</h2>
-  <p class="reviews__subheading mb-16 text-center text-lg">
+  <h2 class="mb-10 text-center text-2xl">Reviews</h2>
+  <p class="mb-16 text-center text-lg">
     These reviews come from real clients on Upwork, a trusted freelance platform.
     <a
       class="font-bold underline"
@@ -9,9 +9,9 @@
       >View my Upwork profile.</a
     >
   </p>
-  <div class="reviews__items">
+  <div id="js-reviews-items">
     {%- for review in reviews %}
-      <div class="reviews__item relative mb-10 mr-3 mt-24 flex min-h-[448px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28">
+      <div class="relative mb-10 mr-3 mt-24 flex min-h-[448px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28">
         <div class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full bg-dissolvedDenim">
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 -translate-x-[150%]' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-6 -translate-x-1/2' -%}
@@ -21,9 +21,9 @@
           </h6>
         </div>
 
-        <div class="reviews__item-text-content relative">
+        <div class="relative">
           {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-6' -%}
-          <p class="reviews__item-text relative text-sm">
+          <p class="relative text-sm">
             {{- review.review | truncate: 240 -}}
           </p>
           {%- render './snippets/quotes-end.svg.liquid', classes: 'absolute right-0 -bottom-6' -%}
