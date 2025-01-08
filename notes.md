@@ -13,8 +13,6 @@ Notes:
 ### Go
 + portfolio inner image change
 
-
-
 ### Done
 + mobile menu riviväli.
 + banner padding top front
@@ -28,14 +26,10 @@ Notes:
 + pylpyrä padding, lyhennä merkkimäärää, fontti -
 + form button color.
 
-
 + columbia linkki Susanille
-
-
 
 ### After launch
 + On scroll down images change on portfolio
-
 
 # Techniques for low-traffic websites
 ## Why conversion is hard for low-traffic websites

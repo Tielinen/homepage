@@ -14,14 +14,14 @@
         <div class="js-portfolio-item mx-7 mb-8 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
           <div class="mb-5">
             <img
-              class="js-open-modal cursor-pointer rounded-xl"
+              class="js-open-modal cursor-pointer rounded-xl bg-deepSlate p-1"
               src="./assets/portfolio-images{{- portfolio_item.images[0].url -}}"
               alt="{{- portfolio_item.images[0].alt -}}"
               width=""
               height=""
             >
           </div>
-          <button class="js-open-modal mb-5 w-full rounded-xl  bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
+          <button class="js-open-modal mb-5 w-full rounded-xl bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
             {{- portfolio_item.button_label -}}
           </button>
 
@@ -37,11 +37,11 @@
                 {{- portfolio_item.button_label -}}
               </button>
               <div>
-                <div class="js-main-carousel">
+                <div class="js-main-carousel m-3 rounded-xl bg-deepSlate p-1">
                   {%- for image in portfolio_item.images -%}
                     <div class="px-2.5">
                       <img
-                        class="rounded-xl"
+                        class="rounded-xl bg-transparent"
                         src="./assets/portfolio-images{{- image.url -}}"
                         alt="{{- image.alt -}}"
                       >
