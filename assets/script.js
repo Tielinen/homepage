@@ -1,7 +1,7 @@
 `use strict`;
 
 // Mobile menu
-const menuToggleElement = document.querySelector(`#js-menu-toggle`);
+const menuToggleElement = document.querySelector(`#js-mobile-menu-toggle`);
 const mobileMenuIconElements = Array.from(menuToggleElement.children);
 const headerMenusElement = document.querySelector(`#js-header-menus`);
 

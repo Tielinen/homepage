@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="assets/flickity.css">
     <link href="./assets/flickity-fade.css" rel="stylesheet">
 
-    {% comment %} Development, build output css and remove line below before publishing  {% endcomment %}
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
-
     <link href="./assets/output.css" rel="stylesheet">
 
     <script src="settings.js" defer></script>
@@ -19,7 +16,7 @@
 
     <title>Tielinen.pro</title>
   </head>
-  <body class="m-auto max-w-md bg-softWhite font-montserrat text-base text-deepSlate">
+  <body class="m-auto bg-softWhite font-montserrat text-base text-deepSlate">
     {%- render './sections/banner.liquid' -%}
     {%- render './sections/header.liquid', menus: menus -%}
     <main>

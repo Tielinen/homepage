@@ -1,11 +1,11 @@
-<h6>{{- menu.name -}}</h6>
-<ul class="header__nav-list mb-7">
+<h6 class="md:hidden">{{- menu.name -}}</h6>
+<ul class="mb-7 md:m-0 md:inline">
   {% for item in menu.items %}
     {%- assign item_link_first_letter = item.link | slice: 0, 1 -%}
-    <li class="header__nav-item pl-2">
+    <li class="pl-2 md:inline md:pl-0 md:pr-4">
       <a
         href="{{- item.link -}}"
-        class="header__nav-link leading-7"
+        class="leading-7"
         {% unless item_link_first_letter == '#' %}
           target="_blank"
         {% endunless %}
