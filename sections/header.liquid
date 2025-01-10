@@ -1,34 +1,31 @@
 <header id="header" class="relative bg-softWhite px-10 py-7 md:flex md:justify-between md:px-20 md:py-10">
-  <div class="mb-5 text-center md:mb-0 md:text-left">
-    <a href="#" class="whitespace-nowrap text-xl font-semibold md:text-4xl">
-      <span class="font-extrabold lg:font-bold">Janne</span> Tielinen</a
+  <a href="#" class="mb-5 block whitespace-nowrap text-center text-xl font-semibold md:mb-0 md:text-left md:text-4xl">
+    <h1><span class="font-extrabold lg:font-bold">Janne</span> Tielinen</h1>
+  </a>
+
+  <nav id="header-nav" class="inline-block">
+    <button id="js-mobile-menu-toggle" class="block md:hidden">
+      {%- render './snippets/hamburger-icon.svg.liquid', size: 30, fill_color: '#2a3439' -%}
+      {%- render './snippets/xmark.svg.liquid', size: 30, classes: 'hidden', fill_color: '#2a3439' -%}
+    </button>
+    <div
+      id="js-header-menus"
+      class="absolute left-0 top-full z-10 hidden h-screen w-full bg-frostedBlue pl-10 pt-7 md:static md:inline md:h-auto md:bg-transparent md:p-0"
     >
-  </div>
-  <div class="flex items-center justify-between">
-    <nav id="header-nav">
-      <button id="js-mobile-menu-toggle" class="relative block md:hidden">
-        {%- render './snippets/hamburger-icon.svg.liquid', size: 30, fill_color: '#2a3439' -%}
-        {%- render './snippets/xmark.svg.liquid', size: 30, classes: 'hidden', fill_color: '#2a3439' -%}
-      </button>
-      <div
-        id="js-header-menus"
-        class="absolute left-0 top-full z-10 hidden h-screen w-full bg-frostedBlue pl-10 pt-7 md:static md:inline md:h-auto md:bg-transparent md:p-0"
-      >
-        {%- assign menu_order = 'Sections, Find Me Online' | split: ',' -%}
-        {% for menu_name in menu_order %}
-          {%- assign menu_in_order = menu_name | strip -%}
-          {% assign menu = menus | where: 'name', menu_in_order | first %}
-          {% if menu %}
-            {%- render './snippets/menu-item.liquid', menu: menu -%}
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-    <a
-      href="#contact-form"
-      id="header-cta-button"
-      class="rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite md:shrink-0"
-      >Contact Me</a
-    >
-  </div>
+      {%- assign menu_order = 'Sections, Find Me Online' | split: ',' -%}
+      {% for menu_name in menu_order %}
+        {%- assign menu_in_order = menu_name | strip -%}
+        {% assign menu = menus | where: 'name', menu_in_order | first %}
+        {% if menu %}
+          {%- render './snippets/menu-item.liquid', menu: menu -%}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+  <a
+    href="#contact-form"
+    id="header-cta-button"
+    class="inline-block rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite md:shrink-0"
+    >Contact Me</a
+  >
 </header>

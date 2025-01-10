@@ -772,6 +772,14 @@ video {
   margin-top: 25px;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
 .block {
   display: block;
 }
@@ -780,8 +788,16 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -841,10 +857,6 @@ video {
   max-width: 100%;
 }
 
-.shrink-0 {
-  flex-shrink: 0;
-}
-
 .grow {
   flex-grow: 1;
 }
@@ -891,8 +903,20 @@ video {
   list-style-type: none;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -1257,17 +1281,8 @@ h1, h2, h3, h4, h5, h6 {
     position: static;
   }
 
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:m-0 {
     margin: 0px;
-  }
-
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .md\:-mb-6 {
@@ -1278,24 +1293,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px;
   }
 
-  .md\:block {
-    display: block;
-  }
-
-  .md\:inline-block {
-    display: inline-block;
-  }
-
   .md\:inline {
     display: inline;
   }
 
   .md\:flex {
     display: flex;
-  }
-
-  .md\:inline-flex {
-    display: inline-flex;
   }
 
   .md\:hidden {
@@ -1310,12 +1313,24 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:shrink-0 {
     flex-shrink: 0;
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:bg-transparent {
@@ -1334,26 +1349,6 @@ h1, h2, h3, h4, h5, h6 {
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .md\:pl-5 {
-    padding-left: 1.25rem;
-  }
-
-  .md\:pr-5 {
-    padding-right: 1.25rem;
-  }
-
-  .md\:pr-10 {
-    padding-right: 2.5rem;
-  }
-
-  .md\:pr-28 {
-    padding-right: 7rem;
-  }
-
-  .md\:pl-28 {
-    padding-left: 7rem;
   }
 
   .md\:pl-0 {
