@@ -3,27 +3,43 @@
 // Mobile menu
 const menuToggleElement = document.querySelector(`#js-mobile-menu-toggle`);
 const mobileMenuIconElements = Array.from(menuToggleElement.children);
+const menuHamburgerIcon = menuToggleElement.querySelector(`#js-hamburger-icon`);
+const xMark = menuToggleElement.querySelector(`#js-x-mark-icon`);
+
 const headerMenusElement = document.querySelector(`#js-header-menus`);
 
 menuToggleElement.addEventListener(`click`, (event) => {
-  toggleMobileMenu();
+  const isMenuOpen = menuToggleElement.getAttribute(`aria-expanded`) === `true`;
+  isMenuOpen ? closeMobileMenu() : openMobileMenu();
 });
 
 headerMenusElement.addEventListener(`click`, (event) => {
   if (event.target.tagName === `A`) {
-    toggleMobileMenu();
+    const isMenuOpen =
+      menuToggleElement.getAttribute(`aria-expanded`) === `true`;
+
+    if (isMenuOpen) {
+      closeMobileMenu();
+    }
   }
 });
 
-function toggleMobileMenu() {
-  toggleHiddenClasses([...mobileMenuIconElements, headerMenusElement]);
-  document.body.classList.toggle(`overflow-hidden`);
+function openMobileMenu() {
+  menuToggleElement.setAttribute(`aria-expanded`, `true`);
+  document.body.classList.add(`overflow-hidden`);
+
+  menuHamburgerIcon.classList.add(`hidden`);
+  xMark.classList.remove(`hidden`);
+  headerMenusElement.classList.remove(`hidden`);
 }
 
-function toggleHiddenClasses(arrayOfElements) {
-  arrayOfElements.forEach((element) => {
-    element.classList.toggle(`hidden`);
-  });
+function closeMobileMenu() {
+  menuToggleElement.setAttribute(`aria-expanded`, `false`);
+  document.body.classList.remove(`overflow-hidden`);
+
+  menuHamburgerIcon.classList.remove(`hidden`);
+  xMark.classList.add(`hidden`);
+  headerMenusElement.classList.add(`hidden`);
 }
 
 // Portfolio

@@ -1,12 +1,22 @@
-<header id="header" class="relative bg-softWhite px-10 py-7 md:flex md:justify-between md:px-20 md:py-10">
-  <a href="#" class="mb-5 block whitespace-nowrap text-center text-xl font-semibold md:mb-0 md:text-left md:text-4xl">
-    <h1><span class="font-extrabold lg:font-bold">Janne</span> Tielinen</h1>
+<header id="header" class="relative h-36 items-center bg-softWhite px-10 py-7 md:flex md:justify-between md:px-20">
+  <a href="#" class="block whitespace-nowrap text-center text-xl font-semibold uppercase md:text-4xl">
+    <h1><span class="font-extrabold">Janne</span> Tielinen</h1>
   </a>
 
-  <nav id="header-nav" class="inline-block">
-    <button id="js-mobile-menu-toggle" class="block md:hidden">
-      {%- render './snippets/hamburger-icon.svg.liquid', size: 30, fill_color: '#2a3439' -%}
-      {%- render './snippets/xmark.svg.liquid', size: 30, classes: 'hidden', fill_color: '#2a3439' -%}
+  <nav id="header-nav" class="" aria-labelledby="js-mobile-menu-toggle">
+    <button
+      id="js-mobile-menu-toggle"
+      class="absolute bottom-7 left-10 md:hidden"
+      aria-expanded="false"
+      aria-controls="js-header-menus"
+    >
+      {%- render './snippets/hamburger-icon.svg.liquid', id: 'js-hamburger-icon', size: 30, fill_color: '#2a3439' -%}
+      {%- render './snippets/xmark.svg.liquid',
+        id: 'js-x-mark-icon',
+        classes: 'hidden',
+        size: 30,
+        fill_color: '#2a3439'
+      -%}
     </button>
     <div
       id="js-header-menus"
@@ -17,7 +27,7 @@
         {%- assign menu_in_order = menu_name | strip -%}
         {% assign menu = menus | where: 'name', menu_in_order | first %}
         {% if menu %}
-          {%- render './snippets/menu-item.liquid', menu: menu -%}
+          {%- render './snippets/menu-item.liquid', menu: menu, is_last_menu: forloop.last -%}
         {% endif %}
       {% endfor %}
     </div>
@@ -25,7 +35,7 @@
   <a
     href="#contact-form"
     id="header-cta-button"
-    class="inline-block rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite md:shrink-0"
+    class="absolute bottom-7 right-10 rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite md:static md:text-base"
     >Contact Me</a
   >
 </header>
