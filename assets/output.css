@@ -1280,10 +1280,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
-.hover\:uppercase:hover {
-  text-transform: uppercase;
-}
-
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1301,6 +1297,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .md\:-mb-6 {
     margin-bottom: -1.5rem;
+  }
+
+  .md\:mr-6 {
+    margin-right: 1.5rem;
   }
 
   .md\:inline-block {
@@ -1323,24 +1323,8 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
   }
 
-  .md\:min-w-\[8ch\] {
-    min-width: 8ch;
-  }
-
-  .md\:min-w-\[220px\] {
-    min-width: 220px;
-  }
-
-  .md\:min-w-\[\] {
-    min-width: ;
-  }
-
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:overflow-auto {
-    overflow: auto;
   }
 
   .md\:bg-transparent {
@@ -1351,17 +1335,18 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px;
   }
 
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .md\:pl-0 {
     padding-left: 0px;
-  }
-
-  .md\:pr-5 {
-    padding-right: 1.25rem;
   }
 
   .md\:text-4xl {

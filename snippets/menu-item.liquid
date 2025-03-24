@@ -4,11 +4,11 @@
     {%- assign item_link_first_letter = item.link | slice: 0, 1 -%}
     {%- assign is_last_menu_item = forloop.last -%}
     <li
-      class="pl-2 md:inline-block md:pl-0"
+      class="pl-2 md:mr-6 md:inline-block md:pl-0"
     >
       <a
         href="{{- item.link -}}"
-        class="leading-7 transition-all duration-200 hover:underline"
+        class="leading-7 transition-all duration-200 hover:underline md:text-base"
         {% unless item_link_first_letter == '#' %}
           target="_blank"
         {% endunless %}
