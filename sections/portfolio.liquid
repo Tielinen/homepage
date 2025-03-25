@@ -4,7 +4,7 @@
     View a comprehensive collection of my projects that demonstrate my technical skills, creativity, and dedication to
     providing exceptional service.
   </p>
-  <div>
+  <div class="md:mx-7 md:grid md:grid-cols-3 md:gap-7">
     {%- assign portfolios_rendered = 0 -%}
     {%- for portfolio_item in portfolio_items -%}
       {%- unless portfolio_item.title == blank
@@ -30,7 +30,7 @@
 
           <!-- Dark layer (backdrop) -->
           <div class="js-portfolio-modal-backdrop fixed inset-0 z-10 hidden bg-black bg-opacity-75"></div>
-          <div class="js-portfolio-modal fixed left-1/2 top-5 z-20 hidden max-h-[calc(100vh-2.5rem)] w-11/12 -translate-x-1/2 overflow-y-auto rounded-xl bg-white py-16 shadow-modal">
+          <div class="js-portfolio-modal fixed  left-1/2 top-5 z-20 hidden max-h-[calc(100vh-2.5rem)] w-11/12 -translate-x-1/2 overflow-y-auto rounded-xl bg-white py-16 shadow-modal md:w-2/5">
             {%- render './snippets/close-modal.svg.liquid' -%}
             <div class="relative mb-9 w-full">
               <button class="absolute left-1/2 top-0 z-10 w-4/5 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-deepSlate py-2 text-2xl font-semibold text-softWhite">

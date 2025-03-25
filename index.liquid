@@ -18,17 +18,22 @@
     <title>Tielinen.pro</title>
   </head>
   <body class="m-auto bg-softWhite font-montserrat text-base text-deepSlate md:text-lg">
-    {%- render './sections/banner.liquid' -%}
-    {%- render './sections/header.liquid', menus: menus -%}
+    {%- render './sections/banner' -%}
+    {%- render './sections/header', menus: menus -%}
     <main>
-      {%- render './sections/hero.liquid' -%}
-      {%- render './sections/about.liquid' -%}
-      {%- render './sections/services.liquid', service_descriptions: service-descriptions -%}
-      {%- render './sections/portfolio.liquid', portfolio_items: portfolio-items -%}
-      {%- render './sections/featured-services.liquid', featured_services: featured-services -%}
-      {%- render './sections/reviews.liquid', reviews: upwork-profile.reviews -%}
-      {%- render './sections/contact-form.liquid' -%}
+      {%- render './sections/hero' -%}
+      {%- render './sections/about' -%}
+      
+      <div class="md:flex md:flex-row-reverse">
+        {%- render './sections/video' -%}
+        {%- render './sections/services', service_descriptions: service-descriptions -%}
+      </div>
+
+      {%- render './sections/portfolio', portfolio_items: portfolio-items -%}
+      {%- render './sections/featured-services', featured_services: featured-services -%}
+      {%- render './sections/reviews', reviews: upwork-profile.reviews -%}
+      {%- render './sections/contact-form' -%}
     </main>
-    {%- render './sections/footer.liquid', menus: menus -%}
+    {%- render './sections/footer', menus: menus -%}
   </body>
 </html>

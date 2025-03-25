@@ -1,23 +1,54 @@
-<section id="hero" class="hero mb-12 bg-frostedBlue">
+<section id="hero" class="hero mb-12 bg-frostedBlue md:mb-24">
   <div class="p-sectionDefault">
-    <h1 class="pb-6 text-center text-2xl font-bold">Shopify Stores That Convert</h1>
-    <p class="text-center">As a Shopify Partner, I build conversion-focused stores that grow your business.</p>
+    <h1 class="pb-6 text-center text-2xl font-bold md:pb-5 md:pt-14 md:text-4xl lg:text-5xl">
+      Shopify Stores That Convert
+    </h1>
+    <p class="text-center md:pb-14">As a Shopify Partner, I build conversion-focused stores that grow your business.</p>
     {% comment %} <a href="#contact" class="hero__cta-button">Get in Touch</a> NO CTA in hero? {% endcomment %}
   </div>
   <div class="flex max-w-full justify-between">
     <img
       class="relative -mb-3 w-[65%] sm:-mb-5 md:-mb-6"
-      src="./assets/images/herofin.png"
-      alt="Screenshot of stores"
-      width="988"
-      height="678"
+      srcset="
+        ./assets/images/online_store_screenshots-w320px.png 320w,
+        ./assets/images/online_store_screenshots-w480px.png 480w,
+        ./assets/images/online_store_screenshots-w768px.png 768w,
+        ./assets/images/online_store_screenshots-w1024px.png 1024w,
+        ./assets/images/online_store_screenshots-w1280px.png 1208w
+      "
+      sizes="
+        (max-width: 320px) 320px,
+        (max-width: 480px) 480px,
+        (max-width: 768px) 768px,
+        (max-width: 1024px) 1024px,
+        1208px
+      "
+      src="./assets/images/online_store_screenshots-w1208px.png"
+      alt="Screenshot of created online stores"
+      width="1208"
+      height="981"
     >
     <img
-      class="w-[35%]" 
-      src="./assets/images/janne_tielinen.png"
-      alt="Janne Tielinen"
-      width="162"
-      height="229"
+      class="w-[35%]"
+      srcset="
+        ./assets/images/janne_tielinen_w162px.png 162w,
+        ./assets/images/janne_tielinen_w320px.png 320w,
+        ./assets/images/janne_tielinen_w480px.png 480w,
+        ./assets/images/janne_tielinen_w650px.png 650w,
+        ./assets/images/janne_tielinen_w768px.png 768w,
+        ./assets/images/janne_tielinen_w1024px.png 1024w
+      "
+      sizes="
+        (max-width: 320px) 162px,
+        (max-width: 480px) 320px,
+        (max-width: 768px) 480px,
+        (max-width: 1024px) 650px,
+        768px
+      "
+      src="./assets/images/janne_tielinen_w650px.png"
+      alt="Profidle picture of Janne Tielinen"
+      width="650"
+      height="919"
     >
   </div>
 </section>
