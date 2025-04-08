@@ -1,29 +1,29 @@
 <section id="reviews" class="reviews bg-frostedBlue px-10 pt-20">
-  <h2 class="mb-10 text-center text-2xl">Reviews</h2>
+  <h2 class="mb-10 text-center text-2xl md:text-4xl">Reviews</h2>
   <p class="mb-16 text-center text-lg">
     These reviews come from real clients on Upwork, a trusted freelance platform.
     <a
       class="font-bold underline"
       target="_blank"
-      href="https://www.upwork.com/freelancers/jannetielinen"
+      href="https://www.upwork.com/freelancers/jannetielinen?s=1017484851352698949"
       >View my Upwork profile.</a
     >
   </p>
   <div id="js-reviews-items">
     {%- for review in reviews %}
-      <div class="relative mb-10 mr-3 mt-24 flex min-h-[448px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28">
-        <div class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full bg-dissolvedDenim">
+      <div class="relative mb-10 mr-3 mt-24 flex min-h-[448px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 md:mx-14 md:mt-32 md:max-w-[457px] md:px-20">
+        <div class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full bg-dissolvedDenim md:h-64 md:w-64">
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 -translate-x-[150%]' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-6 -translate-x-1/2' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 translate-x-1/2' -%}
-          <h6 class="absolute top-1/2 w-full px-1 text-center text-sm font-semibold leading-tight">
+          <h6 class="absolute top-1/2 w-full px-1 text-center text-sm font-semibold leading-tight md:text-xl">
             {{- review.job_title | truncate: 30 -}}
           </h6>
         </div>
 
         <div class="relative">
           {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-6' -%}
-          <p class="relative text-sm">
+          <p class="relative text-sm md:text-2xl">
             {{- review.review | truncate: 240 -}}
           </p>
           {%- render './snippets/quotes-end.svg.liquid', classes: 'absolute right-0 -bottom-6' -%}

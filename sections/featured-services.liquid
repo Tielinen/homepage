@@ -1,12 +1,12 @@
 <section id="featured-services" class="bg-softWhite px-sectionDefaultX py-20 text-center">
-  <h2 class="mb-7 text-2xl">Featured Services</h2>
+  <h2 class="mb-7 text-2xl md:text-4xl">Featured Services</h2>
   <p class="mb-16">
     Explore my Shopify services to launch, enhance, and optimize your online presence. I handle setup, custom features,
     and migrations, so you can focus on growth.
   </p>
-  <div>
+  <div class="md:mx-20 md:flex md:justify-between">
     {%- for servive_item in featured_services -%}
-      <div class="mt-11 rounded-xl bg-white px-8 py-16">
+      <div class="mt-11 rounded-xl bg-white px-8 py-16 md:w-1/4">
         {% comment %} {%- render './snippets/star.svg.liquid' -%} {% endcomment %}
         <img class="mx-auto mb-4 block w-1/2" src="./assets/images/shopify_logo_black.png" alt="Shopify logo">
         <h3 class="my-12 text-2xl font-semibold">{{- servive_item.title -}}</h3>
@@ -16,13 +16,15 @@
       </div>
     {%- endfor -%}
   </div>
-  <div class="mt-11 rounded-xl bg-white p-8">
+  <div class="mt-11 rounded-xl bg-white p-8 md:mx-auto md:w-2/5">
     <h3 class="mb-12 text-2xl font-semibold">Looking for something else?</h3>
-    <p class="mb-sectionDefaultY">
+    <p class="mb-sectionDefaultY md:mx-auto">
       I’m happy to discuss any Shopify-related needs not listed here. Let’s chat about your unique goals and find the
       perfect solution for your store.
     </p>
-    <a href="#contact-form" class="mx-auto mb-7 block w-fit rounded-xl  bg-deepSlate p-2 font-semibold text-softWhite"
+    <a
+      href="#contact-form"
+      class="mx-auto mb-7 block w-fit rounded-xl  bg-deepSlate p-2 font-semibold text-softWhite md:w-max md:px-36 md:py-7 md:text-3xl"
       >Contact Me</a
     >
   </div>

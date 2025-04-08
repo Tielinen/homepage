@@ -1,14 +1,11 @@
 Notes:
 + Video
++ Hover state?
++ 
 
 ### Susan?
 + Hover states?
-+ porfolio modal heading
-+ truncated reviews popup? (If yes, how to tell object is linkable)
-+ body font size
-+ Should revies have numbers 17/41
-+ [Shopify partner / logo?](https://help.shopify.com/pdf/partners/Shopify_Partner_Toolkit_Marketing_and_Brand_Guidelines_2024.pdf) (https://www.shopify.com/brand-assets)
-+ Send Message button color?
++ Looking for something else? section
 
 ### Go
 + portfolio inner image change
