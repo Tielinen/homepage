@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 
-  src: url('Montserrat-VariableFont_wght.ttf') format('truetype');
+  src: url("Montserrat-VariableFont_wght.ttf") format("truetype");
 
   font-weight: 100 900;
 
@@ -562,6 +562,12 @@ video {
 
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
+}
+
+a:hover {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
 }
 
 .fixed {
@@ -1261,7 +1267,12 @@ video {
   transition-duration: 200ms;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   /* Tailwind's utility class for font-weight: 700 */
 }
@@ -1325,6 +1336,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 6rem;
   }
 
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .md\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -1333,16 +1348,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 5rem;
   }
 
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .md\:mr-5 {
+    margin-right: 1.25rem;
+  }
+
   .md\:mr-6 {
     margin-right: 1.5rem;
   }
 
   .md\:mt-32 {
     margin-top: 8rem;
-  }
-
-  .md\:mr-0 {
-    margin-right: 0px;
   }
 
   .md\:inline-block {
@@ -1381,6 +1400,10 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 630px;
   }
 
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .md\:w-3\/5 {
     width: 60%;
   }
@@ -1400,10 +1423,6 @@ h1, h2, h3, h4, h5, h6 {
   .md\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .md\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .md\:max-w-96 {
@@ -1491,6 +1510,10 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
+  .md\:text-right {
+    text-align: right;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1499,6 +1522,11 @@ h1, h2, h3, h4, h5, h6 {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .md\:text-base {
