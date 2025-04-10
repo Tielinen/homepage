@@ -564,12 +564,6 @@ video {
   display: none;
 }
 
-a:hover {
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(74 222 128 / var(--tw-text-opacity, 1));
-}
-
 .fixed {
   position: fixed;
 }
@@ -1276,6 +1270,12 @@ h6 {
   font-weight: 700;
   /* Tailwind's utility class for font-weight: 700 */
 }
+
+/* @layer base {
+  a:hover {
+    @apply font-bold text-green-400;
+  }
+} */
 
 .last\:mb-0:last-child {
   margin-bottom: 0px;

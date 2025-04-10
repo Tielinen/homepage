@@ -18,8 +18,8 @@ h6 {
   @apply font-bold; /* Tailwind's utility class for font-weight: 700 */
 }
 
-@layer base {
+/* @layer base {
   a:hover {
     @apply font-bold text-green-400;
   }
-}
+} */
