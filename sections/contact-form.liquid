@@ -1,16 +1,16 @@
 <section id="contact-form" class="px-10 py-16 text-lg">
-  <h2 class="mb-8 text-center">Get in Touch</h2>
-  <p class="mb-14 leading-snug">
+  <h2 class="mb-8 text-center md:text-4xl">Get in Touch</h2>
+  <p class="mb-14 leading-snug md:text-center">
     Have a question or want to work together? Fill out the form below, and I'll get back to you as soon as possible.
   </p>
   <form
     action="https://formsubmit.co/8ff01a82068cb3452aa2de06188362d0"
     method="POST"
-    class="contact-form__form flex flex-col justify-center text-sm"
+    class="contact-form__form flex flex-col justify-center text-sm md:mx-auto md:w-2/3"
     action="#"
     method="post"
   >
-    {% assign input_classes = 'mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5 border border-deepSlate' %}
+    {% assign input_classes = 'mb-7 rounded-xl bg-dissolvedDenim py-2 pl-5 border border-deepSlate md:py-5 md:text-2xl' %}
     <input
       class="{{ input_classes }}"
       type="text"
@@ -41,6 +41,11 @@
       name="_honey"
       style="display:none"
     >
-    <button type="submit" class="m-auto grow-0 rounded-xl bg-deepSlate px-12 py-5 text-softWhite">Send Message</button>
+    <button
+      type="submit"
+      class="m-auto grow-0 rounded-xl bg-deepSlate px-12 py-5 text-softWhite md:mr-0 md:text-2xl md:font-semibold"
+    >
+      Send Message
+    </button>
   </form>
 </section>

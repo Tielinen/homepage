@@ -11,8 +11,8 @@
   </p>
   <div id="js-reviews-items">
     {%- for review in reviews %}
-      <div class="relative mb-10 mr-3 mt-24 flex min-h-[448px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 md:mx-14 md:mt-32 md:max-w-[457px] md:px-20">
-        <div class="circle absolute left-1/2 top-0 h-44 w-44 translate-x-[-50%] translate-y-[-50%] overflow-hidden rounded-full bg-dissolvedDenim md:h-64 md:w-64">
+      <div class="relative mb-10 mr-3 mt-24 flex min-h-[490px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 md:mx-14 md:mt-32 md:min-h-[630px] md:max-w-[457px] md:px-20 md:pt-36">
+        <div class="circle absolute left-1/2 top-0 h-44 w-44 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full bg-dissolvedDenim md:h-64 md:w-64">
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 -translate-x-[150%]' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-6 -translate-x-1/2' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 translate-x-1/2' -%}
