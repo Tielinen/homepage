@@ -564,6 +564,10 @@ video {
   display: none;
 }
 
+a:hover:hover {
+  text-decoration-line: underline;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1271,22 +1275,12 @@ h6 {
   /* Tailwind's utility class for font-weight: 700 */
 }
 
-/* @layer base {
-  a:hover {
-    @apply font-bold text-green-400;
-  }
-} */
-
 .last\:mb-0:last-child {
   margin-bottom: 0px;
 }
 
 .last\:text-right:last-child {
   text-align: right;
-}
-
-.hover\:underline:hover {
-  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {
