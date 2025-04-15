@@ -1,20 +1,51 @@
-<h6 class="md:hidden">{{- menu.name -}}</h6>
-<ul class="mb-7 flex-row font-medium md:inline">
-  {% for item in menu.items %}
-    {%- assign item_link_first_letter = item.link | slice: 0, 1 -%}
-    {%- assign is_last_menu_item = forloop.last -%}
-    <li
-      class="pl-2 md:mr-6 md:inline-block md:pl-0"
-    >
-      <a
-        href="{{- item.link -}}"
-        class="leading-7 transition-all duration-200 md:text-base"
-        {% unless item_link_first_letter == '#' %}
-          target="_blank"
-        {% endunless %}
+<div class="relative md:inline-block">
+  <h6
+    class="
+      md:font-medium
+      {% unless menu.dropdown %}
+        md:hidden
+      {% endunless %}
+    "
+  >
+    {{- menu.name -}}
+  </h6>
+  <ul
+    class="
+      mb-7 flex-row font-medium md:inline
+      {% if menu.dropdown %}
+        md:absolute
+        block
+        md:w-full
+
+      {% endif %}
+    "
+  >
+    {% for item in menu.items %}
+      {%- assign item_link_first_letter = item.link | slice: 0, 1 -%}
+      {%- assign is_last_menu_item = forloop.last -%}
+      <li
+        class="
+          pl-2 md:mr-6 md:bg-softWhite md:pl-0
+          {% if menu.dropdown %}
+            md:w-full
+          {% else %}
+            md:inline-block
+          {% endif %}
+        "
       >
-        {{- item.title -}}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+        <a
+          href="{{- item.link -}}"
+          class="leading-7 transition-all duration-200 md:text-base"
+          {% unless item_link_first_letter == '#' %}
+            target="_blank"
+          {% endunless %}
+        >
+          {{- item.title -}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% unless menu.dropdown %}
+{% endunless %}

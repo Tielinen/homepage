@@ -1,6 +1,7 @@
 [
   {
     "name": "Sections",
+    "dropdown": false,
     "items": [
       {
       "title": "Home",
@@ -26,6 +27,7 @@
   },
   {
     "name": "Find Me Online",
+    "dropdown": true,
     "items": [
       {
         "title": "Upwork",
