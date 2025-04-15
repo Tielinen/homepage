@@ -13,10 +13,7 @@
     class="
       mb-7 flex-row font-medium md:inline
       {% if menu.dropdown %}
-        md:absolute
-        block
-        md:w-full
-
+        md:absolute md:block md:w-full md:border md:border-deepSlate top-9
       {% endif %}
     "
   >
@@ -28,6 +25,7 @@
           pl-2 md:mr-6 md:bg-softWhite md:pl-0
           {% if menu.dropdown %}
             md:w-full
+            mr-2
           {% else %}
             md:inline-block
           {% endif %}
