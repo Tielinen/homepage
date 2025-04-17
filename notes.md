@@ -1,29 +1,48 @@
-Notes:
-+ Video
-+ Hover state?
-+ 
+### ChatGPT
+
+## Quick wins:
+
+1. Top bar: turn “Message Me Now!” into a clear button; hide on scroll for more space.
+2. Hero: swap the mock‑ups and your photo side‑by‑side on desktop; add a single big “Start your store” CTA under the headline.
+3. Headline typo → “by an experienced Shopify Partner”.
+4. Video: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
+5. “Working With Me” icons are nice; trim text to 2‑3 lines each for easier scanning.
+6. Portfolio: add badges (Shopify, Klaviyo, etc.) and 1‑line metrics (“↑ 22 % conv. rate”).
+
+Credibility boosts
+7. Move 2‑3 best reviews (with star icons) directly under the hero; keep the carousel lower.
+8. Show your Upwork “Top‑Rated +” badge near the logo; link to profile.
+
+## What to show high on the page
+- **Shopify Foundations Certification** (core platform)  
+- **Liquid Storefronts – Verified Skill Badge** (directly proves your theme‑dev expertise)  
+
+These two speak straight to store‑building clients, so place the badges near your **Top‑Rated +** Upwork badge or inside the **Working With Me** block. Small icons + one‑line tooltip (“Issued 2024 by Shopify”) keep it tidy.
+
+### Where to place Hotjar Foundations L1
+- Put it lower (e.g., in a collapsible **Tool Stack & Analytics** section or in the footer skills list). It’s useful but secondary; you don’t want to dilute the Shopify focus in the hero area.
+
+### Tips
+- Use official badge images (SVG/PNG) at ~40 px height for crispness.  
+- Link each badge to the issuing credential page for verification.  
+- Keep the total row ≤ 4 badges; beyond that, move extras to an **About** page.
+
+This keeps authority high without clutter.
+
+
+
+
+### Notes:
+
 
 ### Susan?
 + Hover states?
 + Looking for something else? section
 
+
 ### Go
 + portfolio inner image change
 
-### Done
-+ mobile menu riviväli.
-+ banner padding top front
-+ hero alle margin
-+ portfolio image hover
-+ review left align
-+ review linkki boldaus
-+ review 100% height
-+ oikea alakulma review no
-+ review otsikko pienemmäksi
-+ pylpyrä padding, lyhennä merkkimäärää, fontti -
-+ form button color.
-
-+ columbia linkki Susanille
 
 ### After launch
 + On scroll down images change on portfolio

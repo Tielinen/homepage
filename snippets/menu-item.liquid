@@ -1,7 +1,7 @@
-<div class="relative md:inline-block">
+<div class="group relative md:inline-block">
   <h6
     class="
-      md:font-medium
+      md:py-5 md:font-medium
       {% unless menu.dropdown %}
         md:hidden
       {% endunless %}
@@ -13,7 +13,9 @@
     class="
       mb-7 flex-row font-medium md:inline
       {% if menu.dropdown %}
-        md:absolute md:block md:w-full md:border md:border-deepSlate top-9
+        md:absolute md:hidden md:w-full md:border md:border-deepSlate md:top-12 md:rounded-xl md:pl-3 md:pr-1  md:bg-softWhite md:hover:block md:group-hover:block md:py-3
+      {% else %}
+        md:py-5
       {% endif %}
     "
   >
@@ -44,6 +46,3 @@
     {% endfor %}
   </ul>
 </div>
-
-{% unless menu.dropdown %}
-{% endunless %}

@@ -656,10 +656,6 @@ a:hover:hover {
   top: 2rem;
 }
 
-.top-9 {
-  top: 2.25rem;
-}
-
 .top-full {
   top: 100%;
 }
@@ -1306,6 +1302,10 @@ h6 {
     position: absolute;
   }
 
+  .md\:top-12 {
+    top: 3rem;
+  }
+
   .md\:m-5 {
     margin: 1.25rem;
   }
@@ -1368,10 +1368,6 @@ h6 {
 
   .md\:mt-32 {
     margin-top: 8rem;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:inline-block {
@@ -1463,6 +1459,10 @@ h6 {
     gap: 1.75rem;
   }
 
+  .md\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
   .md\:border {
     border-width: 1px;
   }
@@ -1500,6 +1500,11 @@ h6 {
     padding-right: 1.5rem;
   }
 
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1520,6 +1525,14 @@ h6 {
 
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .md\:pr-1 {
+    padding-right: 0.25rem;
   }
 
   .md\:pt-14 {
@@ -1578,6 +1591,14 @@ h6 {
 
   .md\:font-semibold {
     font-weight: 600;
+  }
+
+  .md\:hover\:block:hover {
+    display: block;
+  }
+
+  .group:hover .md\:group-hover\:block {
+    display: block;
   }
 }
 
