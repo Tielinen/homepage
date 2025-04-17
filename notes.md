@@ -1,3 +1,9 @@
+### Susan?
++ Hover states?
++ Looking for something else? section
++ WhatsApp style https://elysiacosmetics.com/pages/contact?
+
+
 ### ChatGPT
 
 ## Quick wins:
@@ -29,19 +35,7 @@ These two speak straight to store‑building clients, so place the badges near y
 
 This keeps authority high without clutter.
 
-
-
-
 ### Notes:
-
-
-### Susan?
-+ Hover states?
-+ Looking for something else? section
-
-
-### Go
-+ portfolio inner image change
 
 
 ### After launch
