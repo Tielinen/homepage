@@ -4,13 +4,13 @@
 ### Susan?
 + Hover states?
 + Looking for something else? section
++ video poster: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
 + WhatsApp style https://elysiacosmetics.com/pages/contact?
 
 
 
 ### ChatGPT
-
-## Quick wins:
+## Quick wins content:
 
 1. Top bar: turn “Message Me Now!” into a clear button; hide on scroll for more space.
 2. Hero: swap the mock‑ups and your photo side‑by‑side on desktop; add a single big “Start your store” CTA under the headline.
@@ -38,6 +38,43 @@ These two speak straight to store‑building clients, so place the badges near y
 - Keep the total row ≤ 4 badges; beyond that, move extras to an **About** page.
 
 This keeps authority high without clutter.
+
+## Quick wins HTML
+
+### 1. Head / SEO
+- Add a `<meta name="description">` (≤ 160 chars) and `<meta property="og:image">` for richer sharing.  
+- Move the **11ty reload** script to the end of the `<head>` so it doesn’t block other downloads.
+
+### 2. Heading order
+- There are two `<h1>` elements (logo **and** hero).  
+  - Keep the logo as plain text or wrap it in a `<span>`.  
+  - Change the hero title to an `<h2>` — one top‑level heading per page helps screen‑readers *and* SEO.
+
+### 3. Accessibility
+- Add `aria-label="Homepage – Janne Tielinen"` to the logo link.  
+- Give the mobile‑nav toggle `aria-controls="header‑nav"` and update `aria‑expanded` in your JS.  
+- Provide a descriptive `poster` or `aria-label` for the `<video>` so non‑visual users grasp its purpose.
+
+### 4. Performance
+- Add `loading="lazy"` and `decoding="async"` to off‑screen images.  
+- Minify inline SVGs (remove Font‑Awesome license comments).  
+- Serve the hero screenshot as AVIF/WebP and audit your `sizes` so only the first matching source is downloaded.
+
+### 5. CSS cleanup
+- `html` has `bg‑black` while `body` uses `bg‑softWhite` — drop the conflicting one.  
+- Move repeated Tailwind utility clusters into component classes with `@apply` (smaller HTML, faster diffing).
+
+### 6. HTML semantics
+- Replace the visible “**Sections**” `<h6>` with a hidden `<span class="sr-only">Sections</span>`.  
+- Wrap each review card in `<article>` (or `<section>`) and consider adding Schema.org `itemtype="Review"` for rich results.
+
+### 7. Minor consistency
+- Unify asset paths (`/assets/…` vs `./assets/…`) to avoid 404s in some hosting setups.
+
+---
+
+**Verdict:** The design already looks polished and conversion‑oriented. Addressing the items above will further improve load speed, accessibility, and search visibility without changing the visual style.
+
 
 
 ### After launch
