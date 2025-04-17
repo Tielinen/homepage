@@ -18,12 +18,11 @@
     <title>Tielinen.pro</title>
   </head>
   <body class="m-auto bg-softWhite font-montserrat text-base text-deepSlate md:text-lg">
-    {%- render './sections/banner' -%}
     {%- render './sections/header', menus: menus -%}
     <main>
       {%- render './sections/hero' -%}
       {%- render './sections/about' -%}
-      
+
       <div class="md:flex md:flex-row-reverse">
         {%- render './sections/video' -%}
         {%- render './sections/services', service_descriptions: service-descriptions -%}
@@ -35,5 +34,6 @@
       {%- render './sections/contact-form' -%}
     </main>
     {%- render './sections/footer', menus: menus -%}
+    {%- render './sections/whatsapp' -%}
   </body>
 </html>

@@ -19,7 +19,8 @@ h6 {
 }
 
 @layer base {
-  a:hover {
+  a:hover,
+  button:hover {
     @apply hover:underline;
   }
 }
