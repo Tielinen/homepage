@@ -1,7 +1,11 @@
+### Notes:
++ Portfolio text formating?
+
 ### Susan?
 + Hover states?
 + Looking for something else? section
 + WhatsApp style https://elysiacosmetics.com/pages/contact?
+
 
 
 ### ChatGPT
@@ -34,8 +38,6 @@ These two speak straight to store‑building clients, so place the badges near y
 - Keep the total row ≤ 4 badges; beyond that, move extras to an **About** page.
 
 This keeps authority high without clutter.
-
-### Notes:
 
 
 ### After launch
