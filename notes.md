@@ -1,4 +1,5 @@
 ### Notes:
++ header find me online chevron
 + Portfolio text formating?
 + wide +1440px screens?
 
@@ -6,7 +7,7 @@
 + Hover states?
 + Looking for something else? section
 + video poster: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
-+ WhatsApp style https://elysiacosmetics.com/pages/contact?
++ Add collapsible “Tool Stack & Analytics” for secondary badges (Hotjar L1, etc.).
 
 
 

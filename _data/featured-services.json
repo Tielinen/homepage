@@ -1,14 +1,17 @@
 [
   {
     "title": "Shopify Store Setup",
-    "description": "Launch a fully functional Shopify store aligned with your brand’s style and goals. From initial configuration to design customization and payment gateways, I’ll ensure a polished, professional setup that’s ready to start selling."
+    "description": "Launch a fully functional Shopify store aligned with your brand’s style and goals. From initial configuration to design customization and payment gateways, I’ll ensure a polished, professional setup that’s ready to start selling.",
+    "price": 990
   },
   {
     "title": "Shopify Theme Customization",
-    "description": "Transform your existing Shopify theme into a unique storefront with custom-coded sections and other engaging features. I’ll tailor every detail to your brand, boosting conversions and keeping customers excited to buy."
+    "description": "Transform your existing Shopify theme into a unique storefront with custom-coded sections and other engaging features. I’ll tailor every detail to your brand, boosting conversions and keeping customers excited to buy.",
+    "price": 590
   },
   {
     "title": "Seamless Shopify Migrations",
-    "description": "Easily migrate from another platform to Shopify without losing data, or momentum. I’ll preserve URLs, transfer products, customers, and content, ensuring a smooth, SEO-friendly transition so you can confidently focus on fully sustained growth."
+    "description": "Migrate from any platform to Shopify without losing data or momentum. I’ll preserve URLs, transfer products, customers and content, ensuring a smooth, SEO‑friendly transition so you can focus on sustained growth.",
+    "price": "1,490"
   }
 ]

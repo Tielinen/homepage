@@ -1,19 +1,23 @@
 <div class="group relative md:inline-block">
   <h6
     class="
-      md:py-5 md:font-medium
+      md:inline md:py-5 md:text-base md:font-medium
       {% unless menu.dropdown %}
         md:hidden
       {% endunless %}
     "
   >
     {{- menu.name -}}
+    <svg aria-hidden="true" focusable="false" class="inline h-3" viewBox="0 0 10 6">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+      </path>
+    </svg>
   </h6>
   <ul
     class="
       mb-7 flex-row font-medium md:inline
       {% if menu.dropdown %}
-        md:absolute md:hidden md:w-full md:border md:border-deepSlate md:top-12 md:rounded-xl md:pl-3 md:pr-1  md:bg-softWhite md:hover:block md:group-hover:block md:py-3
+        md:absolute md:hidden md:w-full md:border md:border-deepSlate md:top-10 md:rounded-xl md:pl-3 md:pr-1  md:bg-softWhite md:hover:block md:group-hover:block md:py-3 md:z-10
       {% else %}
         md:py-5
       {% endif %}
