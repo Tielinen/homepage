@@ -1,5 +1,6 @@
 ### Notes:
 + Portfolio text formating?
++ wide +1440px screens?
 
 ### Susan?
 + Hover states?
@@ -12,7 +13,7 @@
 ### ChatGPT
 ## Quick wins content:
 
-1. Top bar: turn “Message Me Now!” into a clear button; hide on scroll for more space.
+
 2. Hero: swap the mock‑ups and your photo side‑by‑side on desktop; add a single big “Start your store” CTA under the headline.
 3. Headline typo → “by an experienced Shopify Partner”.
 4. Video: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).

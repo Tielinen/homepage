@@ -1028,6 +1028,10 @@ a:hover:hover,
   padding: 0.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1231,6 +1235,11 @@ a:hover:hover,
 .text-deepSlate {
   --tw-text-opacity: 1;
   color: rgb(42 52 57 / var(--tw-text-opacity, 1));
+}
+
+.text-red-700 {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity, 1));
 }
 
 .text-softWhite {
@@ -1535,12 +1544,12 @@ h6 {
     padding-bottom: 1.25rem;
   }
 
-  .md\:pb-14 {
-    padding-bottom: 3.5rem;
-  }
-
   .md\:pb-5 {
     padding-bottom: 1.25rem;
+  }
+
+  .md\:pb-7 {
+    padding-bottom: 1.75rem;
   }
 
   .md\:pl-0 {
@@ -1555,12 +1564,12 @@ h6 {
     padding-right: 0.25rem;
   }
 
-  .md\:pt-14 {
-    padding-top: 3.5rem;
-  }
-
   .md\:pt-36 {
     padding-top: 9rem;
+  }
+
+  .md\:pt-7 {
+    padding-top: 1.75rem;
   }
 
   .md\:text-left {
