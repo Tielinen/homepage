@@ -645,12 +645,12 @@ a:hover:hover,
   right: 2.5rem;
 }
 
-.right-11 {
-  right: 2.75rem;
-}
-
 .right-2\.5 {
   right: 0.625rem;
+}
+
+.right-3 {
+  right: 0.75rem;
 }
 
 .top-0 {
@@ -1360,10 +1360,6 @@ h6 {
 
   .md\:left-auto {
     left: auto;
-  }
-
-  .md\:right-20 {
-    right: 5rem;
   }
 
   .md\:right-5 {
