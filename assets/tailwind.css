@@ -569,6 +569,18 @@ a:hover:hover,
   text-decoration-line: underline;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .fixed {
   position: fixed;
 }
@@ -621,6 +633,10 @@ a:hover:hover,
   left: 2.5rem;
 }
 
+.left-11 {
+  left: 2.75rem;
+}
+
 .right-0 {
   right: 0px;
 }
@@ -629,12 +645,12 @@ a:hover:hover,
   right: 2.5rem;
 }
 
-.right-2\.5 {
-  right: 0.625rem;
+.right-11 {
+  right: 2.75rem;
 }
 
-.right-3 {
-  right: 0.75rem;
+.right-2\.5 {
+  right: 0.625rem;
 }
 
 .top-0 {
@@ -1338,8 +1354,16 @@ h6 {
     position: absolute;
   }
 
+  .md\:left-20 {
+    left: 5rem;
+  }
+
   .md\:left-auto {
     left: auto;
+  }
+
+  .md\:right-20 {
+    right: 5rem;
   }
 
   .md\:right-5 {

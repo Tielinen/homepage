@@ -3,7 +3,6 @@
 | Phase | Goal | Why it comes **now** | Key tasks (in sequence) |
 |-------|------|----------------------|-------------------------|
 | **1. Instant credibility (½ day)** | Show proof *while interest is hottest* | Social proof near the promise converts quickest. | 1. Place **Shopify Foundations**, **Liquid Storefronts**, and **Upwork Top‑Rated +** badges in a tight row under the hero CTA (max 4).<br>2. Surface 2‑3 ⭐⭐⭐⭐⭐ reviews with star icons directly below badges.<br>3. Keep full carousel lower. |
-| **5. Performance & cleanliness (1 day)** | Speed & maintainability | Safe once markup settled; yields Lighthouse wins. | 1. `loading="lazy"`/`decoding="async"` for off‑screen images.<br>2. Serve hero image as AVIF/WebP; verify `sizes` attr.<br>3. Minify inline SVGs.<br>4. `html` vs `body` background conflict → keep one.<br>5. Extract repeated Tailwind utilities into `@apply` components.<br>6. Unify asset paths. |
 | **6. Semantic polish (½ day)** | Rich results & future proofing | After structure/performance locked. | 1. Replace visible “Sections” `<h6>` with `sr-only` text.<br>2. Wrap each review in `<article itemtype="Review">`. |
 | **7. Post‑launch optimizations (ongoing)** | Iterate with real users | Needs traffic & data. | • Hotjar recordings & polls.<br>• Scroll‑based image swaps on portfolio grid.<br>• Schedule periodic performance audits.<br>• A/B test alternative CTAs once traffic allows. |
 

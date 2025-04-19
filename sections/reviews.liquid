@@ -1,8 +1,8 @@
 <section id="reviews" class="reviews bg-frostedBlue px-10 pt-20">
   <h2 class="mb-10 text-center text-2xl md:text-4xl">Reviews</h2>
   <p class="md:text mb-16 text-center text-lg">
-    These reviews come from real clients on Upwork, a trusted freelance platform where I proudly hold the
-    <span class="block md:inline">Top Rated Plus badge.</span><br>
+    <span class="font-bold">These reviews come from real clients on Upwork,</span> a trusted freelance platform where I
+    proudly hold the <span class="block md:inline">Top Rated Plus badge.</span><br>
     Top Rated Plus talent is highly rated for delivering excellent results on large ($15K+) contracts.
     <a
       class="block font-bold underline"
@@ -11,31 +11,63 @@
       >View my Upwork profile.</a
     >
   </p>
+
   <div id="js-reviews-items">
     {%- for review in reviews %}
-      <div class="relative mb-10 mr-3 mt-24 flex min-h-[490px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 md:mx-14 md:mt-32 md:min-h-[630px] md:max-w-[457px] md:px-20 md:pt-36">
+      <article
+        itemscope
+        itemtype="http://schema.org/Review"
+        class="relative mb-10 mr-3 mt-24 flex min-h-[490px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 md:mx-14 md:mt-32 md:min-h-[630px] md:max-w-[457px] md:px-20 md:pt-36"
+      >
+        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Service">
+          <meta itemprop="name" content="{{- review.job_title -}}">
+        </div>
         <div class="circle absolute left-1/2 top-0 h-44 w-44 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full bg-dissolvedDenim md:h-64 md:w-64">
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 -translate-x-[150%]' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-6 -translate-x-1/2' -%}
           {%- render './snippets/review-star.svg.liquid', classes: 'absolute left-1/2 top-8 translate-x-1/2' -%}
-          <h6 class="absolute top-1/2 w-full px-1 text-center text-sm font-semibold leading-tight md:text-xl">
+          <h6
+            itemprop="name"
+            class="absolute top-1/2 w-full px-1 text-center text-sm font-semibold leading-tight md:text-xl"
+          >
             {{- review.job_title | truncate: 30 -}}
           </h6>
         </div>
 
         <div class="relative">
           {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-6' -%}
-          <p class="relative text-sm md:text-2xl">
+          <p
+            itemprop="reviewBody"
+            class="relative text-sm md:text-2xl"
+          >
             {{- review.review | truncate: 240 -}}
           </p>
           {%- render './snippets/quotes-end.svg.liquid', classes: 'absolute right-0 -bottom-6' -%}
         </div>
-        <span class="absolute bottom-3 right-3 font-bold">
+
+        <div
+          itemprop="reviewRating"
+          itemscope
+          itemtype="http://schema.org/Rating"
+          class="sr-only"
+        >
+          <meta itemprop="worstRating" content="1">
+          <meta itemprop="ratingValue" content="5">
+          <meta itemprop="bestRating" content="5">
+        </div>
+        <meta itemprop="datePublished" content="{{ review.date | date: '%Y-%m-%d' }}">
+        <span class="absolute bottom-3 left-11 font-bold md:left-20">
+          {% assign new_length = review.date.size | minus: 3 %}
+          {% assign short_date = review.date | slice: 0, new_length %}
+          {{ short_date }}
+        </span>
+
+        <span class="absolute bottom-3 right-11 font-bold md:right-20">
           {{- forloop.index -}}
           /
           {{- reviews.size -}}
         </span>
-      </div>
+      </article>
     {%- endfor %}
   </div>
 </section>

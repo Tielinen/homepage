@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "css": "tailwindcss -i ./tailwind.css -o ./assets/output.css --watch",
+    "css": "tailwindcss -i ./tailwind.css -o ./assets/tailwind.css --watch",
     "eleventy": "npx @11ty/eleventy --serve",
     "build-eleventy": "eleventy",
-    "build-css": "tailwindcss -i ./tailwind.css -o ./assets/output.css"
+    "build-css": "tailwindcss -i ./tailwind.css -o ./assets/tailwind.css"
   },
   "keywords": [],
   "author": "",
