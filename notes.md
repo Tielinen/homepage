@@ -10,18 +10,13 @@
 + Looking for something else? section
 + video poster: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
 + Add collapsible “Tool Stack & Analytics” for secondary badges (Hotjar L1, etc.).
-
-
++ Review dates
 
 ### ChatGPT
 ## Quick wins content:
 
-
 2. Hero: swap the mock‑ups and your photo side‑by‑side on desktop; add a single big “Start your store” CTA under the headline.
-3. Headline typo → “by an experienced Shopify Partner”.
 4. Video: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
-5. “Working With Me” icons are nice; trim text to 2‑3 lines each for easier scanning.
-6. Portfolio: add badges (Shopify, Klaviyo, etc.) and 1‑line metrics (“↑ 22 % conv. rate”).
 
 Credibility boosts
 7. Move 2‑3 best reviews (with star icons) directly under the hero; keep the carousel lower.
@@ -76,9 +71,6 @@ This keeps authority high without clutter.
 - Unify asset paths (`/assets/…` vs `./assets/…`) to avoid 404s in some hosting setups.
 
 ---
-
-**Verdict:** The design already looks polished and conversion‑oriented. Addressing the items above will further improve load speed, accessibility, and search visibility without changing the visual style.
-
 
 
 ### After launch

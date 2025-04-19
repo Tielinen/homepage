@@ -56,13 +56,15 @@
           <meta itemprop="bestRating" content="5">
         </div>
         <meta itemprop="datePublished" content="{{ review.date | date: '%Y-%m-%d' }}">
-        <span class="absolute bottom-3 left-11 font-bold md:left-20">
-          {% assign new_length = review.date.size | minus: 3 %}
-          {% assign short_date = review.date | slice: 0, new_length %}
-          {{ short_date }}
-        </span>
+        {% comment %}
+          <span class="absolute bottom-3 left-11 font-bold md:left-20">
+            {% assign new_length = review.date.size | minus: 3 %}
+            {% assign short_date = review.date | slice: 0, new_length %}
+            {{ short_date }}
+          </span>
+        {% endcomment %}
 
-        <span class="absolute bottom-3 right-11 font-bold md:right-20">
+        <span class="absolute bottom-3 right-3 font-bold">
           {{- forloop.index -}}
           /
           {{- reviews.size -}}
