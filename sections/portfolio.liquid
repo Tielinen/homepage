@@ -19,6 +19,7 @@
               alt="{{- portfolio_item.images[0].alt -}}"
               width=""
               height=""
+              loading="lazy"
             >
           </div>
           <button class="js-open-modal mb-5 w-full rounded-xl bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
@@ -44,6 +45,7 @@
                         class="rounded-xl bg-transparent"
                         src="./assets/portfolio-images{{- image.url -}}"
                         alt="{{- image.alt -}}"
+                        loading="lazy"
                       >
                     </div>
                   {%- endfor -%}

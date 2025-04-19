@@ -605,6 +605,10 @@ a:hover:hover,
   bottom: 1.75rem;
 }
 
+.bottom-px {
+  bottom: 1px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -799,10 +803,6 @@ a:hover:hover,
 
 .inline-block {
   display: inline-block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -1282,6 +1282,12 @@ a:hover:hover,
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1310,6 +1316,11 @@ h6 {
 
 .group:hover .group-hover\:hidden {
   display: none;
+}
+
+.group:hover .group-hover\:rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px) {
@@ -1379,20 +1390,12 @@ h6 {
     margin-bottom: 6rem;
   }
 
-  .md\:mb-5 {
-    margin-bottom: 1.25rem;
-  }
-
   .md\:mb-8 {
     margin-bottom: 2rem;
   }
 
   .md\:ml-20 {
     margin-left: 5rem;
-  }
-
-  .md\:ml-5 {
-    margin-left: 1.25rem;
   }
 
   .md\:mr-0 {
@@ -1560,6 +1563,10 @@ h6 {
     padding-bottom: 1.25rem;
   }
 
+  .md\:pb-4 {
+    padding-bottom: 1rem;
+  }
+
   .md\:pb-5 {
     padding-bottom: 1.25rem;
   }
@@ -1574,6 +1581,10 @@ h6 {
 
   .md\:pl-3 {
     padding-left: 0.75rem;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem;
   }
 
   .md\:pr-1 {

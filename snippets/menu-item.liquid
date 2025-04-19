@@ -7,13 +7,19 @@
       {% endunless %}
     "
   >
-    {{- menu.name -}}
-    <svg aria-hidden="true" focusable="false" class="inline h-3" viewBox="0 0 10 6">
+    {{- menu.name }}
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      class="relative bottom-px inline-block h-3 transform transition-transform duration-200 group-hover:rotate-180"
+      viewBox="0 0 10 6"
+    >
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
       </path>
     </svg>
   </h6>
   <ul
+    role="menu"
     class="
       mb-7 flex-row font-medium md:inline
       {% if menu.dropdown %}
@@ -27,6 +33,7 @@
       {%- assign item_link_first_letter = item.link | slice: 0, 1 -%}
       {%- assign is_last_menu_item = forloop.last -%}
       <li
+        role="menuitem"
         class="
           pl-2 md:mr-6 md:bg-softWhite md:pl-0
           {% if menu.dropdown %}

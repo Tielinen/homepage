@@ -2,7 +2,11 @@
   id="header"
   class="relative h-36 items-center bg-softWhite px-10 py-7 md:flex md:h-16 md:justify-between md:px-20 md:py-0"
 >
-  <a href="#" class="block whitespace-nowrap text-center text-xl font-semibold uppercase md:text-4xl">
+  <a
+    href="#"
+    aria-label="Homepage – Janne Tielinen"
+    class="block whitespace-nowrap text-center text-xl font-semibold uppercase md:text-4xl"
+  >
     <h1 class="font-semibold"><span class="font-extrabold">Janne</span> Tielinen</h1>
   </a>
 
@@ -12,6 +16,7 @@
       class="absolute bottom-7 left-10 md:hidden"
       aria-expanded="false"
       aria-controls="js-header-menus"
+      aria-expanded="false"
     >
       {%- render './snippets/hamburger-icon.svg.liquid', id: 'js-hamburger-icon', size: 30, fill_color: '#2a3439' -%}
       {%- render './snippets/xmark.svg.liquid',

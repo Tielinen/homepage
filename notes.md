@@ -2,6 +2,8 @@
 + header find me online chevron
 + Portfolio text formating?
 + wide +1440px screens?
++ Preview image should be the full URL to your image (ideally 1200×630 px).
+
 
 ### Susan?
 + Hover states?
