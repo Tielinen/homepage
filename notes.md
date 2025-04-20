@@ -1,6 +1,6 @@
 ### Notes:
-+ Portfolio text formating?
-+ wider/smaller +1440px screens?
+pad views.
+
 
 
 ### Susan?

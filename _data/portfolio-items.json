@@ -1,57 +1,53 @@
 [
   {
-    "title": "Health Supplement Store",
-    "button_label": "Versagora",
-    "description": "I built a clean, conversion‑focused health‑supplement store, matching a market leader’s aesthetic. Custom Shopify sections were designed and fine‑tuned across devices. The site guides health‑conscious shoppers quickly to key products. Precise styling builds trust and drives repeat orders.",
-    "images": [
-      {
-        "url": "/versagora/01_desktop_hero_versagora.webp",
-        "alt": "Hero section showcasing a stack of balanced stones on a beach with text promoting energy-boosting supplements."
-      },
-      {
-        "url": "/versagora/02_desktop_versagora.webp",
-        "alt": "Bestselling products section featuring Multivitamin Gummies, Mushroom Extract Complex, and Ashwagandha supplements."
-      },
-      {
-        "url": "/versagora/03_desktop_versagora.webp",
-        "alt": "Section highlighting athletic performance supplements with a female tennis player and a sliced orange filled with vitamins and supplements."
-      },
-      {
-        "url": "/versagora/04_desktop_versagora.webp",
-        "alt": "Ashwagandha supplement product page displaying product details, pricing, and health benefits."
-      },
-      {
-        "url": "/versagora/05_desktop_versagora.webp",
-        "alt": "Suggested use and ingredients section for Ashwagandha supplement, featuring product information and potential health benefits."
-      },
-      {
-        "url": "/versagora/06_mobiili_versagora.webp",
-        "alt": "Mobile version of the website showcasing various sections, including the hero banner, bestsellers, and Ashwagandha product page."
-      }
-    ]
-  },
-  {
     "title": "Store Creation with Real-Time Stock Sync",
     "button_label": "Housumaailma",
     "description": "I created and customized a Shopify store for a women’s trousers brand. A bespoke script syncs inventory with the manufacturer four times daily. Shoppers always see exact stock levels, avoiding disappointment. The streamlined design keeps focus on fit and style.",
     "images": [
       {
         "url": "/housumaailma/housumaailma-desktop-1.webp",
-        "alt": "A homepage of an online store named 'Housumaailma,' featuring two women modeling pants on either side of the logo. The navigation bar includes categories such as 'Koti,' 'Housut,' 'Hameet,' and more. The website highlights a clean, minimalist design with neutral colors and a focus on fashion."
+        "alt": "Desktop homepage of Housumaailma showing two women modeling trousers beside the logo with a minimalist navigation bar"
       },
       {
         "url": "/housumaailma/housumaailma-desktop-2.webp",
-        "alt": "A product page for 'Taylor Regular Capri Medium Length - Navy' priced at €99. A woman is modeling the pants, standing confidently with her arms crossed. The page includes size selection, quantity control, and buttons for adding to the shopping cart or purchasing immediately."
+        "alt": "Desktop product page for navy Taylor Regular Capri showing model, size selector, quantity control, and buy buttons"
       },
       {
         "url": "/housumaailma/housumaailma-desktop-2.webp",
-        "alt": "A product listing page showing various capri pants, including styles like 'Elizabeth Slim Capri Medium Length' and 'Kelly Regular Capri Short Length,' in different colors such as black, blue denim, and navy. Each product includes the price and model wearing the pants."
+        "alt": "Desktop listing of capri pants styles with model thumbnails, prices, and style names like Elizabeth and Kelly"
       },
       {
         "url": "/housumaailma/housumaailma-mobile-1.webp",
-        "alt": "Mobile views of the Housumaailma website, showcasing a fashion model in a black shirt on the homepage, the 'Taylor Regular Capri' product page, and a capri pants collection page. The mobile version mirrors the clean, minimalist design and highlights product options with large images and simple navigation."
+        "alt": "Mobile view of Housumaailma showing homepage model, Taylor Regular Capri page, and capri collection with simple nav"
       }
-    ]
+    ],
+    "url": "https://www.housumaailma.fi/",
+    "active": true
+  },
+  {
+    "title": "Elysia Cosmetics Shopify Store",
+    "button_label": "Elysia Cosmetics",
+    "description": "I built Elysia Cosmetics’ Shopify store, tailoring a premium theme with HTML, CSS, JS, and Liquid. Dynamic variants and metafield‑driven content keep every product detail precise and on‑brand. A video hero, refined UX, and built‑in affiliate links elevate engagement and sales. Post‑launch fixes and polish delivered a turnkey site the client enthusiastically endorses.",
+    "images": [
+      {
+        "url": "/elysia/elysia-desktop-1.png",
+        "alt": "Desktop hero slider showing an athletic woman doing a pull‑up under the Elysia logo and “Unstoppable Beauty” headline"
+      },
+      {
+        "url": "/elysia/elysia-desktop-2.png",
+        "alt": "Desktop listing of three Elysia product cards—Combo, Liquid Foundation, Liquid Corrector—with offer tags, prices, and ratings"
+      },
+      {
+        "url": "/elysia/elysia-desktop-3.png",
+        "alt": "Desktop product page for Liquid Foundation showing large product image, color swatches, price, quantity selector, and Add to Cart/Buy Now buttons"
+      },
+      {
+        "url": "/elysia/elysia-mobile-1.png",
+        "alt": "Mobile view: Elysia hero image, a product card for the Combo with price and rating, and the Liquid Foundation detail page with swatches and buy button"
+      }
+    ],
+    "url": "https://elysiacosmetics.com",
+    "active": true
   },
   {
     "title": "Boutique for tall women",
@@ -82,7 +78,9 @@
         "url": "/whitney/jt_mobiili_whitney1.webp",
         "alt": "Mobile view of the Whitney Allysyn homepage featuring a hero image of a woman in a beige coat, with overlay text promoting hero videos."
       }
-    ]
+    ],
+    "url": "https://www.whitneyallysyn.com/",
+    "active": true
   },
   {
     "title": "Children's fashion store",
@@ -91,21 +89,23 @@
     "images": [
       {
         "url": "/mamaswildchild/jt_desktop_mamaswildchild1.webp",
-        "alt": "Website screenshot for Mama's Wild Child. Two children wearing illustrated t-shirts featuring Australian wilderness themes, standing by the ocean. The website promotes kids' clothing inspired by Australian flora and fauna, with original watercolor art prints and accompanying book series about Australia's wild places."
+        "alt": "Desktop view: two children by the ocean wearing illustrated wilderness‑themed t‑shirts on Mama’s Wild Child homepage"
       },      
       {
         "url": "/mamaswildchild/jt_desktop_mamaswildchild2.webp",
-        "alt": "Website section showing categories for Tee's & Rompers, Wildling Books, and Activities & Resources with images of children in nature-themed clothing and a 'View the Range' button below."
+        "alt": "Desktop section: categories for Tees & Rompers, Wildling Books, and Activities with images and “View the Range” button"
       },
       {
         "url": "/mamaswildchild/jt_desktop_mamaswildchild3.webp",
-        "alt": "Product page featuring a child wearing a two-tone t-shirt with an anglerfish illustration and the text 'Wild One.' The product description highlights original artwork, biodegradable cotton, available sizes 1 to 10 years, and options to add to cart or buy now."
+        "alt": "Desktop product page: child modeling a two-tone anglerfish “Wild One” t‑shirt with size selector and add‑to‑cart option"
       },
       {
         "url": "/mamaswildchild/jt_mobiili_mamaswildchild1.webp",
-        "alt": "Mobile view of Mama's Wild Child website showing three different pages: the homepage with kids' clothing inspired by Australian wilderness, a category page for tees and rompers, and a product page for a 'Wild One' anglerfish t-shirt. Each page highlights nature-themed apparel and book offerings, with options to view and purchase items."
+        "alt": "Mobile view: Mama’s Wild Child showing homepage, tees & rompers category, and Wild One anglerfish t‑shirt product page with simple navigation"
       }
-    ]
+    ],
+    "url": "https://mamaswildchild.com.au/",
+    "active": true
   },
   {
     "title": "eCommerce store migration to Shopify",
@@ -114,44 +114,55 @@
     "images": [
       {
         "url": "/mimi/jt_desktop_mimi1.webp",
-        "alt": "Website screenshot for Mimi.fi, a Finnish clothing store featuring natural material garments. The page displays models wearing striped dresses from the Pont Neuf collection. Navigation includes categories like tunics, jackets, ponchos, and linen art pieces. Store information and opening hours for the physical location in Turku are also provided."
+        "alt": "Desktop homepage: Mimi.fi model wearing striped Pont Neuf dresses, navigation for tunics, jackets, ponchos, plus store info and hours"
       },
       {
         "url": "/mimi/jt_desktop_mimi2.webp",
-        "alt": "Product listing page on Mimi.fi featuring tunics, sweaters, and tops in various colors. Each garment is made from natural materials, with prices ranging from €179 to €189. Models wear red, white, grey, and plum-colored tunics, showcasing comfortable and stylish designs."
+        "alt": "Desktop listing: Mimi.fi display of tunics, sweaters, and tops with model thumbnails and prices (€179–€189)"
       },
       {
         "url": "/mimi/jt_desktop_mimi3.webp",
-        "alt": "Product page on Mimi.fi for the grey 'Sonja' linen tunic priced at €189. The tunic is available in sizes XS to 3XL. Options to select size, quantity, and add to cart are displayed, along with local pickup information and a description of the tunic's soft, comfortable design."
+        "alt": "Desktop product page: grey Sonja linen tunic (€189) with size XS–3XL selector, add‑to‑cart button, and local pickup details"
       },
       {
         "url": "/mimi/jt_mobiili_mimi1.webp",
-        "alt": "Mobile view of the Mimi.fi website showing three different pages: the homepage with store information and featured products, a category page with a black poncho listed at €99, and a product page for the grey 'Sonja' linen tunic priced at €189. The pages highlight natural material clothing options with descriptions, price, and options to add to cart."
+        "alt": "Mobile view: Mimi.fi homepage, category page showing black poncho (€99), and product page for grey Sonja tunic"
       }
-    ]
+    ],
+    "url": "https://pellavakauppa.fi/",
+    "active": true
   },
   {
-    "title": "Elysia Cosmetics Shopify Store",
-    "button_label": "Elysia",
-    "description": "I built Elysia Cosmetics’ Shopify store, tailoring a premium theme with HTML, CSS, JS, and Liquid. Dynamic variants and metafield‑driven content keep every product detail precise and on‑brand. A video hero, refined UX, and built‑in affiliate links elevate engagement and sales. Post‑launch fixes and polish delivered a turnkey site the client enthusiastically endorses.",
+    "title": "Health Supplement Store",
+    "button_label": "Versagora",
+    "description": "I built a clean, conversion‑focused health‑supplement store, matching a market leader’s aesthetic. Custom Shopify sections were designed and fine‑tuned across devices. The site guides health‑conscious shoppers quickly to key products. Precise styling builds trust and drives repeat orders.",
     "images": [
       {
-        "url": "/elysia/elysia-desktop-1.png",
-        "alt": ""
+        "url": "/versagora/01_desktop_hero_versagora.webp",
+        "alt": "Hero section showcasing a stack of balanced stones on a beach with text promoting energy-boosting supplements."
       },
       {
-        "url": "/elysia/elysia-desktop-2.png",
-        "alt": ""
+        "url": "/versagora/02_desktop_versagora.webp",
+        "alt": "Bestselling products section featuring Multivitamin Gummies, Mushroom Extract Complex, and Ashwagandha supplements."
       },
       {
-        "url": "/elysia/elysia-desktop-3.png",
-        "alt": ""
+        "url": "/versagora/03_desktop_versagora.webp",
+        "alt": "Section highlighting athletic performance supplements with a female tennis player and a sliced orange filled with vitamins and supplements."
       },
       {
-        "url": "/elysia/elysia-mobile-1.png",
-        "alt": ""
+        "url": "/versagora/04_desktop_versagora.webp",
+        "alt": "Ashwagandha supplement product page displaying product details, pricing, and health benefits."
+      },
+      {
+        "url": "/versagora/05_desktop_versagora.webp",
+        "alt": "Suggested use and ingredients section for Ashwagandha supplement, featuring product information and potential health benefits."
+      },
+      {
+        "url": "/versagora/06_mobiili_versagora.webp",
+        "alt": "Mobile version of the website showcasing various sections, including the hero banner, bestsellers, and Ashwagandha product page."
       }
-    ]
+    ],
+    "active": false
   },
   {
     "title": "",
@@ -162,6 +173,7 @@
         "url": "",
         "alt": ""
       }
-    ]
+    ],
+    "active": true
   }
 ]
