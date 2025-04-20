@@ -1,8 +1,6 @@
 ### Notes:
-+ header find me online chevron
 + Portfolio text formating?
-+ wide +1440px screens?
-+ Preview image should be the full URL to your image (ideally 1200×630 px).
++ wider/smaller +1440px screens?
 
 
 ### Susan?
@@ -11,6 +9,8 @@
 + video poster: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
 + Add collapsible “Tool Stack & Analytics” for secondary badges (Hotjar L1, etc.).
 + Review dates
++ Preview image should be the full URL to your image (ideally 1200×630 px).
+
 
 ### ChatGPT
 ## Quick wins content:
