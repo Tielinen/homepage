@@ -1,16 +1,16 @@
 <footer id="footer" class="bg-[#101010] pt-16 text-center text-white">
   <div class="inline-block">
-    <a href="#" class="mb-16 inline-block text-4xl font-semibold md:text-6xl">
+    <a href="#" class="mb-16 inline-block text-4xl font-semibold lg:text-6xl">
       <span class="font-bold">Janne</span>
       Tielinen</a
     >
-    <nav class="mb-28 flex justify-between md:mb-8 md:text-2xl">
+    <nav class="mb-28 flex justify-between lg:mb-8 lg:text-2xl">
       {%- for menu in menus -%}
         <div class="text-left last:text-right">
-          <h6 class="md:mb-8">{{- menu.name -}}</h6>
+          <h6 class="lg:mb-8">{{- menu.name -}}</h6>
           <ul class="list-none">
             {%- for item in menu.items -%}
-              <li class="md:mb-8">
+              <li class="lg:mb-8">
                 <a href="{{- item.link -}}">{{- item.title -}}</a>
               </li>
             {%- endfor -%}
@@ -19,7 +19,7 @@
       {%- endfor -%}
     </nav>
   </div>
-  <div class="footer__copyright md:pb-4 md:pl-4 md:text-left">
+  <div class="footer__copyright lg:pb-4 lg:pl-4 lg:text-left">
     <small class="font-semibold">&copy; {{ 'now' | date: '%Y' }} Janne Tielinen. All rights reserved.</small>
   </div>
 </footer>

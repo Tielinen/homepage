@@ -1,9 +1,9 @@
-<div class="group relative md:inline-block">
+<div class="group relative lg:inline-block">
   <h6
     class="
-      md:inline md:py-5 md:text-base md:font-medium
+      lg:inline lg:py-5 lg:text-base lg:font-medium
       {% unless menu.dropdown %}
-        md:hidden
+        lg:hidden
       {% endunless %}
     "
   >
@@ -21,11 +21,11 @@
   <ul
     role="menu"
     class="
-      mb-7 flex-row font-medium md:inline
+      mb-7 flex-row font-medium lg:inline
       {% if menu.dropdown %}
-        md:absolute md:hidden md:w-full md:border md:border-deepSlate md:top-10 md:rounded-xl md:pl-3 md:pr-1  md:bg-softWhite md:hover:block md:group-hover:block md:py-3 md:z-10
+        lg:absolute lg:hidden lg:w-full lg:border lg:border-deepSlate lg:top-10 lg:rounded-xl lg:pl-3 lg:pr-1  lg:bg-softWhite lg:hover:block lg:group-hover:block lg:py-3 lg:z-10
       {% else %}
-        md:py-5
+        lg:py-5
       {% endif %}
     "
   >
@@ -35,18 +35,18 @@
       <li
         role="menuitem"
         class="
-          pl-2 md:mr-6 md:bg-softWhite md:pl-0
+          pl-2 lg:mr-6 lg:bg-softWhite lg:pl-0
           {% if menu.dropdown %}
-            md:w-full
+            lg:w-full
             mr-2
           {% else %}
-            md:inline-block
+            lg:inline-block
           {% endif %}
         "
       >
         <a
           href="{{- item.link -}}"
-          class="leading-7 transition-all duration-200 md:text-base"
+          class="leading-7 transition-all duration-200 lg:text-base"
           {% unless item_link_first_letter == '#' %}
             target="_blank"
           {% endunless %}

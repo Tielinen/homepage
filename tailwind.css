@@ -18,6 +18,10 @@ h6 {
   @apply font-bold; /* Tailwind's utility class for font-weight: 700 */
 }
 
+h2 {
+  @apply text-2xl md:text-3xl lg:text-5xl;
+}
+
 @layer base {
   a:hover,
   button:hover {
