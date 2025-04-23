@@ -1,18 +1,23 @@
 ### Notes:
-pad views.
++ rething section order
++ check/unify section margins/paddings
++ hero cta margin, between images and subheading
++ need something else banner
++ short caption (“60 sec intro”).
++ titel review standarx smaller font (italic)
++ Preview image should be the full URL to your image (ideally 1200×630 px).
++ Condense footer images
+
++ pad views.
 
 
 
 ### Susan?
-+ Hover states?
-+ Looking for something else? section
-+ video poster: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
-+ Add collapsible “Tool Stack & Analytics” for secondary badges (Hotjar L1, etc.).
-+ Review dates
-+ Preview image should be the full URL to your image (ideally 1200×630 px).
 
-+ hero cta margin, between images and subheading
-+ 
+
+# DONE
++ swap whatsapp hover color
++ reorganize sections
 
 
 ### ChatGPT

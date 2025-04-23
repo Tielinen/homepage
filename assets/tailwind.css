@@ -1443,6 +1443,10 @@ h2 {
     margin-bottom: 0px;
   }
 
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .lg\:mb-24 {
     margin-bottom: 6rem;
   }
@@ -1457,6 +1461,10 @@ h2 {
 
   .lg\:mr-0 {
     margin-right: 0px;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .lg\:mt-32 {
@@ -1551,6 +1559,11 @@ h2 {
     padding-right: 1.5rem;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1573,8 +1586,16 @@ h2 {
     padding-left: 1rem;
   }
 
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
   .lg\:pt-14 {
     padding-top: 3.5rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:pt-36 {
