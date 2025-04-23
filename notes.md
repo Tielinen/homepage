@@ -11,6 +11,9 @@ pad views.
 + Review dates
 + Preview image should be the full URL to your image (ideally 1200×630 px).
 
++ hero cta margin, between images and subheading
++ 
+
 
 ### ChatGPT
 ## Quick wins content:
