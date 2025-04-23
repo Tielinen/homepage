@@ -1,11 +1,11 @@
 <header
   id="header"
-  class="relative h-36 items-center bg-softWhite px-10 py-7 lg:flex lg:h-16 lg:justify-between lg:px-20 lg:py-0"
+  class="relative h-36 items-center bg-softWhite px-10 py-7 xl:flex xl:h-16 xl:justify-between xl:px-20 xl:py-0"
 >
   <a
     href="#"
     aria-label="Homepage – Janne Tielinen"
-    class="block whitespace-nowrap text-center text-3xl font-semibold uppercase md:text-4xl lg:text-6xl"
+    class="block whitespace-nowrap text-center text-3xl font-semibold uppercase md:text-4xl"
   >
     <h1 class="font-semibold"><span class="font-extrabold">Janne</span> Tielinen</h1>
   </a>
@@ -13,7 +13,7 @@
   <nav id="header-nav" class="" aria-labelledby="js-mobile-menu-toggle">
     <button
       id="js-mobile-menu-toggle"
-      class="absolute bottom-7 left-10 lg:hidden"
+      class="absolute bottom-7 left-10 xl:hidden"
       aria-controls="js-header-menus"
       aria-expanded="false"
       aria-label="Open mobile menu"
@@ -28,7 +28,7 @@
     </button>
     <div
       id="js-header-menus"
-      class="absolute left-0 top-full z-10 hidden h-screen w-full bg-frostedBlue pl-10 pt-7 lg:static lg:inline lg:h-auto lg:bg-transparent lg:p-0"
+      class="absolute left-0 top-full z-10 hidden h-screen w-full bg-frostedBlue pl-10 pt-7 xl:static xl:inline xl:h-auto xl:bg-transparent xl:p-0"
     >
       {%- assign menu_order = 'Sections, Find Me Online' | split: ',' -%}
       {% for menu_name in menu_order %}
@@ -43,7 +43,7 @@
   <a
     href="#contact-form"
     id="header-cta-button"
-    class="absolute bottom-7 right-10 rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite md:text-base lg:static"
+    class="absolute bottom-7 right-10 rounded-xl bg-deepSlate p-2 text-sm font-semibold text-softWhite md:text-base xl:static"
     >Contact Me</a
   >
 </header>

@@ -16,7 +16,7 @@
       <article
         itemscope
         itemtype="http://schema.org/Review"
-        class="relative mb-10 mr-3 mt-24 flex min-h-[490px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 lg:mx-14 lg:mt-32 lg:min-h-[630px] lg:max-w-[457px] lg:px-20 lg:pt-36"
+        class="relative mb-10 mr-3 mt-24 flex min-h-[490px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 md:max-w-[457px] lg:mx-14 lg:mt-32 lg:min-h-[630px] lg:px-20 lg:pt-36"
       >
         <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Service">
           <meta itemprop="name" content="{{- review.job_title -}}">
@@ -37,7 +37,7 @@
           {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-6' -%}
           <p
             itemprop="reviewBody"
-            class="relative text-sm lg:text-2xl"
+            class="relative text-sm md:text-2xl"
           >
             {{- review.review | truncate: 240 -}}
           </p>
