@@ -1,13 +1,13 @@
 ### Notes:
-+ rething section order
-+ check/unify section margins/paddings
 + hero cta margin, between images and subheading
 + need something else banner
 + short caption (“60 sec intro”).
 + titel review standarx smaller font (italic)
 + Preview image should be the full URL to your image (ideally 1200×630 px).
-+ Condense footer images
++ Condense footer items
 
++ rething section order
++ check/unify section margins/paddings
 + pad views.
 
 
