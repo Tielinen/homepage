@@ -1,6 +1,6 @@
-<section id="portfolio" class="bg-frostedBlue pb-20 pt-16 lg:py-20">
-  <h2 class="mb-9 text-center">My Portfolio</h2>
-  <p class="mx-sectionDefaultX mb-24 text-center">
+<section id="portfolio" class="bg-frostedBlue p-10 lg:py-20">
+  <h2 class="mb-2 text-center">My Portfolio</h2>
+  <p class="mb-10 text-center">
     View a comprehensive collection of my projects that demonstrate my technical skills, creativity, and dedication to
     providing exceptional service.
   </p>
@@ -13,7 +13,7 @@
         or portfolio_item.images[0].url == blank
         or portfolio_item.active == false
       -%}
-        <div class="js-portfolio-item mx-7 mb-8 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
+        <div class="js-portfolio-item mb-5 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
           <div class="mb-5">
             <img
               class="js-open-modal cursor-pointer rounded-xl bg-deepSlate p-1"
@@ -22,11 +22,11 @@
               loading="lazy"
             >
           </div>
-          <button class="js-open-modal mb-5 w-full rounded-xl bg-deepSlate py-2 text-2xl font-semibold text-softWhite">
+          <button class="js-open-modal mb-5 w-full rounded-xl bg-deepSlate py-2 text-xl font-semibold text-softWhite">
             {{- portfolio_item.button_label -}}
           </button>
 
-          <h3 class="mb-2.5 text-2xl font-semibold">{{- portfolio_item.title -}}</h3>
+          <h3 class="mb-2.5 text-xl font-semibold">{{- portfolio_item.title -}}</h3>
           <p>{{- portfolio_item.description | truncate: 250 -}}</p>
 
           <!-- Dark layer (backdrop) -->
