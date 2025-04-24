@@ -92,7 +92,7 @@ portfolioItems.forEach((portfolioItem) => {
 });
 
 // Load more
-const loadMoreButton = document.querySelector(`.js-portfolio-load-more`);
+const loadMoreButton = document.querySelector(`#js-portfolio-load-more`);
 loadMoreButton.addEventListener(`click`, () => {
   loadPortfolioItems(SETTINGS.portfolioLoadCount);
 });

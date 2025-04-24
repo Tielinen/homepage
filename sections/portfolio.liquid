@@ -1,6 +1,6 @@
-<section id="portfolio" class="bg-frostedBlue p-10 lg:py-20">
-  <h2 class="mb-2 text-center">My Portfolio</h2>
-  <p class="mb-10 text-center">
+<section id="portfolio" class="bg-frostedBlue p-10 text-center lg:py-20">
+  <h2 class="section-heading">My Portfolio</h2>
+  <p class="mb-10">
     View a comprehensive collection of my projects that demonstrate my technical skills, creativity, and dedication to
     providing exceptional service.
   </p>
@@ -13,7 +13,7 @@
         or portfolio_item.images[0].url == blank
         or portfolio_item.active == false
       -%}
-        <div class="js-portfolio-item mb-5 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
+        <div class="js-portfolio-item mb-10 rounded-xl bg-white p-5 last:mb-0 {% if portfolios_rendered > 2 %}hidden{%- endif -%}">
           <div class="mb-5">
             <img
               class="js-open-modal cursor-pointer rounded-xl bg-deepSlate p-1"
@@ -22,12 +22,12 @@
               loading="lazy"
             >
           </div>
-          <button class="js-open-modal mb-5 w-full rounded-xl bg-deepSlate py-2 text-xl font-semibold text-softWhite">
+          <button class="js-open-modal mb-5 w-full rounded-xl bg-deepSlate py-2 text-lg font-semibold text-softWhite">
             {{- portfolio_item.button_label -}}
           </button>
 
-          <h3 class="mb-2.5 text-xl font-semibold">{{- portfolio_item.title -}}</h3>
-          <p>{{- portfolio_item.description | truncate: 250 -}}</p>
+          <h3 class="mb-2.5 text-left text-lg font-semibold">{{- portfolio_item.title -}}</h3>
+          <p class="text-left">{{- portfolio_item.description | truncate: 250 -}}</p>
 
           <!-- Dark layer (backdrop) -->
           <div class="js-portfolio-modal-backdrop fixed inset-0 z-10 hidden bg-black bg-opacity-75"></div>
@@ -61,10 +61,8 @@
     {%- endfor -%}
   </div>
   {%- if portfolio_items.size > 3 -%}
-    <div class="bg-frostedBlue px-2.5">
-      <button class="js-portfolio-load-more mt-14 block w-full rounded-xl bg-deepSlate py-7 text-3xl font-semibold text-softWhite lg:mx-auto lg:w-max lg:px-36">
-        See More Work
-      </button>
+    <div id="js-portfolio-load-more" class="bg-frostedBlue text-center">
+      <button class="large-button">See More Work</button>
     </div>
   {%- endif -%}
 </section>

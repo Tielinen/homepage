@@ -1,27 +1,27 @@
-<section id="featured-services" class="bg-softWhite px-sectionDefaultX py-20 text-center">
-  <h2 class="mb-7">Featured Services</h2>
-  <p class="mb-16 lg:mx-20">
+<section id="featured-services" class="bg-softWhite px-10 pt-10 text-center">
+  <h2 class="section-heading">Featured Services</h2>
+  <p class="mb-10 lg:mx-20">
     Explore my Shopify services to launch, enhance, and optimize your online presence. I handle setup, custom features,
     and migrations, so you can focus on growth.
   </p>
   <div class="lg:mx-20 lg:flex lg:justify-between">
     {%- for servive_item in featured_services -%}
-      <div class="mt-11 rounded-xl bg-white px-8 py-16 lg:flex lg:w-[25vw] lg:flex-col lg:justify-between">
+      <div class="featured-service-container lg:flex lg:w-[25vw] lg:flex-col lg:justify-between">
         <img
-          class="mx-auto mb-4 block w-1/2"
+          class="featured-service-logo"
           src="./assets/images/shopify_logo_black.webp"
           alt="Shopify logo"
           loading="lazy"
         >
-        <h3 class="my-12 text-2xl font-semibold">{{- servive_item.title -}}</h3>
+        <h3 class="featured-service-heading">{{- servive_item.title -}}</h3>
         <p>
           {{- servive_item.description -}}
         </p>
 
-        <h3 class="lg:mt-a my-12 text-2xl font-semibold">
+        <h4 class="lg:mt-a my-5 text-lg font-semibold">
           Starting at $
           {{- servive_item.price -}}
-        </h3>
+        </h4>
 
         <a
           href="#contact-form"
@@ -31,21 +31,21 @@
       </div>
     {%- endfor -%}
   </div>
-  <div class="mt-11 rounded-xl bg-white p-8 lg:mx-auto  lg:w-[25vw]">
+  <div class="featured-service-container mb-10 lg:mx-auto lg:w-[25vw]">
     <img
-      class="mx-auto mb-4 block w-1/2"
+      class="featured-service-logo"
       src="./assets/images/shopify_logo_black.webp"
       alt="Shopify logo"
       loading="lazy"
     >
-    <h3 class="mb-12 text-2xl font-semibold lg:mb-8">Need something else?</h3>
-    <p class="mb-sectionDefaultY lg:mx-auto lg:mb-8">
+    <h3 class="featured-service-heading">Need something else?</h3>
+    <p class="">
       I’m happy to discuss any Shopify-related needs not listed here. Let’s chat about your unique goals and find the
       perfect solution for your store.
     </p>
     <a
       href="#contact-form"
-      class="mx-auto mb-7 block w-fit rounded-xl  bg-deepSlate p-2 font-semibold text-softWhite lg:mb-0 lg:px-6 lg:py-3 lg:text-xl"
+      class="mx-auto  mt-5 block w-fit rounded-xl  bg-deepSlate p-2 font-semibold text-softWhite lg:mb-0 lg:px-6 lg:py-3 lg:text-xl"
       >Contact Me</a
     >
   </div>
