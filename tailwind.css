@@ -38,14 +38,6 @@ h2 {
   @apply inline-block rounded-xl bg-deepSlate px-4 py-3 font-semibold text-softWhite;
 }
 
-.featured-service-logo {
-  @apply mx-auto mb-4 block w-1/2;
-}
-
-.featured-service-heading {
-  @apply mb-5 mt-10 text-xl font-semibold;
-}
-
 @layer base {
   a:hover,
   button:hover {

@@ -1,6 +1,4 @@
 ### Tasks:
-+ hero cta margin, between images and subheading
-+ need something else banner
 + short caption (“60 sec intro”).
 + titel review standarx smaller font (italic)
 + Preview image should be the full URL to your image (ideally 1200×630 px).
@@ -18,15 +16,14 @@
 
 ## Notes
 
-- md:pl-3
-- md:ml-5
-
-- lg:ml-10
-
 
 # DONE
 + swap whatsapp hover color
 + reorganize sections
++ need something else banner
++ hero cta margin, between images and subheading
+
+
 
 
 ### ChatGPT

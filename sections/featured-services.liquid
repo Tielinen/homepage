@@ -4,21 +4,21 @@
     Explore my Shopify services to launch, enhance, and optimize your online presence. I handle setup, custom features,
     and migrations, so you can focus on growth.
   </p>
-  <div class="lg:mx-20 lg:flex lg:justify-between">
+  <div class="lg:flex lg:justify-between">
     {%- for servive_item in featured_services -%}
-      <div class="featured-service-container lg:flex lg:w-[25vw] lg:flex-col lg:justify-between">
+      <div class="mt-10 rounded-xl bg-white p-10 lg:flex lg:w-[28vw] lg:flex-col lg:justify-between xl:mt-0">
         <img
-          class="featured-service-logo"
+          class="mx-auto mb-4 block w-[10vw]"
           src="./assets/images/shopify_logo_black.webp"
           alt="Shopify logo"
           loading="lazy"
         >
-        <h3 class="featured-service-heading">{{- servive_item.title -}}</h3>
+        <h3 class="mb-5 mt-10 text-xl font-semibold">{{- servive_item.title -}}</h3>
         <p>
           {{- servive_item.description -}}
         </p>
 
-        <h4 class="lg:mt-a my-5 text-lg font-semibold">
+        <h4 class="lg:mt-a my-5 text-lg font-semibold lg:mt-10">
           Starting at $
           {{- servive_item.price -}}
         </h4>
@@ -31,21 +31,21 @@
       </div>
     {%- endfor -%}
   </div>
-  <div class="mt-10 rounded-xl bg-white p-10 lg:mx-auto lg:w-[25vw]">
+  <div class="mt-10 rounded-xl bg-white p-10 lg:mx-auto lg:p-5">
     <img
-      class="featured-service-logo"
+      class="mx-auto mb-4 block w-[10vw] lg:hidden"
       src="./assets/images/shopify_logo_black.webp"
       alt="Shopify logo"
       loading="lazy"
     >
-    <h3 class="featured-service-heading">Need something else?</h3>
+    <h3 class="mb-5 mt-10 text-xl font-semibold lg:mt-0 lg:text-2xl xl:mb-1">Need something else?</h3>
     <p class="">
       I’m happy to discuss any Shopify-related needs not listed here. Let’s chat about your unique goals and find the
       perfect solution for your store.
     </p>
     <a
       href="#contact-form"
-      class="mx-auto  mt-5 block w-fit rounded-xl  bg-deepSlate p-2 font-semibold text-softWhite lg:mb-0 lg:px-6 lg:py-3 lg:text-xl"
+      class="mx-auto mt-5 block w-fit rounded-xl  bg-deepSlate p-2 font-semibold text-softWhite lg:mb-0 lg:px-6 lg:py-3 lg:text-xl xl:mt-5"
       >Contact Me</a
     >
   </div>
