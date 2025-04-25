@@ -1,4 +1,4 @@
-### Notes:
+### Tasks:
 + hero cta margin, between images and subheading
 + need something else banner
 + short caption (“60 sec intro”).
@@ -9,11 +9,19 @@
 + rething section order
 + check/unify section margins/paddings
 + pad views.
-
-
++ test video control on actual touch device
 
 ### Susan?
-+featured services color blind
++ featured services color blind
++ two fonts
++ sosial proof section?
+
+## Notes
+
+- md:pl-3
+- md:ml-5
+
+- lg:ml-10
 
 
 # DONE

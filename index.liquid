@@ -80,10 +80,9 @@
         {%- render './sections/video' -%}
         {%- render './sections/services', service_descriptions: service-descriptions -%}
       </div>
-
-      {%- render './sections/portfolio', portfolio_items: portfolio-items -%}
-      {%- render './sections/featured-services', featured_services: featured-services -%}
       {%- render './sections/reviews', reviews: upwork-profile.reviews -%}
+      {%- render './sections/featured-services', featured_services: featured-services -%}
+      {%- render './sections/portfolio', portfolio_items: portfolio-items -%}
       {%- render './sections/contact-form' -%}
     </main>
     {%- render './sections/footer', menus: menus -%}
