@@ -863,6 +863,10 @@ a:hover:hover,
   width: 91.666667%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -1385,6 +1389,10 @@ h2 {
     display: inline;
   }
 
+  .md\:w-1\/6 {
+    width: 16.666667%;
+  }
+
   .md\:w-\[10vw\] {
     width: 10vw;
   }
@@ -1562,6 +1570,10 @@ h2 {
 
   .lg\:min-h-\[710px\] {
     min-height: 710px;
+  }
+
+  .lg\:w-1\/12 {
+    width: 8.333333%;
   }
 
   .lg\:w-1\/2 {

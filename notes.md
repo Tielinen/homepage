@@ -3,15 +3,11 @@
 + Preview image should be the full URL to your image (ideally 1200×630 px).
 
 + rething section order
-+ check/unify section margins/paddings
-+ pad views.
-+ test video control on actual touch device
 
 ### Susan?
 + featured services color blind
 + two fonts
 + sosial proof section?
-+ short caption (“60 sec intro”).
 
 # DONE
 + swap whatsapp hover color
@@ -21,9 +17,18 @@
 + title review standarx smaller font (italic)
 + review order
 + Condense footer items
++ short caption (“60 sec intro”).
++ check/unify section margins/paddings
++ pad views.
++ test video control on actual touch device
+
+
 
 ### After launch
-+ review modal
++ Create review modal which displays full of truncated reviews
++ speed optimization
++ cro optimization
+
 
 
 ### ChatGPT
