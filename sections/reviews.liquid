@@ -45,8 +45,8 @@
             {%- render './snippets/quotes-end.svg.liquid', classes: '' -%}
 
             <span class="text-right">
-              {{- review.reviewer_job_title }} |
-              <time datetime="{{ review.date }}">{{- review.date | date: '%b %Y' -}}</time>
+              {{- review.reviewer_job_title -}}
+              <time class="block" datetime="{{ review.date }}">{{- review.date | date: '%b %Y' -}}</time>
             </span>
           </div>
         </div>
