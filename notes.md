@@ -1,8 +1,6 @@
+## Notes
 ### Tasks:
-+ short caption (“60 sec intro”).
-+ titel review standarx smaller font (italic)
 + Preview image should be the full URL to your image (ideally 1200×630 px).
-+ Condense footer items
 
 + rething section order
 + check/unify section margins/paddings
@@ -13,17 +11,19 @@
 + featured services color blind
 + two fonts
 + sosial proof section?
-
-## Notes
-
++ short caption (“60 sec intro”).
 
 # DONE
 + swap whatsapp hover color
 + reorganize sections
 + need something else banner
 + hero cta margin, between images and subheading
++ title review standarx smaller font (italic)
++ review order
++ Condense footer items
 
-
+### After launch
++ review modal
 
 
 ### ChatGPT

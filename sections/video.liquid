@@ -1,13 +1,24 @@
 <section id="video" class="video mx-8 my-6 shrink-0 lg:relative lg:w-1/2">
-  <video
-    class="about__video w-full rounded lg:sticky lg:top-5 lg:mb-20"
-    width="362"
-    height="204"
-    controls
-    poster=""
-    aria-label="60‑sec intro video"
-  >
-    <source src="./assets/introduction_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <figure class="lg:sticky lg:top-5 lg:mb-20">
+    <video
+      class="about__video w-full rounded"
+      width="362"
+      height="204"
+      controls
+      poster=""
+      aria-labelledby="intro-caption"
+    >
+      <source src="./assets/introduction_video.mp4" type="video/mp4">
+      <!-- add a WebVTT caption file -->
+      <track
+        kind="captions"
+        src="./assets/introduction_video.vtt"
+        srclang="en"
+        label="English captions"
+        default
+      >
+      Your browser does not support the video tag.
+    </video>
+    <figcaption class="text-center text-2xl font-bold" id="intro-caption">60 SEC INTRO</figcaption>
+  </figure>
 </section>

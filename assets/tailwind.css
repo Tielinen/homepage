@@ -601,12 +601,8 @@ a:hover:hover,
   inset: 0px;
 }
 
-.-bottom-6 {
-  bottom: -1.5rem;
-}
-
-.-top-6 {
-  top: -1.5rem;
+.-right-3 {
+  right: -0.75rem;
 }
 
 .bottom-3 {
@@ -619,6 +615,10 @@ a:hover:hover,
 
 .bottom-7 {
   bottom: 1.75rem;
+}
+
+.bottom-full {
+  bottom: 100%;
 }
 
 .bottom-px {
@@ -641,10 +641,6 @@ a:hover:hover,
   left: 2.75rem;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .right-10 {
   right: 2.5rem;
 }
@@ -655,6 +651,10 @@ a:hover:hover,
 
 .right-3 {
   right: 0.75rem;
+}
+
+.right-full {
+  right: 100%;
 }
 
 .top-0 {
@@ -701,6 +701,11 @@ a:hover:hover,
   margin: auto;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -709,6 +714,11 @@ a:hover:hover,
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-5 {
@@ -841,8 +851,8 @@ a:hover:hover,
   max-height: calc(100vh - 2.5rem);
 }
 
-.min-h-\[490px\] {
-  min-height: 490px;
+.min-h-\[600px\] {
+  min-height: 600px;
 }
 
 .w-11\/12 {
@@ -934,6 +944,10 @@ a:hover:hover,
   flex-direction: column;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -944,6 +958,12 @@ a:hover:hover,
 
 .justify-between {
   justify-content: space-between;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1132,6 +1152,10 @@ a:hover:hover,
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-montserrat {
@@ -1464,8 +1488,16 @@ h2 {
     margin-bottom: 4rem;
   }
 
+  .lg\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .lg\:mb-20 {
     margin-bottom: 5rem;
+  }
+
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .lg\:mb-8 {
@@ -1516,8 +1548,8 @@ h2 {
     height: 16rem;
   }
 
-  .lg\:min-h-\[630px\] {
-    min-height: 630px;
+  .lg\:min-h-\[710px\] {
+    min-height: 710px;
   }
 
   .lg\:w-1\/2 {
@@ -1564,8 +1596,8 @@ h2 {
     gap: 1.75rem;
   }
 
-  .lg\:p-5 {
-    padding: 1.25rem;
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:px-20 {

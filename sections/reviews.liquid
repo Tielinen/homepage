@@ -9,13 +9,13 @@
       ><span class="underline">See all reviews on my Upwork profile</span></a
     >
   </p>
-
   <div id="js-reviews-items">
-    {%- for review in reviews %}
+    {% assign sorted_reviews = reviews | sort: 'date' | reverse %}
+    {%- for review in sorted_reviews %}
       <article
         itemscope
         itemtype="http://schema.org/Review"
-        class="relative mb-10 mr-3 mt-24 flex min-h-[490px] w-4/5 items-center rounded-xl bg-white px-11 pb-24 pt-28 md:max-w-[457px] lg:mx-14 lg:mt-32 lg:min-h-[630px] lg:px-20 lg:pt-36"
+        class="relative mb-10 mr-3 mt-24 flex min-h-[600px] w-4/5  items-center rounded-xl bg-white px-11 pb-24 pt-28 md:max-w-[457px] lg:mx-14 lg:mt-32 lg:min-h-[710px] lg:px-20 lg:pt-36"
       >
         <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Service">
           <meta itemprop="name" content="{{- review.job_title -}}">
@@ -33,14 +33,22 @@
         </div>
 
         <div class="relative">
-          {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute -top-6' -%}
+          {%- render './snippets/quotes-start.svg.liquid', classes: 'absolute bottom-full right-full' -%}
           <p
             itemprop="reviewBody"
-            class="relative text-sm md:text-2xl"
+            class="relative mx-2 my-4 text-sm md:text-2xl"
           >
             {{- review.review | truncate: 240 -}}
           </p>
-          {%- render './snippets/quotes-end.svg.liquid', classes: 'absolute right-0 -bottom-6' -%}
+
+          <div class="absolute -right-3 top-full flex flex-col items-end space-y-1">
+            {%- render './snippets/quotes-end.svg.liquid', classes: '' -%}
+
+            <span class="text-right">
+              {{- review.reviewer_job_title }} |
+              <time datetime="{{ review.date }}">{{- review.date | date: '%b %Y' -}}</time>
+            </span>
+          </div>
         </div>
 
         <div

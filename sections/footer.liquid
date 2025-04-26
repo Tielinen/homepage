@@ -7,10 +7,10 @@
     <nav class="mb-14 flex justify-between lg:mb-8 lg:text-2xl">
       {%- for menu in menus -%}
         <div class="text-left last:text-right">
-          <h6 class="lg:mb-8">{{- menu.name -}}</h6>
+          <h6 class="lg:mb-4">{{- menu.name -}}</h6>
           <ul class="list-none">
             {%- for item in menu.items -%}
-              <li class="lg:mb-8">
+              <li class="lg:mb-2">
                 <a href="{{- item.link -}}">{{- item.title -}}</a>
               </li>
             {%- endfor -%}
