@@ -867,12 +867,12 @@ a:hover:hover,
   width: 11rem;
 }
 
-.w-\[10vw\] {
-  width: 10vw;
-}
-
 .w-\[35\%\] {
   width: 35%;
+}
+
+.w-\[35vw\] {
+  width: 35vw;
 }
 
 .w-\[65\%\] {
@@ -1375,6 +1375,10 @@ h2 {
 
   .md\:inline {
     display: inline;
+  }
+
+  .md\:w-\[10vw\] {
+    width: 10vw;
   }
 
   .md\:max-w-\[457px\] {
