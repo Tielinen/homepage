@@ -1,14 +1,18 @@
 <section id="reviews" class="reviews section-padding bg-frostedBlue text-center">
   <h2 class="section-heading-margin">Reviews</h2>
   <p class="lg:text mb-10 lg:mb-16 xl:mb-20">
-    Every testimonial below is a 5‑star review left by real clients on Upwork, where I’m a Top Rated Plus freelancer.
+    Every testimonial below is a 5‑star review left by real clients on Upwork, where I’m a Top Rated Plus freelancer.<a
+      class=""
+      target="_blank"
+      href="https://www.upwork.com/freelancers/jannetielinen?s=1017484851352698949"
+      ><img class="m-auto w-1/2 md:w-1/5 lg:w-48" src="./assets/top-rated-plus-badge.png" alt="Top rated plus badge"
+    ></a>
     <a
       class="mt-5 block font-bold"
       target="_blank"
       href="https://www.upwork.com/freelancers/jannetielinen?s=1017484851352698949"
-      ><span class="underline">See all reviews on my Upwork profile</span
-      ><img class="m-auto w-2/5 md:w-1/6 lg:w-1/12" src="./assets/top-rated-plus-badge.png" alt="Top rated plus badge"
-    ></a>
+      ><span class="underline">See all reviews on my Upwork profile</span></a
+    >
   </p>
   <div id="js-reviews-items">
     {% assign sorted_reviews = reviews | sort: 'date' | reverse %}
