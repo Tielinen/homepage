@@ -118,8 +118,3 @@ const reviewsFlickity = new Flickity(
   `#js-reviews-items`,
   SETTINGS.reviewsFlickityObject,
 );
-
-// Tricker from submission
-document
-  .querySelector(".contact-form__form")
-  .addEventListener("submit", () => gtag("event", "contact_submit"));
