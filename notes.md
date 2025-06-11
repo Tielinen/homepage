@@ -25,74 +25,16 @@
 
 
 ### After launch
++ add cerficates
++ sticky header
 + Create review modal which displays full of truncated reviews
-+ cro optimization
-
-
-
-### ChatGPT
-## Quick wins content:
-
-2. Hero: swap the mock‑ups and your photo side‑by‑side on desktop; add a single big “Start your store” CTA under the headline.
-4. Video: auto‑thumbnail looks dark—upload a brighter frame and add a short caption (“60 sec intro”).
-
-Credibility boosts
-7. Move 2‑3 best reviews (with star icons) directly under the hero; keep the carousel lower.
-8. Show your Upwork “Top‑Rated +” badge near the logo; link to profile.
-
-## What to show high on the page
-- **Shopify Foundations Certification** (core platform)  
-- **Liquid Storefronts – Verified Skill Badge** (directly proves your theme‑dev expertise)  
-
-These two speak straight to store‑building clients, so place the badges near your **Top‑Rated +** Upwork badge or inside the **Working With Me** block. Small icons + one‑line tooltip (“Issued 2024 by Shopify”) keep it tidy.
-
-### Where to place Hotjar Foundations L1
-- Put it lower (e.g., in a collapsible **Tool Stack & Analytics** section or in the footer skills list). It’s useful but secondary; you don’t want to dilute the Shopify focus in the hero area.
-
-### Tips
-- Use official badge images (SVG/PNG) at ~40 px height for crispness.  
-- Link each badge to the issuing credential page for verification.  
-- Keep the total row ≤ 4 badges; beyond that, move extras to an **About** page.
-
-This keeps authority high without clutter.
-
-## Quick wins HTML
-
-### 1. Head / SEO
-- Add a `<meta name="description">` (≤ 160 chars) and `<meta property="og:image">` for richer sharing.  
-- Move the **11ty reload** script to the end of the `<head>` so it doesn’t block other downloads.
-
-### 2. Heading order
-- There are two `<h1>` elements (logo **and** hero).  
-  - Keep the logo as plain text or wrap it in a `<span>`.  
-  - Change the hero title to an `<h2>` — one top‑level heading per page helps screen‑readers *and* SEO.
-
-### 3. Accessibility
-- Add `aria-label="Homepage – Janne Tielinen"` to the logo link.  
-- Give the mobile‑nav toggle `aria-controls="header‑nav"` and update `aria‑expanded` in your JS.  
-- Provide a descriptive `poster` or `aria-label` for the `<video>` so non‑visual users grasp its purpose.
-
-### 4. Performance
-- Add `loading="lazy"` and `decoding="async"` to off‑screen images.  
-- Minify inline SVGs (remove Font‑Awesome license comments).  
-- Serve the hero screenshot as AVIF/WebP and audit your `sizes` so only the first matching source is downloaded.
-
-### 5. CSS cleanup
-- `html` has `bg‑black` while `body` uses `bg‑softWhite` — drop the conflicting one.  
-- Move repeated Tailwind utility clusters into component classes with `@apply` (smaller HTML, faster diffing).
-
-### 6. HTML semantics
-- Replace the visible “**Sections**” `<h6>` with a hidden `<span class="sr-only">Sections</span>`.  
-- Wrap each review card in `<article>` (or `<section>`) and consider adding Schema.org `itemtype="Review"` for rich results.
-
-### 7. Minor consistency
-- Unify asset paths (`/assets/…` vs `./assets/…`) to avoid 404s in some hosting setups.
-
----
-
-
-### After launch
 + On scroll down images change on portfolio
++ cro optimization
++ whatsapp msg/phone swithc
+
+
+## ChatGPT
+
 
 # Techniques for low-traffic websites
 ## Why conversion is hard for low-traffic websites
