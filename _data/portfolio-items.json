@@ -30,19 +30,19 @@
     "description": "I built Elysia Cosmetics’ Shopify store, tailoring a premium theme with HTML, CSS, JS, and Liquid. Dynamic variants and metafield‑driven content keep every product detail precise and on‑brand. A video hero, refined UX, and built‑in affiliate links elevate engagement and sales. Post‑launch fixes and polish delivered a turnkey site the client enthusiastically endorses.",
     "images": [
       {
-        "url": "/elysia/elysia-desktop-1.webp",
+        "url": "/elysia/case_elysia1.png",
         "alt": "Desktop hero slider showing an athletic woman doing a pull‑up under the Elysia logo and “Unstoppable Beauty” headline"
       },
       {
-        "url": "/elysia/elysia-desktop-2.webp",
+        "url": "/elysia/case_elysia2.png",
         "alt": "Desktop listing of three Elysia product cards—Combo, Liquid Foundation, Liquid Corrector—with offer tags, prices, and ratings"
       },
       {
-        "url": "/elysia/elysia-desktop-3.webp",
+        "url": "/elysia/case_elysia3.png",
         "alt": "Desktop product page for Liquid Foundation showing large product image, color swatches, price, quantity selector, and Add to Cart/Buy Now buttons"
       },
       {
-        "url": "/elysia/elysia-mobile-1.webp",
+        "url": "/elysia/case_elysia_mob.png",
         "alt": "Mobile view: Elysia hero image, a product card for the Combo with price and rating, and the Liquid Foundation detail page with swatches and buy button"
       }
     ],
