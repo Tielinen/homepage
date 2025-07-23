@@ -1,4 +1,33 @@
 [
+    {
+    "title": "Shopify Theme v2 Upgrade & Metaobject Migration",
+    "button_label": "Medik8 Cyprus",
+    "description": "Upgraded Medik8 Cyprus to Theme v2.1.1: built a staging store, created metaobject definitions, and migrated 1,000 metaobjects with Matrixify, added custom Liquid fixes (recommendations, country selector, header), and launched live with zero downtime.",
+    "images": [
+      {
+        "url": "/medik8/medik8_frontp.png",
+        "alt": "Medik8 homepage hero highlighting new C-Tetra Advanced serum bottle with “Shop Now” button."
+      },
+      {
+        "url": "/medik8/medik8_accordion.png",
+        "alt": "Medik8 product page for “Press & Glow” tonic showing usage steps, a woman applying it, size options and Add to Cart."
+      },
+      {
+        "url": "/medik8/medik8_mob.png",
+        "alt": "Three mobile screenshots of the Medik8 site: homepage hero, Press & Glow gallery, and info accordion tabs."
+      },
+      {
+        "url": "/medik8/shopifymetao.png",
+        "alt": "Shopify Admin “Metaobjects” list view with custom definitions like FAQ, Key Ingredient and entry counts."
+      },
+            {
+        "url": "/medik8/shopifyimp.png",
+        "alt": "Shopify Matrixify screen showing a finished CSV import of 1,055 metaobject records."
+      }
+    ],
+    "url": "https://www.medik8.com.cy/",
+    "active": true
+  },
   {
     "title": "Store with Stock Sync",
     "button_label": "Housumaailma",
