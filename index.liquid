@@ -4,19 +4,37 @@
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://static.hotjar.com">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJHHS5BWSV"></script>
+    <!-- Google Tag Manager -->
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-GJHHS5BWSV');
-      });
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-W6TQXZPF');
     </script>
+    <!-- End Google Tag Manager -->
+
+    {% comment %}
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJHHS5BWSV"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+
+          gtag('config', 'G-GJHHS5BWSV');
+        });
+      </script>
+    {% endcomment %}
+
     <!-- Hotjar Tracking Code for tielinen.pro -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
@@ -75,6 +93,16 @@
     <title>Tielinen.pro</title>
   </head>
   <body class="m-auto overflow-x-hidden bg-softWhite font-montserrat text-base text-deepSlate lg:text-lg">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-W6TQXZPF"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     {%- render './sections/header', menus: menus -%}
     <main>
       {%- render './sections/hero' -%}

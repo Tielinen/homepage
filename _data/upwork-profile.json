@@ -1,6 +1,22 @@
 {
   "projects": [
     {
+      "Job_title": "Medik8 Cyprus - Shopify Theme v2 Upgrade & Metaobject Migration",
+      "Store": "medik8.com.cy",
+      "Industry": "Skincare / beauty e-commerce",
+      "Client_review": "",
+      "My_role": "Shopify Store Developer and Customization Expert",
+      "Project_description": "Upgraded Medik8 Cyprus to Theme v2.1.1: built a staging store, created metaobject definitions, and migrated 1,000 metaobjects with Matrixify, added custom Liquid fixes (recommendations, country selector, header), and launched live with zero downtime."
+    },
+    {
+      "Job_title": "Elysia Cosmetics Shopify Store: Custom Liquid Theme & Turn-Key Setup",
+      "Store": "elysiacosmetics.com",
+      "Industry": "Beauty / cosmetics",
+      "Client_review": "",
+      "My_role": "Shopify Store Developer and Customization Expert",
+      "Project_description": "Developed Elysia Cosmetics' Shopify store using HTML/CSS/JS + Liquid. Customized premium theme for brand alignment, dynamic variants, and metafield-driven descriptions. Resolved post-launch bugs, optimized UX with video hero, and integrated affiliate links. Delivered a turn-key solution praised for client-focused execution.\n✅ Highlights: Technical skills, problem-solving, client satisfaction.\n✅ Keywords: Shopify, Liquid, UX optimization, e-commerce."
+    },
+    {
       "Job_title": "Shopify Store Creation with Real-Time Stock Sync",
       "Store": "housumaailma.fi",
       "Industry": "Fashion",
@@ -13,7 +29,7 @@
       "Store": "versagora.com",
       "Industry": "Nutritional Supplements",
       "Client_review": "",
-      "My_role": "",
+      "My_role": "Shopify Store Developer and Customization Expert",
       "Project_description": "Tasked with emulating the successful design of a market leader, I developed an intuitive and detail-focused online store for a new health supplement brand. Target Audience: Health-conscious individuals looking for quality supplements to enhance their well-being. Execution: My role involved customizing and creating Shopify sections with a keen eye on design details to match the client’s vision. Regular reviews on various devices ensured the store’s responsiveness and user experience adhered to the high standards set by the theme author."
     },
     {
@@ -21,7 +37,7 @@
       "Store": "whitneyallysyn.com",
       "Industry": "Fashion",
       "Client_review": "Janne was so great to work with! He diligently and patiently worked with me to set up my business website and customize it the way I wanted. He's highly responsive, did all the research, came to me with options and solutions, and advised me on what was needed to keep my website backed up and secure. Janne will always be my #1 go to for my website needs. I highly recommend working with him. 10/10!",
-      "My_role": "",
+      "My_role": "Shopify Store Developer and Customization Expert",
       "Project_description": "Shopify E-commerce creation from scratch, close cooperation with the merchant. Creating high converting E-commerce shops while following closely the merchant design and feature request. We both like to think we have created a beautiful, high-converting site."
     },
     {
@@ -29,7 +45,7 @@
       "Store": "Made With Love by Celia",
       "Industry": "Food and Beverage",
       "Client_review": "",
-      "My_role": "",
+      "My_role": "Shopify Store Developer and Customization Expert",
       "Project_description": "Objective: The objective of this project was to create a professional and user-friendly online store for a home bakery business using the Shopify platform within a tight budget The store was intended to showcase the bakery's products and allow customers to place orders online. Scope: - The scope of the project included the design and development of a custom Shopify theme, as well as the setup and configuration of all necessary features and functionality for the store. - The store needed a clean, modern design, easy navigation, and user-friendly features."
     },
     {
@@ -37,7 +53,7 @@
       "Store": "pellavakauppa.fi",
       "Industry": "Fashion",
       "Client_review": "",
-      "My_role": "",
+      "My_role": "Shopify Store Developer and Customization Expert",
       "Project_description": "Project: Migrating an eCommerce Platform from a Small Local Platform to Shopify. Objective: The objective of this project was to migrate an eCommerce platform from a local platform to Shopify. Scope: The project scope included transferring all products, customers, orders, and other relevant data from the current platform to Shopify. The migrated store was required to have the same functionalities and features as the existing platform, including payment gateways, shipping options, and customer accounts. Deliverables: A fully migrated and functional eCommerce store on the Shopify platform."
     },
     {
@@ -45,7 +61,7 @@
       "Store": "Helsinki Fashion",
       "Industry": "Fashion",
       "Client_review": "",
-      "My_role": "",
+      "My_role": "Shopify Store Developer and Customization Expert",
       "Project_description": "The Helsinki Fashion Shopify Shop is built on a customized premium theme. The online store features include, but are not limited to: Image Hotspots to cross-sell products. Mega Menus for product accessibility. Filters with multiple options to increase conversions and revenue."
       
     },
@@ -55,7 +71,7 @@
       "Industry": "Fashion",
       "Client_review": "",
       "My_role": "On this children's fashion store, I customized Shopify's premium theme Prestige and implemented a hidden password-protected wholesales section, with wholesale prices.",
-      "Project_description": ""
+      "Project_description": "Shopify Store Developer and Customization Expert"
     }
   ],
   "certifications": [
