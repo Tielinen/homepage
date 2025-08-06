@@ -29,31 +29,31 @@
     "active": true
   },
   {
-    "title": "Store with Stock Sync",
-    "button_label": "Housumaailma",
-    "description": "I created and customized a Shopify store for a women’s trousers brand. A bespoke script syncs inventory with the manufacturer four times daily. Shoppers always see exact stock levels, avoiding disappointment. The streamlined design keeps focus on fit and style.",
+    "title": "Toddies Kidswear – Shopify Store Launch",
+    "button_label": "Wearetoddies",
+    "description": "Built Toddies’ debut kidswear store on Shopify, recreating Equalite’s style while fitting the brand. Delivered pages and collections, bundle products, custom fonts, color swatches, multilingual setup, EU‑compliant VAT & shipping rules. Integrated Sendcloud returns, TikTok ads, Judge.me reviews, Rewind backups, and a countdown password landing page. Managed work in Trello, trained the client, and provided on‑call launch support.",
     "images": [
       {
-        "url": "/housumaailma/housumaailma-desktop-1.webp",
-        "alt": "Desktop homepage of Housumaailma showing two women modeling trousers beside the logo with a minimalist navigation bar"
+        "url": "/wearetoddies/toddie_desktop1.webp",
+        "alt": "full‑width banner of two kids gardening, sitewide promo bar and Toddie logo above, “The Urban Gardeners” headline with “Shop Now” button."
       },
       {
-        "url": "/housumaailma/housumaailma-desktop-2.webp",
-        "alt": "Desktop product page for navy Taylor Regular Capri showing model, size selector, quantity control, and buy buttons"
+        "url": "/wearetoddies/toddie_desktop2.webp",
+        "alt": "three outfit cards in a horizontal slider, navy header, prices shown with strike‑through discounts."
       },
       {
-        "url": "/housumaailma/housumaailma-desktop-2.webp",
-        "alt": "Desktop listing of capri pants styles with model thumbnails, prices, and style names like Elizabeth and Kelly"
+        "url": "/wearetoddies/toddie_desktop3.webp",
+        "alt": " “Grow – Oversized Tee” with large gallery, color swatch, size dropdown, green “Add to cart” button and key selling points."
       },
       {
-        "url": "/housumaailma/housumaailma-mobile-1.webp",
-        "alt": "Mobile view of Housumaailma showing homepage model, Taylor Regular Capri page, and capri collection with simple nav"
+        "url": "/wearetoddies/toddie_mob.webp",
+        "alt": "three phone mock‑ups displaying home hero, “Get the Fit” slider and an outfit product page, illustrating responsive design."
       }
     ],
-    "url": "https://www.housumaailma.fi/",
+    "url": "https://www.medik8.com.cy/",
     "active": true
   },
-  {
+    {
     "title": "Cosmetics Shopify Store",
     "button_label": "Elysia Cosmetics",
     "description": "I built Elysia Cosmetics’ Shopify store, tailoring a premium theme with HTML, CSS, JS, and Liquid. Dynamic variants and metafield‑driven content keep every product detail precise and on‑brand. A video hero, refined UX, and built‑in affiliate links elevate engagement and sales. Post‑launch fixes and polish delivered a turnkey site the client enthusiastically endorses.",
@@ -76,6 +76,31 @@
       }
     ],
     "url": "https://elysiacosmetics.com",
+    "active": true
+  },
+  {
+    "title": "Store with Stock Sync",
+    "button_label": "Housumaailma",
+    "description": "I created and customized a Shopify store for a women’s trousers brand. A bespoke script syncs inventory with the manufacturer four times daily. Shoppers always see exact stock levels, avoiding disappointment. The streamlined design keeps focus on fit and style.",
+    "images": [
+      {
+        "url": "/housumaailma/housumaailma-desktop-1.webp",
+        "alt": "Desktop homepage of Housumaailma showing two women modeling trousers beside the logo with a minimalist navigation bar"
+      },
+      {
+        "url": "/housumaailma/housumaailma-desktop-2.webp",
+        "alt": "Desktop product page for navy Taylor Regular Capri showing model, size selector, quantity control, and buy buttons"
+      },
+      {
+        "url": "/housumaailma/housumaailma-desktop-2.webp",
+        "alt": "Desktop listing of capri pants styles with model thumbnails, prices, and style names like Elizabeth and Kelly"
+      },
+      {
+        "url": "/housumaailma/housumaailma-mobile-1.webp",
+        "alt": "Mobile view of Housumaailma showing homepage model, Taylor Regular Capri page, and capri collection with simple nav"
+      }
+    ],
+    "url": "https://www.housumaailma.fi/",
     "active": true
   },
   {
@@ -192,17 +217,5 @@
       }
     ],
     "active": false
-  },
-  {
-    "title": "",
-    "button_label": "",
-    "description": "",
-    "images": [
-      {
-        "url": "",
-        "alt": ""
-      }
-    ],
-    "active": true
   }
 ]
