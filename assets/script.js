@@ -1,4 +1,4 @@
-`use strict`;
+"use strict";
 
 // Mobile menu
 const menuToggleElement = document.querySelector(`#js-mobile-menu-toggle`);
