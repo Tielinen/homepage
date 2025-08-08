@@ -31,7 +31,11 @@
 
           <!-- Dark layer (backdrop) -->
           <div class="js-portfolio-modal-backdrop fixed inset-0 z-10 hidden bg-black bg-opacity-75"></div>
-          <div class="js-portfolio-modal fixed  left-1/2 top-5 z-20 hidden max-h-[calc(100vh-2.5rem)] w-11/12 -translate-x-1/2 overflow-y-auto rounded-xl bg-white py-16 shadow-modal lg:w-3/5">
+          <div
+            class="js-portfolio-modal fixed  left-1/2 top-5 z-20 hidden max-h-[calc(100vh-2.5rem)] w-11/12 -translate-x-1/2 overflow-y-auto rounded-xl bg-white py-16 shadow-modal lg:w-3/5"
+            tabindex="-1"
+            aria-modal="true"
+          >
             {%- render './snippets/close-modal.svg.liquid' -%}
             <div class="relative mb-9 w-full">
               <button class="absolute left-1/2 top-0 z-10 w-4/5 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-deepSlate py-2 text-2xl font-semibold text-softWhite">

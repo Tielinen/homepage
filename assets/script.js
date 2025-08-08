@@ -3,12 +3,14 @@
 // Mobile menu
 const menuToggleElement = document.querySelector(`#js-mobile-menu-toggle`);
 if (menuToggleElement) {
-  const menuHamburgerIcon = menuToggleElement.querySelector(`#js-hamburger-icon`);
+  const menuHamburgerIcon =
+    menuToggleElement.querySelector(`#js-hamburger-icon`);
   const xMark = menuToggleElement.querySelector(`#js-x-mark-icon`);
   const headerMenusElement = document.querySelector(`#js-header-menus`);
 
   menuToggleElement.addEventListener(`click`, (event) => {
-    const isMenuOpen = menuToggleElement.getAttribute(`aria-expanded`) === `true`;
+    const isMenuOpen =
+      menuToggleElement.getAttribute(`aria-expanded`) === `true`;
     isMenuOpen ? closeMobileMenu() : openMobileMenu();
   });
 
@@ -52,10 +54,14 @@ if (portfolioItems.length) {
       `.js-portfolio-modal-close`,
     );
 
-    const backdrop = portfolioItem.querySelector(`.js-portfolio-modal-backdrop`);
+    const backdrop = portfolioItem.querySelector(
+      `.js-portfolio-modal-backdrop`,
+    );
     const openModalButtons = Array.from(
       portfolioItem.querySelectorAll(`.js-open-modal`),
     );
+
+    let lastFocusedElement = null;
 
     // Function to initialize Flickity on a carousel
     function initializeFlickity(carouselElement) {
@@ -71,22 +77,75 @@ if (portfolioItems.length) {
       }
     }
 
-    // Modal Toggle
+    function openModal(trigger) {
+      modalElement.classList.remove(`hidden`);
+      document.body.classList.add(`overflow-hidden`);
+      backdrop.classList.remove(`hidden`);
+
+      initializeFlickity(mainCarousel);
+
+      lastFocusedElement = trigger;
+      modalElement.focus();
+      document.addEventListener(`keydown`, handleKeydown);
+    }
+
+    function closeModal() {
+      modalElement.classList.add(`hidden`);
+      document.body.classList.remove(`overflow-hidden`);
+      backdrop.classList.add(`hidden`);
+
+      document.removeEventListener(`keydown`, handleKeydown);
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+
+    function handleKeydown(event) {
+      if (event.key === `Escape`) {
+        closeModal();
+      } else if (event.key === `Tab`) {
+        trapFocus(event);
+      }
+    }
+
+    function trapFocus(event) {
+      const focusableSelectors = [
+        `a[href]`,
+        `area[href]`,
+        `input:not([disabled])`,
+        `select:not([disabled])`,
+        `textarea:not([disabled])`,
+        `button:not([disabled])`,
+        `[tabindex]:not([tabindex="-1"])`,
+      ];
+      const focusableElements = modalElement.querySelectorAll(
+        focusableSelectors.join(`,`),
+      );
+      if (!focusableElements.length) {
+        event.preventDefault();
+        return;
+      }
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        lastElement.focus();
+        event.preventDefault();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        firstElement.focus();
+        event.preventDefault();
+      }
+    }
+
     portfolioItem.addEventListener(`click`, (event) => {
-      if (
+      if (openModalButtons.includes(event.target)) {
+        openModal(event.target);
+      } else if (
         modalCloseElement.contains(event.target) ||
-        openModalButtons.includes(event.target) ||
         event.target === backdrop
       ) {
-        modalElement.classList.toggle(`hidden`);
-        document.body.classList.toggle(`overflow-hidden`);
-
-        backdrop.classList.toggle(`hidden`);
-
-        if (!modalElement.classList.contains(`hidden`)) {
-          // Modal is now visible, initialize Flickity
-          initializeFlickity(mainCarousel);
-        }
+        closeModal();
       }
     });
   });
