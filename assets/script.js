@@ -176,6 +176,90 @@ if (loadMoreButton) {
 }
 
 // Reviews
+const reviewItems = document.querySelectorAll(`.js-review-item`);
+if (reviewItems.length) {
+  reviewItems.forEach((reviewItem) => {
+    const modalElement = reviewItem.querySelector(`.js-review-modal`);
+    const modalCloseElement = modalElement.querySelector(
+      `.js-review-modal-close`,
+    );
+    const backdrop = reviewItem.querySelector(`.js-review-modal-backdrop`);
+    const openModalButton = reviewItem.querySelector(`.js-open-review-modal`);
+
+    let lastFocusedElement = null;
+
+    function openModal(trigger) {
+      modalElement.classList.remove(`hidden`);
+      document.body.classList.add(`overflow-hidden`);
+      backdrop.classList.remove(`hidden`);
+
+      lastFocusedElement = trigger;
+      modalElement.focus();
+      document.addEventListener(`keydown`, handleKeydown);
+    }
+
+    function closeModal() {
+      modalElement.classList.add(`hidden`);
+      document.body.classList.remove(`overflow-hidden`);
+      backdrop.classList.add(`hidden`);
+
+      document.removeEventListener(`keydown`, handleKeydown);
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+
+    function handleKeydown(event) {
+      if (event.key === `Escape`) {
+        closeModal();
+      } else if (event.key === `Tab`) {
+        trapFocus(event);
+      }
+    }
+
+    function trapFocus(event) {
+      const focusableSelectors = [
+        `a[href]`,
+        `area[href]`,
+        `input:not([disabled])`,
+        `select:not([disabled])`,
+        `textarea:not([disabled])`,
+        `button:not([disabled])`,
+        `[tabindex]:not([tabindex="-1"])`,
+      ];
+      const focusableElements = modalElement.querySelectorAll(
+        focusableSelectors.join(`,`),
+      );
+      if (!focusableElements.length) {
+        event.preventDefault();
+        return;
+      }
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        lastElement.focus();
+        event.preventDefault();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        firstElement.focus();
+        event.preventDefault();
+      }
+    }
+
+    reviewItem.addEventListener(`click`, (event) => {
+      if (openModalButton && openModalButton.contains(event.target)) {
+        openModal(openModalButton);
+      } else if (
+        modalCloseElement.contains(event.target) ||
+        event.target === backdrop
+      ) {
+        closeModal();
+      }
+    });
+  });
+}
+
 const reviewsFlickity = new Flickity(
   `#js-reviews-items`,
   SETTINGS.reviewsFlickityObject,

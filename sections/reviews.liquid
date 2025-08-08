@@ -20,7 +20,7 @@
       <article
         itemscope
         itemtype="http://schema.org/Review"
-        class="relative mb-10 mr-3 mt-24 flex min-h-[600px] w-4/5  items-center rounded-xl bg-white px-11 pb-24 pt-28 md:max-w-[457px] lg:mx-14 lg:mt-32 lg:min-h-[710px] lg:px-20 lg:pt-36"
+        class="js-review-item relative mb-10 mr-3 mt-24 flex min-h-[600px] w-4/5  items-center rounded-xl bg-white px-11 pb-24 pt-28 md:max-w-[457px] lg:mx-14 lg:mt-32 lg:min-h-[710px] lg:px-20 lg:pt-36"
       >
         <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Service">
           <meta itemprop="name" content="{{- review.job_title -}}">
@@ -45,6 +45,7 @@
           >
             {{- review.review | truncate: 240 -}}
           </p>
+          <button type="button" class="js-open-review-modal font-bold underline">Read full review</button>
 
           <div class="absolute -right-3 top-full flex flex-col items-end space-y-1">
             {%- render './snippets/quotes-end.svg.liquid', classes: '' -%}
@@ -80,6 +81,19 @@
           /
           {{- reviews.size -}}
         </span>
+        <!-- Dark layer (backdrop) -->
+        <div class="js-review-modal-backdrop fixed inset-0 z-10 hidden bg-black bg-opacity-75"></div>
+        <div
+          class="js-review-modal fixed left-1/2 top-5 z-20 hidden max-h-[calc(100vh-2.5rem)] w-11/12 -translate-x-1/2 overflow-y-auto rounded-xl bg-white py-16 shadow-modal lg:w-3/5"
+          tabindex="-1"
+          aria-modal="true"
+        >
+          {%- render './snippets/close-modal.svg.liquid',
+            classes: 'js-review-modal-close absolute right-2.5 top-2.5 cursor-pointer'
+          -%}
+          <h4 class="mb-4 px-2.5 text-2xl lg:px-6">{{- review.job_title -}}</h4>
+          <p class="px-2.5 lg:px-6">{{- review.review -}}</p>
+        </div>
       </article>
     {%- endfor %}
   </div>
