@@ -5,36 +5,16 @@
     <link rel="preconnect" href="https://static.hotjar.com">
     <link rel="preload" as="font" href="/assets/Montserrat-VariableFont_wght.ttf" type="font/ttf" crossorigin>
 
-    <!-- Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-978007279"></script>
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-W6TQXZPF');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'AW-978007279');
     </script>
-    <!-- End Google Tag Manager -->
-
-    {% comment %}
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJHHS5BWSV"></script>
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          window.dataLayer = window.dataLayer || [];
-          function gtag() {
-            dataLayer.push(arguments);
-          }
-          gtag('js', new Date());
-
-          gtag('config', 'G-GJHHS5BWSV');
-        });
-      </script>
-    {% endcomment %}
 
     <!-- Hotjar Tracking Code for tielinen.pro -->
     <script>
