@@ -1,4 +1,33 @@
 [
+      {
+    "title": "Shopify Theme Customization & Launch (10 Days)",
+    "button_label": "Read More",
+    "description": "Collaborated with <a href='https://www.littlebigworld.co/' target='_blank'>littlebigworld</a> to lead the Shopify build for Gladys Books & Wine, a queer-owned Brooklyn bookstore and wine lounge. Customized the Shapes theme with full brand integration, typography, and color system. Built core pages, integrated Ingram book import, events, newsletter, and automated fulfillment. Delivered a fully branded, mobile-optimized storefront and smooth Squarespace-to-Shopify migration in just 10 days.",
+    "images": [
+      {
+        "url": "/gladys/gladys_desktop1.webp",
+        "alt": "Homepage of Gladys Books & Wine showing a woman reading while drinking wine, collage of books, vinyl record, and green sofa with the headline “Gladys Books & Wine”."
+      },
+      {
+        "url": "/gladys/gladys_desktop2.webp",
+        "alt": "Events page of Gladys Books & Wine titled “Gather with Us,” featuring upcoming poetry readings, happy hours, and live podcast events with dates and locations."
+      },
+      {
+        "url": "/gladys/gladys_desktop3.webp",
+        "alt": "Product listing page of Gladys Books & Wine bookstore showing book covers such as “(S)KIN,” “10 Things I Hate About Prom,” and “1000 Record Covers”"
+      },
+      {
+        "url": "/gladys/gladys_desktop4.webp",
+        "alt": "Product detail page for “We Do This ’Til We Free Us” by Mariame Kaba, showing large book cover image, title, description, and purchase options."
+      },
+            {
+        "url": "/gladys/gladys_mob.webp",
+        "alt": "Mobile view of Gladys Books & Wine website showing homepage banner, product grid, and book detail layout optimized for smartphones."
+      }
+    ],
+    "url": "https://gladysbooksandwine.com/",
+    "active": true
+  },
     {
     "title": "Shopify Theme v2 Upgrade & Metaobject Migration",
     "button_label": "Medik8 Cyprus",
