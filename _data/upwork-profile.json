@@ -1,5 +1,13 @@
 {
   "projects": [
+        {
+      "Job_title":"Shopify Theme Customization & Launch (10 Days)",
+      "Store": "gladysbooksandwine.com",
+      "Industry": "Community-driven lifestyle branding",
+      "Client_review": "Janne is a pleasure to work with! He’s thorough, accessible, and solution-oriented.",
+      "My_role": "Shopify Store Developer and Customization Expert",
+      "Project_description": "Collaborated with littlebigworld to lead the Shopify build for Gladys Books & Wine, a queer-owned Brooklyn bookstore and wine lounge. Customized the Shapes theme with full brand integration, typography, and color system. Built core pages, integrated Ingram book import, events, newsletter, and automated fulfillment. Delivered a fully branded, mobile-optimized storefront and smooth Squarespace-to-Shopify migration in just 10 days."
+    },
     {
       "Job_title": "Medik8 Cyprus - Shopify Theme v2 Upgrade & Metaobject Migration",
       "Store": "medik8.com.cy",
@@ -107,6 +115,12 @@
   ],
   "reviews": [
         {
+      "job_title": " Espresso Momenti Shopify store creation",
+      "review": "Working with Janne is an absolute gift. He is an incredibly skilled Shopify developer and an organized, thoughtful, and patient teacher who genuinely wants you to succeed. He builds with excellence while guiding you through the backend so you feel confident moving forward. His work is consistently high-quality, detail-oriented, and delivered with precision and efficiency. He also brings valuable business insight when invited, which is a rare and appreciated bonus. Beyond his skillset, he’s simply a wonderful human - kind, professional, funny, and easy to work with. I can’t recommend him highly enough. Thank you, Janne!",
+      "reviewer_job_title": "Merchant",
+      "date": "2026-05-12"
+    },
+    {
       "job_title": "Shopify website design/development",
       "review": "Janne is a pleasure to work with! He’s thorough, accessible, and solution-oriented.",
       "reviewer_job_title": "Agency owner",
@@ -342,10 +356,10 @@
     "heading": "Shopify Developer | Shopify Expert | 40+ 5-Star Reviews",
     "description": "Struggling to turn your Shopify traffic into sales?\n\nI help merchants build fast, flawless, conversion-optimized Shopify stores that not only look beautiful but also persuade visitors to buy. Instead of relying on generic sections or apps, I deliver data-driven improvements that boost performance, trust, and revenue.\n\nRESULTS YOU CAN EXPECT\n- Faster load times → higher conversion rates\n- Streamlined purchase flow → fewer abandoned carts\n- Conversion-focused design & copy tweaks → more buyers, more trust\n- Custom features built to support your sales strategy\n\nWHEN WE’RE A GREAT FIT\n- You want more sales, sooner (not just a prettier store).\n- You’ve hit the limits of DIY tools and need expert guidance.\n- You value a partner who explains CRO and tech in plain language.\n\nWHY ME\nWith 20+ years in IT and a Shopify-only focus in recent years, I combine technical skill with conversion strategy. I’m a Top-Rated Plus Shopify Expert on Upwork, certified in Liquid Storefronts for Theme Developers, and trusted by merchants worldwide to deliver measurable results.\n\nKEY STATS\n- 50+ Shopify stores customized and optimized\n- Certified Shopify Partner\n- Verified Shopify Liquid & Foundations skill badges\n\nClick \"Message\" to book a free strategy call and see how I can help you increase sales and peace of mind.",
     "Total_earnings": 100000,
-    "Total_shopify_jobs": 73,
-    "Total_hours_worked_on-shopify": "2600+",
+    "Total_shopify_jobs": 90,
+    "Total_hours_worked_on-shopify": "3200+",
     "Badge": "Top Rated Plus",
-    "Job_Success_Score": 98,
+    "Job_Success_Score": 100,
     "rate": "$79/h"
   }
 }
