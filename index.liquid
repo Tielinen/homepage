@@ -1,44 +1,8 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://static.hotjar.com">
     <link rel="preload" as="font" href="/assets/Montserrat-VariableFont_wght.ttf" type="font/ttf" crossorigin>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-978007279"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      // Google Ads conversion tracking
-      gtag('config', 'AW-978007279');
-
-     // GA4 tracking
-      gtag('config', 'G-GJHHS5BWSV');
-
-    </script>
-
-    <!-- Hotjar Tracking Code for tielinen.pro -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        (function (h, o, t, j, a, r) {
-          h.hj =
-            h.hj ||
-            function () {
-              (h.hj.q = h.hj.q || []).push(arguments);
-            };
-          h._hjSettings = { hjid: 6377566, hjsv: 6 };
-          a = o.getElementsByTagName('head')[0];
-          r = o.createElement('script');
-          r.async = 1;
-          r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-          a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-      });
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -79,16 +43,6 @@
     <title>Tielinen.pro</title>
   </head>
   <body class="m-auto overflow-x-hidden bg-softWhite font-montserrat text-base text-deepSlate lg:text-lg">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-W6TQXZPF"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     {%- render './sections/header', menus: menus -%}
     <main>
       {%- render './sections/hero' -%}
