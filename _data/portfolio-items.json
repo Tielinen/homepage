@@ -1,4 +1,58 @@
 [
+{
+    "title": "Decanter: Shopify Store Rebuild & Ongoing Improvements",
+    "button_label": "Decanter",
+    "description": "I rebuilt Decanter's Shopify store to make a large catalogue easier to browse and everyday updates easier for the team. The work covered 150 collection templates, 11 pages, improved search and filters, clearer product details, editable badges, store availability and cart improvements. After launch, I refined image loading, reviews and mobile layouts. The refreshed store gives shoppers clearer buying information and the merchant more control over content. I continue to support the store with fixes and improvements.",
+    "images": [
+      {
+        "url": "/decanter/01-decanter-homepage.webp",
+        "alt": "Decanter desktop homepage with its logo, navigation, seasonal campaign hero and introduction to the Finnish kitchen and wineware retailer."
+      },
+      {
+        "url": "/decanter/02-decanter-collection.webp",
+        "alt": "Decanter Riedel collection showing bestseller labels, product images, prices and separate product-view and add-to-cart controls."
+      },
+      {
+        "url": "/decanter/03-decanter-product.webp",
+        "alt": "Decanter product page with champagne glasses, customer reviews, purchase controls and availability online and in two stores."
+      },
+      {
+        "url": "/decanter/04-decanter-mobile.webp",
+        "alt": "Three mobile Decanter views showing the homepage, product gallery, sticky buy bar, store availability and delivery information."
+      }
+    ],
+    "url": "https://decanter.fi/",
+    "active": true
+  },
+  {
+    "title": "Scented Helsinki: Standalone Shopify Store Build & Launch",
+    "button_label": "Scented Helsinki",
+    "description": "Scented Helsinki needed its own Shopify store after sharing a storefront with another brand. I built the standalone store, prepared and checked the product catalogue, connected its own domain and supported the launch. I also improved the display of Judge.me ratings and review counts, and added automatic preorder behaviour that returns to the normal out-of-stock state when preorder conditions no longer apply. The brand now has a live storefront of its own, with clear product information and buying options for fragrance shoppers.",
+    "images": [
+      {
+        "url": "/scented-helsinki/00-scented-helsinki-hero-cover.webp",
+        "alt": "Scented Helsinki desktop homepage with brand logo, fragrance navigation and a campaign hero featuring three perfume bottles."
+      },
+      {
+        "url": "/scented-helsinki/01-scented-helsinki-store-overview.webp",
+        "alt": "Scented Helsinki fragrance collection with product cards, prices, ratings and preorder labels."
+      },
+      {
+        "url": "/scented-helsinki/02-scented-helsinki-product-reviews.webp",
+        "alt": "Scented Helsinki product page showing fragrance details and customer reviews."
+      },
+      {
+        "url": "/scented-helsinki/03-scented-helsinki-preorder.webp",
+        "alt": "Scented Helsinki product page displaying the preorder option and information for shoppers."
+      },
+      {
+        "url": "/scented-helsinki/04-scented-helsinki-mobile.webp",
+        "alt": "Three mobile Scented Helsinki storefront views showing fragrance browsing and product purchasing layouts."
+      }
+    ],
+    "url": "https://scentedhelsinki.com/",
+    "active": true
+  },
       {
     "title": "Shopify Theme Customization & Launch (10 Days)",
     "button_label": "Read More",

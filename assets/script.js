@@ -71,9 +71,21 @@ if (portfolioItems.length) {
             carouselElement,
             SETTINGS.portfolioFlickityObject,
           );
+          focusCarousel();
         });
       } else {
         carouselElement.flickityInstance.resize();
+        focusCarousel();
+      }
+    }
+
+    function focusCarousel() {
+      // Do not steal focus if the user closed the modal or tabbed elsewhere while images loaded.
+      if (
+        !modalElement.classList.contains(`hidden`) &&
+        document.activeElement === modalElement
+      ) {
+        mainCarousel.focus({ preventScroll: true });
       }
     }
 
@@ -82,10 +94,9 @@ if (portfolioItems.length) {
       document.body.classList.add(`overflow-hidden`);
       backdrop.classList.remove(`hidden`);
 
-      initializeFlickity(mainCarousel);
-
       lastFocusedElement = trigger;
       modalElement.focus();
+      initializeFlickity(mainCarousel);
       document.addEventListener(`keydown`, handleKeydown);
     }
 
