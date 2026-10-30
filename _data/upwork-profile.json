@@ -114,11 +114,17 @@
     }
   ],
   "reviews": [
+            {
+      "job_title": "Senior Shopify Developer Needed for Ongoing Fixes & Support",
+      "review": "Great experience working with Janne. He quickly fixed several ongoing issues on our Shopify store and communicated clearly throughout the project. Very knowledgeable and easy to work with. Highly recommend.",
+      "reviewer_job_title": "Merchant",
+      "date": "2026-05-14"
+    },
         {
-      "job_title": " Espresso Momenti Shopify store creation",
+      "job_title": "Espresso Momenti Shopify store creation",
       "review": "Working with Janne is an absolute gift. He is an incredibly skilled Shopify developer and an organized, thoughtful, and patient teacher who genuinely wants you to succeed. He builds with excellence while guiding you through the backend so you feel confident moving forward. His work is consistently high-quality, detail-oriented, and delivered with precision and efficiency. He also brings valuable business insight when invited, which is a rare and appreciated bonus. Beyond his skillset, he’s simply a wonderful human - kind, professional, funny, and easy to work with. I can’t recommend him highly enough. Thank you, Janne!",
       "reviewer_job_title": "Merchant",
-      "date": "2026-05-12"
+      "date": "2026-05-05"
     },
     {
       "job_title": "Shopify website design/development",
